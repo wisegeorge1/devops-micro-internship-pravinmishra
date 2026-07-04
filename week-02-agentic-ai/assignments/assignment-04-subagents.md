@@ -95,8 +95,8 @@ mkdir -p .claude/agents
 **Expected Output:** 3 written answers in your GitHub Repository folder showing you understand the design decisions behind each agent.
 
 **Screenshots Required:**
-- Screenshot 2 — `security-auditor.md` frontmatter showing tools and model
-- Screenshot 3 — `cost-optimizer.md` frontmatter showing tools and model
+- Screenshot 2 — `security-auditor.md` frontmatter showing model and tools configuration
+- Screenshot 3 — `cost-optimizer.md` frontmatter showing the model and tools configuration
 
 ---
 
@@ -182,7 +182,7 @@ Not required for this assignment.
 Before submission, verify:
 - [ ] All 3 agent files in `.claude/agents/`
 - [ ] Screenshot 2 and 3 show different tools and models for each agent
-- [ ] 3 written answers in Google Doc (Task 2)
+- [ ] 3 written answers 
 - [ ] Security auditor ran and produced a report with findings
 - [ ] Cost optimizer ran and produced a report
 - [ ] Agents committed and visible in GitHub repo

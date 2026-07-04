@@ -156,9 +156,7 @@ Your submission must include:
 
 ## 10. Solution Walkthrough
 
-A step-by-step solution and troubleshooting guide is available for reference:
-
-Full solution walkthrough → (LINK)
+A step-by-step solution and troubleshooting guide will be provided.
 
 ---
 

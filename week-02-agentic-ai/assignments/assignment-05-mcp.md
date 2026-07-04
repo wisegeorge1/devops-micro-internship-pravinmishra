@@ -133,13 +133,13 @@ Each task must be completed sequentially.
 **Expected Output:** `settings.local.json` has the token in the `env` section and `github` listed in `enabledMcpjsonServers`.
 
 **Screenshots Required:**
-- Screenshot 3 — `settings.local.json` open in VS Code showing the `env` section — **blur or cover the actual token value**
+- Screenshot 3 — `settings.local.json` open in VS Code showing the `env` section — **blur or cover the actual GitHub token value**
 
 ---
 
 ### Task 4 — Verify the Connection with /mcp
 
-**Goal:** Confirm the GitHub MCP server is connected and ready.
+**Goal:** Confirm the GitHub MCP server is connected and ready. 
 
 **Steps:**
 1. Close Claude Code completely and reopen it (so it picks up the new `.mcp.json`)
@@ -198,8 +198,7 @@ Your submission must include:
 
 ## 10. Solution Walkthrough
 
-A step-by-step solution and troubleshooting guide is available for reference:
-Full solution walkthrough → (LINK)
+A step-by-step solution and troubleshooting guide is available for reference will be updated.
 
 ---
 

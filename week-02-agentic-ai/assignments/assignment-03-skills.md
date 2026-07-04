@@ -101,7 +101,6 @@ mkdir -p .claude/skills/deploy
 **Screenshots Required:**
 - Screenshot 2 — `.claude/skills/scaffold-terraform/` open in VS Code showing both `SKILL.md` and `template-spec.md`
 - Screenshot 3 — `tf-plan/SKILL.md` frontmatter showing `allowed-tools: Bash, Read, Grep` (no Write) and `disable-model-invocation: true`
-
 ---
 
 ### Task 3 — Run /scaffold-terraform
