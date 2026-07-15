@@ -95,9 +95,6 @@ claude
 
 **Screenshots Required:**
 - Screenshot 1 — Terminal showing `claude --version` with the version number visible
-
-![claude version](/week-02-agentic-ai/screenshots/claude-version.png)
-
 - Screenshot 2 — Claude Code authenticated and showing the terminal prompt (your name visible)
 
 ![terminal-prompt](/week-02-agentic-ai/screenshots/trust-folder.png)
@@ -181,13 +178,15 @@ Your submission must include:
 - Your GitHub forked repository URL
 
 ---
-![](https://github.com/wisegeorge1/devops-micro-internship-pravinmishra.git)
+(https://github.com/wisegeorge1/devops-micro-internship-pravinmishra.git)
 
-![](https://github.com/wisegeorge1/Ultimate-Agentic-DevOps-with-Claude-Code)
+(https://github.com/wisegeorge1/Ultimate-Agentic-DevOps-with-Claude-Code)
 
 ## 10. Solution Walkthrough
 
-A step-by-step solution and troubleshooting guide will be provided.
+A step-by-step solution and troubleshooting guide is available for reference:
+Full solution walkthrough → [Click here](../Solutions_walkthrough/assignment-01-setup-agentic-loop.md)
+
 
 ---
 
