@@ -385,7 +385,7 @@ Every weekday from ***7:00 PM to 9:00 PM***, I will complete one uninterrupted d
 
 ### LinkedIn Post
 
-LinkedIn post link https://www.linkedin.com/posts/wisgeorge1_join-the-dmi-devops-micro-internship-share-7478224574527098880-Eoco/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY
+LinkedIn post link: https://www.linkedin.com/posts/wisgeorge1_join-the-dmi-devops-micro-internship-share-7478224574527098880-Eoco/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY
 
 
 
@@ -393,8 +393,9 @@ LinkedIn post link https://www.linkedin.com/posts/wisgeorge1_join-the-dmi-devops
 
 ## 10. Proof of Work
 
-- LinkedIn Post URL: **https://www.linkedin.com/pulse/what-5-years-consistency-did-devops-engineer-inspire-you-epebifie-oensf**  
-- Blog / Medium : **https://cloudly.hashnode.dev/what-5-years-of-consistency-did-for-this-devops-engineer-will-inspire-you**  
+- LinkedIn Post URL: https://www.linkedin.com/posts/wisgeorge1_this-is-article-is-about-consistency-and-activity-7478449530552717314-eDT0?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY
+
+- Blog / Medium : https://cloudly.hashnode.dev/what-5-years-of-consistency-did-for-this-devops-engineer-will-inspire-you  
 
 ---
 
