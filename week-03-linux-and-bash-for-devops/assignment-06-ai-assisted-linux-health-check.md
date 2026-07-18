@@ -36,7 +36,7 @@ Answer the following in your own words:
 
 **1. What proves that Nginx is running?**
 
-Testing the web server locally using **curl http://localhost** can prove that Nginx is running. Also you can use the server IP-address on a browser to confirm if it is running, typically you shouls see a **Welcome to Nginx** message on your screen. Any of these commands can show if Nginx is running **'sudo netstat -tlnp | grep :80', 'ps aux | grep nginx', 'sudo systemctl status nginx'**
+Testing the web server locally using **`curl http://localhost`** can prove that Nginx is running. Also you can use the server IP-address on a browser to confirm if it is running, typically you shouls see a **Welcome to Nginx** message on your screen. Any of these commands can show if Nginx is running **`sudo netstat -tlnp | grep :80`, `ps aux | grep nginx`, `sudo systemctl status nginx`**
 
 ---
 
@@ -112,19 +112,20 @@ Answer the following in your own words:
 
 **1. Which part of this task represents the Gather phase?**
 
-Add your answer here.
+The Gather phase is when Claude Code inspects the Linux environment using read-only commands and collects information about the system before any Bash script is written. It gathers evidence such as the Nginx service status, network ports, HTTP response, and other system details without making any changes.
 
 ---
 
 **2. Did Claude follow the instruction not to create files? How did you verify this?**
 
-Add your answer here.
+Yes, Claude followed the instruction not to create any files. It only inspected the environment and produced a read-only implementation plan instead of generating the Bash script. I verified this by confirming that no new files were created in the project directory after the planning step and that Claude only displayed its findings and recommendations.
 
 ---
 
 **3. Why is planning before coding useful in DevOps automation?**
 
-Add your answer here.
+Planning before coding helps identify the requirements, available resources, and potential risks before implementation begins. It reduces mistakes, ensures the automation follows the intended workflow, and makes it easier to build reliable, safe, and maintainable DevOps scripts that perform the correct checks without unintended side effects.
+
 
 ---
 
@@ -186,7 +187,7 @@ Separating the health checks into functions makes the script modular, organized,
 
 **4. What is the purpose of `$(...)` in this script?**
 
-$(...) is a command substitution. It runs a command and replaces the expression with the command's output.
+`$(...)` is a command substitution. It runs a command and replaces the expression with the command's output.
 
 ---
 
@@ -223,15 +224,17 @@ Answer the following in your own words:
 **1. What is the overall status of your healthy baseline?**
 
 The overall status of the healthy baseline is HEALTHY. As indicated by the report summary
+```text
 Overall Status: HEALTHY
 PASS: 5
 WARN: 0
 FAIL: 0
+```
 ---
 
 **2. Which exact Linux evidence proves the application is serving traffic?**
 
-The strongest evidence is [PASS] Local HTTP check returned status 200. An HTTP 200 (OK) response means the web server successfully received and processed the request, indicating that the application is serving HTTP traffic. Additional supporting evidence is **'PASS' Nginx service is active.**
+The strongest evidence is `PASS` Local HTTP check returned status 200. An HTTP 200 **OK** response means the web server successfully received and processed the request, indicating that the application is serving HTTP traffic. Additional supporting evidence is `PASS` Nginx service is active.
 
 ---
 
@@ -280,7 +283,7 @@ This skill has Bash, Read, and Grep because it is designed for investigation and
 
 **2. Why is `disable-model-invocation: true` useful for this skill?**
 
-disable-model-invocation: true is useful for the skill because Claude cannot automatically decide to run this skill on its own. The skill must be explicitly requested by the human.
+`disable-model-invocation: true` is useful for the skill because Claude cannot automatically decide to run this skill on its own. The skill must be explicitly requested by the human.
 
 ---
 
@@ -294,6 +297,7 @@ On the other hand Claude performs the analysis and reporting through Reading the
 ---
 
 **4. Why is this better than asking Claude "Is my server healthy?" without giving it evidence?**
+
 This approach is better because it is evidence based troubleshooting instead of guessing. Without evidence, it could only provide general advice or make unsupported assumptions. With this skill, Claude receives actual Linux evidence:
 
 
@@ -334,28 +338,33 @@ Answer the following in your own words:
 **1. Which three checks failed?**
 
 These are the checks that failed;
-1. Nginx service is not active
-2. Port 80 is not listening
-3. Local HTTP check returned status 000
+
+  1. Nginx service is not active
+  2. Port 80 is not listening
+  3. Local HTTP check returned status 000
 
 ---
 
 **2. What evidence supports the conclusion that Nginx is unavailable?**
 
 The report provides multiple pieces of evidence.
-1. The service status shows: [FAIL] Nginx service is not active.
-2. Port 80 is not accepting connections: [FAIL] Port 80 is not listening.
-3. The HTTP health check failed with status 000, indicating no response was received from the web server.
-4. The recent logs show that Nginx was stopped.
+
+  1. The service status shows: `FAIL` Nginx service is not active.
+  2. Port 80 is not accepting connections: `FAIL` Port 80 is not listening.
+  3. The HTTP health check failed with status 000, indicating no response was received from the web server.
+  4. The recent logs show that Nginx was stopped.
 
 ---
 
 **3. Did Claude execute the recovery command? Why is that important?**
 
-No. Based on the incident report, there is no evidence that Claude executed any recovery command (such as sudo systemctl start nginx). It was clearly stated in the safety section of the skills that it should not do anything like executing a command. This is important because an AI assistant should analyze and recommend corrective actions rather than automatically making changes to a production system. Leaving execution to the user ensures:
-Human oversight and approval.
-Reduced risk of unintended system changes.
-Compliance with the principle of safe, controlled operations.
+No. Based on the incident report, there is no evidence that Claude executed any recovery command (such as sudo systemctl start nginx). It was clearly stated in the safety section of the skills that it should not do anything like executing a command. This is important because an AI assistant should analyze and recommend corrective actions rather than automatically making changes to a production system. 
+
+Leaving execution to the user ensures:
+
+  - Human oversight and approval.
+  - Reduced risk of unintended system changes.
+  - Compliance with the principle of safe, controlled operations.
 
 ---
 
@@ -381,7 +390,7 @@ Recover the service as the human operator and prove that the system is healthy a
 
 #### Screenshot 16 — Output showing Nginx is active and `curl -I http://localhost` returns 200 OK
 
-![rcovery](/week-03-linux-and-bash-for-devops/screenshots/recovery-display.png)
+![nginx rcovery verification](/week-03-linux-and-bash-for-devops/screenshots/recovery-display.png)
 
 ---
 
@@ -409,7 +418,7 @@ Answer the following in your own words:
 
 **1. What action did you execute manually?**
 
-I restarted nginx manually by executing the following command **sudo systemctl start nginx**
+I restarted nginx manually by executing the following command `sudo systemctl start nginx`
 
 ---
 
@@ -422,30 +431,31 @@ it returned active status for my nginx and the http request showed that it was l
 
 **3. Why is the second triage run necessary?**
 
-The second triage run is necessary to verify that the recovery action was successful.
+The second triage run is necessary to verify that the recovery action was successful. After the issue is fixed for example, by running sudo systemctl start nginx, a second execution of the triage script confirms that:
 
-After the issue is fixed (for example, by running sudo systemctl start nginx), a second execution of the triage script confirms that:
-- The Nginx service is active.
-- Port 80 is listening for incoming connections.
-- The HTTP health check returns a successful response (such as HTTP 200 instead of status 000).
-- The system's overall status changes from FAIL to PASS, if the problem has been resolved.
+  - The Nginx service is active.
+  - Port 80 is listening for incoming connections.
+  - The HTTP health check returns a successful response such as HTTP 200 instead of status 000.
+  - The system's overall status changes from FAIL to PASS, if the problem has been resolved.
 
 ---
 
 **4. What could go wrong if an AI agent automatically restarted every failed service?**
 
 If an AI agent automatically restarted every failed service, several problems could occur like
-- Restarting a service may temporarily restore it, but the underlying cause (such as a configuration error, missing dependency, 
-  or software bug) would remain unresolved.
-- It could make the situation worse.
-- If the service failed because of corrupted data, insufficient resources, or a security issue, repeatedly restarting it could 
-  lead to repeated crashes, data corruption, or higher system load.
-- It could disrupt users.
-- Restarting services without approval can interrupt active connections or ongoing transactions, causing downtime or loss of work.
-- It could interfere with incident investigation.
-- Automatic restarts may overwrite logs or alter the system state, making it harder for administrators to determine why the 
-  service failed.
-- It could create security risks.
+
+  - Restarting a service may temporarily restore it, but the underlying cause (such as a configuration error, missing dependency, 
+    or software bug) would remain unresolved.
+  - It could make the situation worse.
+  - If the service failed because of corrupted data, insufficient resources, or a security issue, repeatedly restarting it could 
+    lead to repeated crashes, data corruption, or higher system load.
+  - It could disrupt users.
+  - Restarting services without approval can interrupt active connections or ongoing transactions, causing downtime or loss of    
+    work.
+  - It could interfere with incident investigation.
+  - Automatic restarts may overwrite logs or alter the system state, making it harder for administrators to determine why the 
+    service failed.
+  - It could create security risks.
 
 ---
 
@@ -503,14 +513,14 @@ The AI assistant did not execute the recovery command automatically. Instead, it
 
 **7. Agentic Loop Mapping**
 
-- Observe: The Bash script collected system information, service status, port status, HTTP check results, resource usage, and 
-  logs.
+  - Observe: The Bash script collected system information, service status, port status, HTTP check results, resource usage, and 
+    logs.
 
-- Think: Claude analyzed the collected evidence, identified that Nginx was stopped, and determined the most likely cause.
+  - Think: Claude analyzed the collected evidence, identified that Nginx was stopped, and determined the most likely cause.
 
-- Act: A human approved and executed the recommended recovery action by restarting the Nginx service.
+  - Act: A human approved and executed the recommended recovery action by restarting the Nginx service.
 
-- Observe (Verification): The triage script was run again to verify that the service was restored and operating correctly.
+  - Observe (Verification): The triage script was run again to verify that the service was restored and operating correctly.
 
 ---
 
@@ -520,7 +530,7 @@ The AI assistant did not execute the recovery command automatically. Instead, it
 
 #### LinkedIn Post URL
 
-Paste your LinkedIn post URL here: https://www.linkedin.com/posts/wisgeorge1_devops-cloudengineering-linux-share-7483985907503489024-4fGd/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY
+<https://www.linkedin.com/posts/wisgeorge1_devops-cloudengineering-linux-share-7483985907503489024-4fGd/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY>
 
 `__________________________`
 
@@ -534,7 +544,8 @@ Paste your LinkedIn post URL here: https://www.linkedin.com/posts/wisgeorge1_dev
 
 # GitHub Repository URL
 
-Paste the URL of your GitHub folder or repository containing the assignment files here:
+<https://github.com/wisegeorge1/devops-micro-internship-pravinmishra.git>
+
 
 [`__________________________`](https://github.com/wisegeorge1/devops-micro-internship-pravinmishra.git)
 

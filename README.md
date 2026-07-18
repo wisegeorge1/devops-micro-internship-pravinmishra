@@ -24,11 +24,7 @@
 
 ## About the Program
 
-<<<<<<< HEAD
-**DevOps Micro Internship with Agentic AI** is a 15 week mentor led cohort program by [Pravin Mishra](https://www.linkedin.com/in/pravin-mishra-aws-trainer/) — Cloud, DevOps & AI consultant with 15+ years of experience, 5,000+ learners trained, and 20K+ LinkedIn followers.
-=======
 **DevOps Micro Internship with Agentic AI** is a 14-week mentor-led cohort program by [Pravin Mishra](https://www.linkedin.com/in/pravin-mishra-aws-trainer/) — Cloud, DevOps & AI consultant with 15+ years of experience, 5,000+ learners trained, and 20K+ LinkedIn followers.
->>>>>>> upstream/main
 
 This is not a course. It is an internship style program — real deployments, real pipelines, real evidence reviewed by mentors every week.
 
@@ -134,29 +130,16 @@ Week 03 → Linux & Bash for DevOps
 
 | Week | Topic | Status | Assignment | LinkedIn Post | Blog Post |
 |------|-------|--------|------------|---------------|-----------|
-<<<<<<< HEAD
-| 00 | Internet & Networking Basics | ✅ Completed | ✅ Solved |https://www.linkedin.com/posts/wisgeorge1_pravin-mishra-the-cloudadvisory-linkedin-activity-7445137604108505088-mFgw?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY | — |
-| 01 | Success Mindset | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/wisgeorge1_this-is-article-is-about-consistency-and-activity-7478449530552717314-eDT0?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY | https://cloudly.hashnode.dev/what-5-years-of-consistency-did-for-this-devops-engineer-will-inspire-you |
-| 02 | Agentic AI with Claude Code |✅ Completed| ✅ Solved | https://www.linkedin.com/posts/(wisgeorge1_dmibypravinmishra-agenticai-claudecode-share-7481285258198392832-wW8u/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY)
- (https://www.linkedin.com/posts/wisgeorge1_dmibypravinmishra-agenticai-claudecode-ugcPost-7481298397124124672-56hc/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY) | (https://cloudly.hashnode.dev/reflection-week-2)|
-| 03 | Linux for DevOps | ✅ Completed| ✅ Solved |  (https://www.linkedin.com/posts/wisgeorge1_devops-cloudengineering-aws-share-7483975195209363456-AfF4/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY) (https://www.linkedin.com/posts/wisgeorge1_devops-cloudengineering-linux-share-7483977181497380864-lnCV/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY) (https://www.linkedin.com/posts/wisgeorge1_devops-aws-linux-share-7483981307635720192-FOEH/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY
-) (https://www.linkedin.com/posts/wisgeorge1_devops-cloudengineering-bashscripting-share-7483983597662642176-fwCr/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY) (https://www.linkedin.com/posts/wisgeorge1_devops-cloudengineering-linux-share-7483985907503489024-4fGd/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY) | — |
-| 04 | Bash Scripting | ✅ Completed| ✅ Solved| https://www.linkedin.com/posts/wisgeorge1_devops-cloudengineering-bashscripting-share-7483983597662642176-fwCr/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY | — |
-| 05 | Git & GitHub | ⬜ Not Started | ⏳ Pending | — | — |
-| 06 | DevOps Lifecycle & Agile | ⬜ Not Started | ⏳ Pending | — | — |
-| 07 | AWS Cloud | ⬜ Not Started | ⏳ Pending | — | — |
-| 08 | Azure Cloud | ⬜ Not Started | ⏳ Pending | — | — |
-| 09 | Terraform | ⬜ Not Started | ⏳ Pending | — | — |
-| 10 | Ansible | ⬜ Not Started | ⏳ Pending | — | — |
-| 11 | Azure DevOps (CI/CD) | ⬜ Not Started | ⏳ Pending | — | — |
-| 12 | Docker | ⬜ Not Started | ⏳ Pending | — | — |
-| 13 | Kubernetes | ⬜ Not Started | ⏳ Pending | — | — |
-| 14 | Final Project | ⬜ Not Started | ⏳ Pending | — | — |
-=======
-| 00 | Internet & Networking Basics | ⬜ Not Started | ⏳ Pending | — | — |
-| 01 | Success Mindset | ⬜ Not Started | ⏳ Pending | — | — |
-| 02 | Agentic AI with Claude Code | ⬜ Not Started | ⏳ Pending | — | — |
-| 03 | Linux & Bash for DevOps | ⬜ Not Started | ⏳ Pending | — | — |
+
+| 00 | Internet & Networking Basics | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/wisgeorge1_pravin-mishra-the-cloudadvisory-linkedin-activity-7445137604108505088-mFgw?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY | https://cloudly.hashnode.dev/my-devops-learning-journey-so-far-building-a-strong-foundation 
+| 01 | Success Mindset | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/wisgeorge1_this-is-article-is-about-consistency-and-activity-7478449530552717314-eDT0?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY | https://cloudly.hashnode.dev/what-5-years-of-consistency-did-for-this-devops-engineer-will-inspire-you 
+| 02 | Agentic AI with Claude Code | ✅ Completed | ✅ Solved | [Post 1](https://www.linkedin.com/posts/wisgeorge1_dmibypravinmishra-agenticai-claudecode-share-7481285258198392832-wW8u/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY),
+ [Post 2](https://www.linkedin.com/posts/wisgeorge1_dmibypravinmishra-agenticai-claudecode-ugcPost-7481298397124124672-56hc/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY) | https://cloudly.hashnode.dev/reflection-week-2 
+| 03 | Linux & Bash for DevOps | ✅ Completed | ✅ Solved | [Post 1](https://www.linkedin.com/posts/wisgeorge1_devops-cloudengineering-aws-share-7483975195209363456-AfF4/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY),
+[Post 2](https://www.linkedin.com/posts/wisgeorge1_devops-cloudengineering-linux-share-7483977181497380864-lnCV/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY),
+[Post 3](https://www.linkedin.com/posts/wisgeorge1_devops-aws-linux-share-7483981307635720192-FOEH/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY),
+[Post 4](https://www.linkedin.com/posts/wisgeorge1_devops-cloudengineering-bashscripting-share-7483983597662642176-fwCr/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY ),
+[Post 5](https://www.linkedin.com/posts/wisgeorge1_devops-cloudengineering-linux-share-7483985907503489024-4fGd/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY) | — |
 | 04 | Git & GitHub | ⬜ Not Started | ⏳ Pending | — | — |
 | 05 | DevOps Lifecycle & Agile | ⬜ Not Started | ⏳ Pending | — | — |
 | 06 | AWS Cloud | ⬜ Not Started | ⏳ Pending | — | — |
@@ -187,6 +170,6 @@ Week 03 → Linux & Bash for DevOps
 If you found this repo useful or want to follow my DevOps journey:
 
 - ⭐ Star this repo
-- 🔗 Connect with me on [LinkedIn](#)
+- 🔗 Connect with me on [LinkedIn](https://www.linkedin.com/in/wisgeorge1/)
 - 🌐 Learn more about the program: https://dmi.pravinmishra.com
 - 💬 Join the community: https://discord.pravinmishra.com
