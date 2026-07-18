@@ -42,7 +42,7 @@ Testing the web server locally using **`curl http://localhost`** can prove that 
 
 **2. What proves that the server is listening for HTTP traffic?**
 
-A server is listening for HTTP traffic when it is accepting connections on port 80, the default port for HTTP.
+The server is listening for HTTP traffic if it is accepting connections on port 80, the default HTTP port. This can be verified by using a command such as `ss -ltn | grep ':80'`, which shows that port 80 is in the LISTEN state. A successful `curl -I http://localhost` request returning an HTTP 200 OK response further confirms that the server is actively receiving and responding to HTTP requests
 
 ---
 
@@ -112,7 +112,7 @@ Answer the following in your own words:
 
 **1. Which part of this task represents the Gather phase?**
 
-The Gather phase is when Claude Code inspects the Linux environment using read-only commands and collects information about the system before any Bash script is written. It gathers evidence such as the Nginx service status, network ports, HTTP response, and other system details without making any changes.
+The Gather phase is when Bash triage script collected objective evidence from the Linux system and Claude Code as the AI assistant then analyzed that evidence, explained the findings, suggested a recovery approach, and left the final decision to me.It gathered evidence such as the Nginx service status, network ports, HTTP response, and other system details without making any changes.
 
 ---
 

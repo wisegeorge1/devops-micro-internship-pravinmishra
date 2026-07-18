@@ -99,7 +99,7 @@ We use chmod +x to make a script executable. By default, a script is just a regu
 
 **3. What is the difference between running a script using `./script.sh` and `bash script.sh`?**
 
-Both commands run a Bash script, but they do so in different ways. **./script.sh** executes the script directly as a program  while **bash script.sh** starts a new Bash process and passes the script to it. **./script.sh** uses the interpreter specified by the script's shebang while **bash script.sh** ignores the shebang and explicitly runs the script with Bash.
+Both commands run a Bash script, but they do so in different ways. **`./script.sh`** executes the script directly as a program  while **bash script.sh** starts a new Bash process and passes the script to it. **`./script.sh`** uses the interpreter specified by the script's shebang while **`bash script.sh`** ignores the shebang and explicitly runs the script with Bash.
 
 ---
 
@@ -416,7 +416,7 @@ The script uses variables to store important values, the script uses Arrays to s
 
 #### LinkedIn Post URL
 
-Paste your LinkedIn post URL here: https://www.linkedin.com/posts/wisgeorge1_devops-cloudengineering-bashscripting-share-7483983597662642176-fwCr/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY
+Paste your LinkedIn post URL here:<https://www.linkedin.com/posts/wisgeorge1_devops-cloudengineering-bashscripting-share-7483983597662642176-fwCr/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY>
 
 `__________________________`
 

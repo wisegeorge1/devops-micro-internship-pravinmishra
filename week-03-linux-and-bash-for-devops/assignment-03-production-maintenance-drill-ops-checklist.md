@@ -48,19 +48,19 @@ Answer the following in your own words:
 
 **1. What proves Nginx is listening on 0.0.0.0:80?**
 
-Write your answer here.
+When the results of running `sudo ss -lptn '( sport = :80 )'` command shows this `LISTEN 0 511 0.0.0.0:80 0.0.0.0:*`
 
 ---
 
 **2. What proves SSH is active on port 22?**
 
-Write your answer here.
+SSH is active on port 22 when the SSH service is running (systemctl is-active ssh returns active) and the output of ss -ltn | grep ':22' shows that the server is in the LISTEN state on port 22, confirming it is ready to accept SSH connections.
 
 ---
 
 **3. Did you find any unexpected open ports? Explain briefly.**
 
-Write your answer here.
+I did not find any open port because the results showed that there were no open ports, besides I only opened port 22 and 80 for ssh and http when I was provisioning networks for my virtual machine. 
 
 ---
 
@@ -368,7 +368,7 @@ Answer the following in your own words:
 
 **1. Why is SSH key-based authentication more secure than sharing passwords?**
 
-SSH key-based authentication is more secure because it uses public key cryptography instead of transmitting or storing passwords. The private key remains with the user, while only the public key is stored on the server. This makes brute force attacks much harder, prevents password sharing, and allows administrators to control and revoke access more securely.
+SSH key based authentication is more secure because it uses public key cryptography instead of transmitting or storing passwords. The private key remains with the user, while only the public key is stored on the server. This makes brute force attacks much harder, prevents password sharing, and allows administrators to control and revoke access more securely.
 
 ---
 
@@ -391,7 +391,9 @@ Secrets, keys, and credentials should never be shared publicly because they can 
 ---
 
 **5. Why should cloud resources be stopped or terminated when they are no longer needed?**
+
 Cloud resources should be stopped or terminated when they are no longer needed to avoid unnecessary costs and reduce security risks. Removing unused resources helps maintain a cleaner, more manageable infrastructure, prevents forgotten systems from becoming vulnerabilities, and ensures cloud spending is optimized.
+
 ---
 
 # LinkedIn Post (Required)
@@ -400,7 +402,7 @@ Cloud resources should be stopped or terminated when they are no longer needed t
 
 #### LinkedIn Post URL
 
-Paste your LinkedIn post URL here: https://www.linkedin.com/posts/wisgeorge1_devops-cloudengineering-linux-share-7483977181497380864-lnCV/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY
+Paste your LinkedIn post URL here: <https://www.linkedin.com/posts/wisgeorge1_devops-cloudengineering-linux-share-7483977181497380864-lnCV/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY>
 
 `__________________________`
 
