@@ -18,7 +18,7 @@
 | **LinkedIn** | [George Epebifie](https://www.linkedin.com/in/wisgeorge1/) |
 | **Location** | Lagos, Nigeria |
 | **Background** | Cloud, DevOps, Infrastructure Administration & AI Enthusiast |
-| **Goal** | To Become a Highly Sought after DevOps professionals |
+| **Goal** | To Become a Highly Sought after DevOps professional |
 
 ---
 
@@ -133,13 +133,9 @@ Week 03 → Linux & Bash for DevOps
 
 | 00 | Internet & Networking Basics | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/wisgeorge1_pravin-mishra-the-cloudadvisory-linkedin-activity-7445137604108505088-mFgw?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY | https://cloudly.hashnode.dev/my-devops-learning-journey-so-far-building-a-strong-foundation 
 | 01 | Success Mindset | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/wisgeorge1_this-is-article-is-about-consistency-and-activity-7478449530552717314-eDT0?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY | https://cloudly.hashnode.dev/what-5-years-of-consistency-did-for-this-devops-engineer-will-inspire-you 
-| 02 | Agentic AI with Claude Code | ✅ Completed | ✅ Solved | [Post 1](https://www.linkedin.com/posts/wisgeorge1_dmibypravinmishra-agenticai-claudecode-share-7481285258198392832-wW8u/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY),
- [Post 2](https://www.linkedin.com/posts/wisgeorge1_dmibypravinmishra-agenticai-claudecode-ugcPost-7481298397124124672-56hc/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY) | https://cloudly.hashnode.dev/reflection-week-2 
-| 03 | Linux & Bash for DevOps | ✅ Completed | ✅ Solved | [Post 1](https://www.linkedin.com/posts/wisgeorge1_devops-cloudengineering-aws-share-7483975195209363456-AfF4/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY),
-[Post 2](https://www.linkedin.com/posts/wisgeorge1_devops-cloudengineering-linux-share-7483977181497380864-lnCV/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY),
-[Post 3](https://www.linkedin.com/posts/wisgeorge1_devops-aws-linux-share-7483981307635720192-FOEH/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY),
-[Post 4](https://www.linkedin.com/posts/wisgeorge1_devops-cloudengineering-bashscripting-share-7483983597662642176-fwCr/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY ),
-[Post 5](https://www.linkedin.com/posts/wisgeorge1_devops-cloudengineering-linux-share-7483985907503489024-4fGd/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY) | — |
+| 02 | Agentic AI with Claude Code | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/wisgeorge1_dmibypravinmishra-agenticai-claudecode-share-7481285258198392832-wW8u/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY | https://cloudly.hashnode.dev/reflection-week-2 
+| 03 | Linux & Bash for DevOps | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/wisgeorge1_devops-cloudengineering-aws-share-7483975195209363456-AfF4/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY
+ | https://cloudly.hashnode.dev/how-to-deploy-a-react-app-on-an-aws-ec2-ubuntu-instance-using-nginx-a-step-by-step-guide 
 | 04 | Git & GitHub | ⬜ Not Started | ⏳ Pending | — | — |
 | 05 | DevOps Lifecycle & Agile | ⬜ Not Started | ⏳ Pending | — | — |
 | 06 | AWS Cloud | ⬜ Not Started | ⏳ Pending | — | — |

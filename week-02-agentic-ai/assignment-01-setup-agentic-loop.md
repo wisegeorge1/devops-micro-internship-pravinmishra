@@ -1,115 +1,208 @@
-# Assignment 1 — Your First Agentic Session
-
-Part of the DevOps Micro Internship (DMI) Cohort 3 with Agentic AI
+# Assignment 1: Your First Agentic Session
 
 ---
 
-## Purpose
+## 1. Assignment Overview
 
-In this assignment, you will set up your local development environment for Agentic AI using Claude Code. You will install and authenticate Claude Code CLI, fork and clone the starter repository, and observe how the Agentic Loop (Gather → Act → Verify) works in practice.
-
----
-
-# Task 1 — Install Claude Code
-
-## Goal
-
-Install the Claude Code CLI globally and authenticate it using your Anthropic account.
-
-### Evidence
-
-#### Screenshot 1 — Terminal showing `claude --version` with the version number visible
-
-Add your screenshot here.
+**Assignment:** Setup & Agentic Loop     
+**Estimated Time:** 60 minutes     
+**Difficulty:** Beginner      
+**Category:** Agentic AI, Claude Code Setup     
 
 ---
 
-#### Screenshot 2 — Claude Code authenticated and showing the terminal prompt (your name visible)
+## 2. Objective
 
-Add your screenshot here.
-
----
-
-# Task 2 — Fork and Clone the Starter Repository
-
-## Goal
-
-Fork the provided GitHub repository, clone it to your local machine, and open it in VS Code.
-
-### Evidence
-
-#### Screenshot 3 — VS Code with the project open, file tree visible showing `index.html`, `style.css`, `images/`
-
-Add your screenshot here.
+Install and authenticate Claude Code CLI and VS Code extension, fork and clone the course starter [repository](https://github.com/pravinmishraaws/Ultimate-Agentic-DevOps-with-Claude-Code), and observe how the Agentic Loop works before any configuration is in place.
 
 ---
 
-# Task 3 — Observe the Agentic Loop
+## 3. Real-World Scenario
 
-## Goal
-
-Interact with Claude Code and observe how it performs the Agentic Loop (Gather → Act → Verify) while answering project-related questions.
-
-### Evidence
-
-#### Screenshot 4 — Claude's response to the first question, showing it read the files (tool calls visible)
-
-Add your screenshot here.
+Every DevOps engineer working with agentic AI starts the same way — setting up the tooling and understanding how the AI actually thinks before trusting it with real infrastructure. You would never hand the keys to a new team member without watching them work first. This assignment is exactly that — get your environment ready, then watch Claude work so you understand what is happening before you build anything on top of it.
 
 ---
 
-#### Screenshot 5 — Claude's response to the second question, showing it ran a command and reported the line count
+## 4. Learning Outcomes
 
-Add your screenshot here.
+- Install and authenticate Claude Code CLI
+- Fork and clone the course starter repository
+- Observe the three phases of the Agentic Loop: Gather, Act, Verify
+- Understand how Claude Code differs from Claude chat
 
 ---
 
-# Submission Instructions
+## 5. Important Instructions (Global Rules)
 
-- Add all required screenshots in your GitHub repository submission
+**Key Rules:**
 - Full name must be visible in required screenshots
-- Push your completed work to your forked repository
-- Submit your GitHub repository URL below
+- Do not expose sensitive information (keys, passwords, account IDs)
+- Follow screenshot requirements exactly as specified in tasks
+- Submission must clearly match task outputs
+- Missing or incorrect proof may result in rejection
 
 ---
 
-## GitHub Repository URL
+## 6. Prerequisites
 
-Paste your forked repository URL here:
+- Node.js and npm installed (`node --version` works)
 
-`__________________________`
+  ![nodejs-npm-version](/week-02-agentic-ai/screenshots/nodejs-npm-version.png)
 
----
+- Git installed and configured (Verify using `git --version`)
 
-# Completion Checklist
+![git-version](/week-02-agentic-ai/screenshots/git-version.png)
 
-- [ ] Claude Code CLI installed successfully
-- [ ] Claude Code authenticated successfully
-- [ ] Repository forked successfully
-- [ ] Repository cloned and opened in VS Code
-- [ ] All required screenshots added
-- [ ] GitHub repository URL provided
+- GitHub account
 
----
+![github-account](/week-02-agentic-ai/screenshots/github-account.png)
 
-## 📌 About DMI & CloudAdvisory
+- VS Code installed (Vrify using `code --version`)
 
-DevOps Micro Internship (DMI) is a project-based DevOps program run by Pravin Mishra (The CloudAdvisory) focused on real-world execution, systems thinking, and career readiness.
+![vscode-version](/week-02-agentic-ai/screenshots/vscode-version-cli.png)
+![vscode-version](/week-02-agentic-ai/screenshots/vscode-version-app.png)
 
-It helps learners build strong DevOps foundations with hands-on experience.
+- Claude subscription (Pro plan minimum)
 
 ---
 
-## 📌 Resources
+## 7. Tasks
 
-- 🌐 DMI Official Website: https://pravinmishra.com/dmi  
-- 🎓 DevOps for Beginners (Udemy): https://www.udemy.com/course/devops-for-beginners-docker-k8s-cloud-cicd-4-projects/  
-- 🎓 Agentic AI DevOps with Claude Code: https://www.udemy.com/course/ultimate-agentic-ai-devops-with-claude-code/  
-- 🎓 DevOps with Claude Code: Terraform, EKS, ArgoCD & Helm: https://www.udemy.com/course/devops-with-claude-code-terraform-eks-argocd-helm/  
-- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho  
-- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/  
-- 🏢 CloudAdvisory (LinkedIn): https://www.linkedin.com/company/thecloudadvisory/
+Each task must be completed sequentially.
 
 ---
 
-*This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track.*
+### Task 1 — Install Claude Code
+
+**Goal:** Install the Claude Code CLI globally and authenticate with your Anthropic account.
+
+**Steps:**
+1. Open your terminal
+2. Run the install command below
+3. Verify the installation printed a version number
+4. Run `claude` to open Claude Code and authenticate through the browser
+
+**Commands:**
+```bash
+npm install -g @anthropic-ai/claude-code
+claude --version
+claude
+```
+![claude-installation](/week-02-agentic-ai/screenshots/install-claude.png)
+
+
+**Expected Output:** Version number printed. Browser opens for Anthropic login. After logging in, the Claude Code prompt appears in your terminal.
+
+**Screenshots Required:**
+- Screenshot 1 — Terminal showing `claude --version` with the version number visible
+- Screenshot 2 — Claude Code authenticated and showing the terminal prompt (your name visible)
+
+![terminal-prompt](/week-02-agentic-ai/screenshots/trust-folder.png)
+![welcome](/week-02-agentic-ai/screenshots/welcome-sub.png)
+![browser-connect](/week-02-agentic-ai/screenshots/browser-connect-claude.png)
+![authorize-claude](/week-02-agentic-ai/screenshots/authorize-claude.png)
+![authorize-code](/week-02-agentic-ai/screenshots/authorize-code.png)
+![claude-cli](/week-02-agentic-ai/screenshots/cli-claude.png)
+---
+
+### Task 2 — Fork and Clone the Starter Repository
+
+**Goal:** Get your own copy of the course project onto your machine.
+
+**Steps:**
+1. Open the [repository link](https://github.com/pravinmishraaws/Ultimate-Agentic-DevOps-with-Claude-Code) in your browser.
+![repository](/week-02-agentic-ai/screenshots/github-assignment-repo.png)
+2. Click **Fork → Create Fork**
+3. Clone your fork to your local machine
+4. Open the project in VS Code
+
+**Commands:**
+```bash
+git clone https://github.com/wisegeorge1/Ultimate-Agentic-DevOps-with-Claude-Code
+cd  C:\Users\George\Documents\Personal-Workspace\DMI-Cohort-3\Ultimate-Agentic-DevOps-with-Claude-Code
+code .
+```
+
+**Expected Output:** VS Code opens showing `index.html`, `style.css`, and the `images/` folder in the sidebar. No `.claude/` directory exists yet. (Remove the .claude folder, CLAUDE.md, and .github folder if they exist.)
+
+**Screenshots Required:**
+- Screenshot 3 — VS Code with the project open, file tree visible showing `index.html`, `style.css`, `images/`
+!
+![cloned repository](/week-02-agentic-ai/screenshots/cloned-repo-vs-code.png)
+
+
+---
+
+### Task 3 — Observe the Agentic Loop
+
+**Goal:** Watch Claude Code work through Gather → Act → Verify on two real tasks.
+
+**Steps:**
+1. Open the Claude Code terminal inside VS Code (open the terminal panel, type `claude`)
+2. Ask this exact question: `"What files are in this project and what does each one do?"`
+3. Watch the tool calls — Claude reads files (Gather), forms its answer (Act), checks its understanding (Verify)
+4. Now ask: `"How many lines of CSS does this project have?"`
+5. Watch Claude run a shell command to count them — this is Act in action
+
+**Commands (type in Claude Code terminal):**
+```
+What files are in this project and what does each one do?
+How many lines of CSS does this project have?
+```
+
+**Expected Output:**
+- Question 1: Claude lists the files and describes each one, showing it read them first
+- Question 2: Claude runs a command like `wc -l style.css` and reports the exact number
+
+**Screenshots Required:**
+- Screenshot 4 — Claude's response to the first question, showing it read the files (tool calls visible)
+![response to question 1](/week-02-agentic-ai/screenshots/response-first-question.png)
+
+- Screenshot 5 — Claude's response to the second question, showing it ran a command and reported the line count
+![response to question 2](/week-02-agentic-ai/screenshots/response-second-question.png)
+
+---
+
+## 8. Industry Insight
+
+In professional agentic DevOps teams, engineers do not use Claude Code blind. Before trusting it with infrastructure, they watch it work on safe, low-stakes tasks — reading files, counting lines, describing what it sees. This is how you build calibration: you learn what Claude does well, where it guesses, and when it needs more context. That calibration is exactly what the rest of this week builds on.
+
+---
+
+## 9. Submission Instructions
+
+Complete all tasks in sequence.
+
+Your submission must include:
+- All 5 required screenshots
+- Your GitHub forked repository URL
+
+---
+<https://github.com/wisegeorge1/devops-micro-internship-pravinmishra.git>
+
+<https://github.com/wisegeorge1/Ultimate-Agentic-DevOps-with-Claude-Code>
+
+## 10. Solution Walkthrough
+
+A step-by-step solution and troubleshooting guide is available for reference:
+Full solution walkthrough → [Click here](../assignment-solutions/assignment-01-setup-agentic-loop.md)
+
+
+---
+
+## 11. LinkedIn Requirement
+
+Not required for this assignment.
+
+---
+
+## 12. Completion Checklist
+
+Before submission, verify:
+- [ ] Claude Code CLI installed and `claude --version` works
+- [ ] Claude Code authenticated — opens without asking for login again
+- [ ] Starter repo forked and cloned
+- [ ] All 5 screenshots captured and added to your GitHub Repository file
+- [ ] GitHub repo URL included
+
+---
