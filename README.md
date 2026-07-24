@@ -135,7 +135,7 @@ Week 04 → Git & GitHub
 | 01 | Success Mindset | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/wisgeorge1_this-is-article-is-about-consistency-and-activity-7478449530552717314-eDT0?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY | https://cloudly.hashnode.dev/what-5-years-of-consistency-did-for-this-devops-engineer-will-inspire-you 
 | 02 | Agentic AI with Claude Code | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/wisgeorge1_dmibypravinmishra-agenticai-claudecode-share-7481285258198392832-wW8u/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY | https://cloudly.hashnode.dev/reflection-week-2 
 | 03 | Linux & Bash for DevOps | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/wisgeorge1_devops-cloudengineering-aws-share-7483975195209363456-AfF4/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY | https://cloudly.hashnode.dev/how-to-deploy-a-react-app-on-an-aws-ec2-ubuntu-instance-using-nginx-a-step-by-step-guide 
-| 04 | Git & GitHub | ✅ Completed | ✅ Solved  | https://www.linkedin.com/posts/wisgeorge1_dmibypravinmishra-devops-cloudcomputing-share-7485723999528886272-XOwI/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY | https://cloudly.hashnode.dev/building-an-ai-assisted-git-safety-net-a-step-by-step-guide-to-git-pre-commit-hooks-and-ai-pr-readiness-checks |
+| 04 | Git & GitHub | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/wisgeorge1_dmibypravinmishra-devops-cloudcomputing-share-7485723999528886272-XOwI/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY | https://cloudly.hashnode.dev/building-an-ai-assisted-git-safety-net-a-step-by-step-guide-to-git-pre-commit-hooks-and-ai-pr-readiness-checks 
 | 05 | DevOps Lifecycle & Agile | ⬜ Not Started | ⏳ Pending | — | — |
 | 06 | AWS Cloud | ⬜ Not Started | ⏳ Pending | — | — |
 | 07 | Azure Cloud | ⬜ Not Started | ⏳ Pending | — | — |
@@ -145,7 +145,7 @@ Week 04 → Git & GitHub
 | 11 | Docker | ⬜ Not Started | ⏳ Pending | — | — |
 | 12 | Kubernetes | ⬜ Not Started | ⏳ Pending | — | — |
 | 13 | Final Project | ⬜ Not Started | ⏳ Pending | — | — |
->>>>>>> upstream/main
+
 
 **Status:** ⬜ Not Started &nbsp;|&nbsp; 🔄 In Progress &nbsp;|&nbsp; ✅ Completed<br>
 **Assignment:** ⏳ Pending &nbsp;|&nbsp; ✅ Solved
