@@ -199,6 +199,16 @@ Your submission must include:
 A step-by-step solution and troubleshooting guide is available for reference:
 Full solution walkthrough → [Click here](../assignment-solutions/assignment-07-memory.md)
 
+<<<<<<< HEAD
+=======
+- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme  
+- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme  
+- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme  
+- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme  
+- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho  
+- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/  
+- 🏢 CloudAdvisory (LinkedIn): https://www.linkedin.com/company/thecloudadvisory/
+>>>>>>> upstream/main
 
 ---
 

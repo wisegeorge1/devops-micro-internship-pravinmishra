@@ -202,6 +202,7 @@ Not required for this assignment.
 
 ## 12. Completion Checklist
 
+<<<<<<< HEAD
 Before submission, verify:
 - [ ] All 3 agent files in `.claude/agents/`
 - [ ] Screenshot 2 and 3 show different tools and models for each agent
@@ -209,4 +210,13 @@ Before submission, verify:
 - [ ] Security auditor ran and produced a report with findings
 - [ ] Cost optimizer ran and produced a report
 - [ ] Agents committed and visible in GitHub repo
+=======
+- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme  
+- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme  
+- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme  
+- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme  
+- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho  
+- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/  
+- 🏢 CloudAdvisory (LinkedIn): https://www.linkedin.com/company/thecloudadvisory/
+>>>>>>> upstream/main
 

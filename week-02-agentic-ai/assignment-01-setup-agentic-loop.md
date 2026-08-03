@@ -139,6 +139,7 @@ code .
 
 ### Task 3 — Observe the Agentic Loop
 
+<<<<<<< HEAD
 **Goal:** Watch Claude Code work through Gather → Act → Verify on two real tasks.
 
 **Steps:**
@@ -164,6 +165,15 @@ How many lines of CSS does this project have?
 
 - Screenshot 5 — Claude's response to the second question, showing it ran a command and reported the line count
 ![response to question 2](/week-02-agentic-ai/screenshots/response-second-question.png)
+=======
+- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme  
+- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme  
+- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme  
+- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme  
+- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho  
+- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/  
+- 🏢 CloudAdvisory (LinkedIn): https://www.linkedin.com/company/thecloudadvisory/
+>>>>>>> upstream/main
 
 ---
 
