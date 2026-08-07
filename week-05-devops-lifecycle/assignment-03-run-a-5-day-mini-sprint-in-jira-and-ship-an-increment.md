@@ -20,13 +20,13 @@ Create the footer Story (`Add footer with version and deploy date`, 1 point, `fr
 
 #### Screenshot 1 — Sprint 1 created with the Story inside it
 
-Add your screenshot here.
+![sprint-1](/week-05-devops-lifecycle/screenshots/sprint-1.png)
 
 ---
 
 #### Screenshot 2 — Active Sprint board showing the Sprint Goal
 
-Add your screenshot here.
+![sprint-goal](/week-05-devops-lifecycle/screenshots/sprint-goal.png)
 
 ---
 
@@ -40,25 +40,25 @@ Add the required footer text (`Pravin Mishra Portfolio v1.0 — Deployed on <DD 
 
 #### Screenshot 3 — Jira board showing the Day 1 Sub-task in Done
 
-Add your screenshot here.
+![sub-task-done](/week-05-devops-lifecycle/screenshots/done.png)
 
 ---
 
 #### Screenshot 4 — Successful Git commit output
 
-Add your screenshot here.
+![commit](/week-05-devops-lifecycle/screenshots/scrum-git-commit.png)
 
 ---
 
 #### Screenshot 5 — EC2 browser view showing the complete footer text, with the URL visible
 
-Add your screenshot here.
+![ec2-browser](/week-05-devops-lifecycle/screenshots/browser-ec2-site.png)
 
 ---
 
 #### Screenshot 6 — Jira Story comment showing the Day 1 Daily Scrum update
 
-Add your screenshot here.
+![comment](/week-05-devops-lifecycle/screenshots/comment.png)
 
 ---
 
@@ -72,25 +72,25 @@ Update the footer so the deployment date is generated automatically (or updated 
 
 #### Screenshot 7 — Code editor showing the footer and date logic or deployment-time template snippet
 
-Add your screenshot here.
+![deployment-time](/week-05-devops-lifecycle/screenshots/dynamic-date.png)
 
 ---
 
 #### Screenshot 8 — EC2 browser view showing the updated footer with the current date
 
-Add your screenshot here.
+![updated-footer](/week-05-devops-lifecycle/screenshots/ec2-updated-footer.png)
 
 ---
 
 #### Screenshot 9 — README snippet documenting the footer and date behavior
 
-Add your screenshot here.
+![readme-snippet](/week-05-devops-lifecycle/screenshots/readme-snippet.png)
 
 ---
 
 #### Screenshot 10 — Jira Story comment showing the Day 2 Daily Scrum update
 
-Add your screenshot here.
+![day-2-update](/week-05-devops-lifecycle/screenshots/day2-scrum-update.png)
 
 ---
 
@@ -104,19 +104,19 @@ Improve the footer's spacing, contrast, and readability, then validate it at bot
 
 #### Screenshot 11 — Desktop EC2 view showing the polished footer
 
-Add your screenshot here.
+![polished-footer](/week-05-devops-lifecycle/screenshots/polished-footer.png)
 
 ---
 
 #### Screenshot 12 — Mobile responsive view showing the footer remains readable
 
-Add your screenshot here.
+![mobile-view](/week-05-devops-lifecycle/screenshots/mobile-view.png)
 
 ---
 
 #### Screenshot 13 — Jira Story comment showing the Day 3 Daily Scrum update
 
-Add your screenshot here.
+![day-3-update](/week-05-devops-lifecycle/screenshots/day-3-update.png)
 
 ---
 
@@ -130,7 +130,7 @@ Replace the existing homepage tagline with the required DMI Website call-to-acti
 
 #### Screenshot 14 — EC2 browser view showing "Start your DevOps Journey here" and the clickable "Visit the DMI Website" link
 
-Add your screenshot here.
+![start-here](/week-05-devops-lifecycle/screenshots/start-here.png)
 
 ---
 
@@ -144,19 +144,18 @@ Record a two-to-three-minute demo video of the shipped footer, add a retrospecti
 
 #### Screenshot 15 — Burndown Chart for Sprint 1
 
-Add your screenshot here.
+![burn-down](/week-05-devops-lifecycle/screenshots/burn-down.png)
 
 ---
 
 #### Screenshot 16 — Jira retrospective comment
 
-Add your screenshot here.
-
+![retro-comment](/week-05-devops-lifecycle/screenshots/jira-retro.png)
 ---
 
 #### Screenshot 17 — Final EC2 browser view showing the complete footer requirement
 
-Add your screenshot here.
+![footer-all](/week-05-devops-lifecycle/screenshots/footer-all.png)
 
 ---
 
@@ -164,7 +163,7 @@ Add your screenshot here.
 
 Paste your unlisted YouTube or accessible Google Drive demo-video link here:
 
-`Add your URL here`
+(https://drive.google.com/file/d/1svgvxOsxxOjCB4xeT9fL443-NUT4ZR64/view?usp=sharing)
 
 ---
 
@@ -180,13 +179,13 @@ Publish a LinkedIn post about your five-day mini-Sprint, including your GitHub r
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+<https://www.linkedin.com/posts/wisgeorge1_dmibypravinmishra-devops-cloudcomputing-share-7491500655270998017-GBb0/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY>
 
 ---
 
 #### LinkedIn Screenshot 1 — Published LinkedIn post showing the post content and at least one required link or proof image
 
-Add your screenshot here.
+![post](/week-05-devops-lifecycle/screenshots/linedIn-Post.png)
 
 ---
 
