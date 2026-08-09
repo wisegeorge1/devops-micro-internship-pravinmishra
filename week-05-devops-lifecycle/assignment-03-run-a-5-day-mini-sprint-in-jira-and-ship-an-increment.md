@@ -161,7 +161,6 @@ Record a two-to-three-minute demo video of the shipped footer, add a retrospecti
 
 #### Demo Video URL
 
-Paste your unlisted YouTube or accessible Google Drive demo-video link here:
 
 (https://drive.google.com/file/d/1svgvxOsxxOjCB4xeT9fL443-NUT4ZR64/view?usp=sharing)
 
@@ -177,7 +176,6 @@ Publish a LinkedIn post about your five-day mini-Sprint, including your GitHub r
 
 #### LinkedIn Post URL
 
-Paste your LinkedIn post URL here:
 
 <https://www.linkedin.com/posts/wisgeorge1_dmibypravinmishra-devops-cloudcomputing-share-7491500655270998017-GBb0/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY>
 

@@ -211,8 +211,6 @@ Publish a LinkedIn post about what you delivered, including your live URL, three
 
 #### LinkedIn Post URL
 
-Paste your LinkedIn post URL here:
-
 <https://www.linkedin.com/posts/wisgeorge1_dmibypravinmishra-devops-cloudcomputing-share-7491701240960069632-3q2z/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY>
 
 ---
