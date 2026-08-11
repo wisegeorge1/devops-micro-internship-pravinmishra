@@ -30,8 +30,7 @@ In the Billing Dashboard, create a monthly Cost Budget with a name, amount, and 
 
 #### Screenshot 1 — AWS Budget setup page showing the budget name, budget amount, and alert thresholds
 
-Add your screenshot here.
-
+![budget-page](/week-06-aws-cloud/screenshots/budget-page.png)
 ---
 
 ### Notes
@@ -40,7 +39,24 @@ Answer the following in your own words:
 
 **1. Why is it important to set up budget alerts when using an AWS account?**
 
-Write your answer here.
+Setting up budget alerts in AWS is important because it helps you monitor and control your cloud spending before unexpected charges become a problem.
+
+Key reasons include:
+
+ - Avoid unexpected bills: AWS resources such as EC2 instances, databases, storage, and data transfer can generate costs.
+   An  alert can notify you when spending reaches a specified threshold.
+ - Catch accidental resource usage: You might forget to stop an EC2 instance or leave another resource running.     
+   A budget alert can help you notice unusual or increasing costs.
+ - Control your learning/project costs: For students, aspiring DevOps Engineers, and people experimenting with AWS, alerts help 
+   keep projects within a planned budget.
+ - Detect unusual spending: A sudden increase in AWS usage can indicate a configuration problem or resources that were 
+   unintentionally created.
+ - Build good DevOps/Cloud practices: Cost monitoring is part of FinOps and cloud governance. 
+   A good Cloud or DevOps Engineer considers not only whether infrastructure works, but also whether it is being used efficiently and cost-effectively.
+ - Get early warnings: AWS Budgets can send notifications when your actual or forecasted costs reach thresholds you define, 
+   giving you an opportunity to take action before the bill grows further.
+
+In short: AWS budget alerts provide an early warning system for cloud costs. They help you stay within budget, identify unexpected resource usage, and develop responsible cloud-management habits—all valuable skills for a DevOps or Cloud Engineer.
 
 ---
 
