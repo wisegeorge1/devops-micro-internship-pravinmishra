@@ -20,31 +20,33 @@ Build a VPC (10.0.0.0/16) with two public and two private subnets across two Ava
 
 #### Screenshot 1 — VPC details showing CIDR 10.0.0.0/16
 
-Add your screenshot here.
+![ha-vpc](/week-06-aws-cloud/screenshots/ha-vpc.png)
 
 ---
 
 #### Screenshot 2 — Subnets list showing four subnets and their Availability Zones
 
-Add your screenshot here.
+![ha-subnets](/week-06-aws-cloud/screenshots/ha-subnets.png)
 
 ---
 
 #### Screenshot 3 — Public route table showing the Internet Gateway route and both public-subnet associations
 
-Add your screenshot here.
+![public-rt](/week-06-aws-cloud/screenshots/ha-public-rt.png)
+![public-rt](/week-06-aws-cloud/screenshots/ha-public-rt-1.png)
 
 ---
 
 #### Screenshot 4 — Private route table showing the NAT Gateway route and both private-subnet associations
 
-Add your screenshot here.
+![private-rt](/week-06-aws-cloud/screenshots/ha-private-rt.png)
+![private-rt](/week-06-aws-cloud/screenshots/ha-private-rt-1.png)
 
 ---
 
 #### Screenshot 5 — NAT Gateway status showing Available and the Elastic IP
 
-Add your screenshot here.
+![ha-nat-gateway](/week-06-aws-cloud/screenshots/ha-nat-gateway-available.png)
 
 ---
 
@@ -58,19 +60,19 @@ Create `ha-alb-sg` (HTTP public), `ha-web-sg` (HTTP only from `ha-alb-sg`, SSH f
 
 #### Screenshot 6 — ALB Security Group inbound rules
 
-Add your screenshot here.
+![ha-alb-sg](/week-06-aws-cloud/screenshots/ha-alb-sg.png)
 
 ---
 
 #### Screenshot 7 — EC2 Security Group inbound rules showing the ALB Security Group reference and SSH from your IP
 
-Add your screenshot here.
+![ha-ec2-sg](/week-06-aws-cloud/screenshots/ha-web-sg.png)
 
 ---
 
 #### Screenshot 8 — RDS Security Group inbound rule showing the database port allowed only from the EC2 Security Group
 
-Add your screenshot here.
+![ha-rds-sg](/week-06-aws-cloud/screenshots/ha-rds-sg.png)
 
 ---
 
@@ -84,13 +86,14 @@ Launch a private, Multi-AZ RDS database (MySQL or PostgreSQL) using the private 
 
 #### Screenshot 9 — RDS summary showing Multi-AZ = Yes and Publicly accessible = No
 
-Add your screenshot here.
+![ha-multi-az](/week-06-aws-cloud/screenshots/ha-RDS-multi-AZ.png)
+![ha-multi-az](/week-06-aws-cloud/screenshots/ha-RDS-multi-AZ-1.png)
 
 ---
 
 #### Screenshot 10 — RDS connectivity section showing the DB Subnet Group and Security Group
 
-Add your screenshot here.
+![ha-RDS-connectivity](/week-06-aws-cloud/screenshots/ha-rds-connectivity.png)
 
 ---
 
@@ -104,13 +107,14 @@ Create a Launch Template whose user data installs the web-server runtime, deploy
 
 #### Screenshot 11 — Launch Template details showing that user data exists, including a visible snippet
 
-Add your screenshot here.
+![ha-web-lt](/week-06-aws-cloud/screenshots/ha-web-lt.png)
+![ha-web-lt](/week-06-aws-cloud/screenshots/ha-web-lt-1.png)
 
 ---
 
 #### Screenshot 12 — A running instance created from the template showing the application responds on port 80
 
-Add your screenshot here.
+![running-instance](/week-06-aws-cloud/screenshots/instance-install.png)
 
 ---
 
@@ -124,13 +128,13 @@ Create an internet-facing ALB across both public subnets with an HTTP listener a
 
 #### Screenshot 13 — ALB details showing two public subnets in two Availability Zones
 
-Add your screenshot here.
+![alb-details](/week-06-aws-cloud/screenshots/ALB-Subnets.png)
 
 ---
 
 #### Screenshot 14 — Target group showing at least one healthy target
 
-Add your screenshot here.
+![healthy-targets](/week-06-aws-cloud/screenshots/healthy-target.png)
 
 ---
 
@@ -144,13 +148,13 @@ Create an Auto Scaling Group from the Launch Template across both public subnets
 
 #### Screenshot 15 — Auto Scaling Group showing desired, minimum, and maximum capacity and the selected subnet Availability Zones
 
-Add your screenshot here.
+![asg-details](/week-06-aws-cloud/screenshots/asg-details.png)
 
 ---
 
 #### Screenshot 16 — EC2 instances list showing two running instances in different Availability Zones
 
-Add your screenshot here.
+![2-running-instances](/week-06-aws-cloud/screenshots/ec2-running.png)
 
 ---
 
@@ -164,13 +168,13 @@ Confirm the application communicates with the RDS database through the ALB DNS n
 
 #### Screenshot 17 — Browser showing the application loaded through the ALB DNS name with the URL visible
 
-Add your screenshot here.
+![browser-app-show](/week-06-aws-cloud/screenshots/ALB-Loaded.png)
 
 ---
 
 #### Screenshot 18 — Proof of a database write through a UI message or database query output
 
-Add your screenshot here.
+![proof-UI](/week-06-aws-cloud/screenshots/proof-ui-write.png)
 
 ---
 
@@ -184,26 +188,25 @@ Test A: terminate one web instance and confirm the Auto Scaling Group replaces i
 
 #### Screenshot 19 — EC2 showing the terminated instance and the newly launched instance
 
-Add your screenshot here.
+![terminated-instance](/week-06-aws-cloud/screenshots/terminated-instance.png)
 
 ---
 
 #### Screenshot 20 — Target group showing healthy targets after replacement
 
-Add your screenshot here.
+![healthy-tg](/week-06-aws-cloud/screenshots/healthy-tg.png)
 
 ---
 
 #### Screenshot 21 — Evidence that an instance was removed, detached, placed in Standby, or stopped in one Availability Zone
 
-Add your screenshot here.
+![stopped-removed](/week-06-aws-cloud/screenshots/removed-stopped-instances.png)
 
 ---
 
 #### Screenshot 22 — Browser showing that the ALB DNS endpoint still works during the change
 
-Add your screenshot here.
-
+![endpoint-still-works](/week-06-aws-cloud/screenshots/alb-still-works.png)
 ---
 
 # Task 9 — Architecture and Test-Results Summary
@@ -216,7 +219,7 @@ Summarize the VPC/subnet layout, the ALB and Auto Scaling Group setup, the priva
 
 #### Screenshot 23 — A simple architecture diagram (hand-drawn is fine), or an AWS console overview showing the components
 
-Add your screenshot here.
+![diagram-architecture](/week-06-aws-cloud/screenshots/architecture-diagram.jpg)
 
 ---
 
@@ -224,7 +227,17 @@ Add your screenshot here.
 
 Write a short summary covering the network, ALB/ASG setup, RDS setup, and the results of Test A and Test B.
 
-Write your answer here.
+Infrastructure Summary
+Network Setup: Built inside an AWS Virtual Private Cloud (ha-vpc) across a cloud region. Public traffic enters via an Internet Gateway and an Application Load Balancer (ALB) that distributes requests across public subnets spanning multiple Availability Zones.
+
+ALB / ASG Setup: An Auto Scaling Group (ASG) manages EC2 web instances running WordPress across public subnets, ensuring seamless scaling and traffic handling.
+
+RDS Setup: A managed Amazon RDS database is deployed across private subnets to securely store application and user data, accepting database traffic exclusively from the web tier.
+
+High-Availability Test Results
+Test A (Instance Failure): When an active running EC2 instance is abruptly terminated, the Auto Scaling Group detects the failure within minutes and automatically provisions a brand-new replacement instance. Because the ALB continues routing traffic to the remaining healthy node, the WordPress site stays fully accessible with zero downtime.
+
+Test B (Availability Zone / Instance Simulation): Simulating an outage or stopping an instance in a specific Availability Zone validates the high-availability failover design, ensuring traffic is safely routed and resilient across remaining healthy availability zones.
 
 ---
 
@@ -240,13 +253,13 @@ Publish a LinkedIn post about the high-availability build, including the ALB URL
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+<https://lnkd.in/p/eGDUwwPd>
 
 ---
 
 #### Screenshot — Published LinkedIn post
 
-Add your screenshot here.
+![ha-linkedin-post](/week-06-aws-cloud/screenshots/ha-linkedin-post.png)
 
 ---
 
