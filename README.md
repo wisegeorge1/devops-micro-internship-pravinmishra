@@ -141,9 +141,10 @@ Week 05 → DevOps Lifecycle & Agile
 
 | 04 | Git & GitHub | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/wisgeorge1_dmibypravinmishra-devops-cloudcomputing-share-7485723999528886272-XOwI/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY | https://cloudly.hashnode.dev/building-an-ai-assisted-git-safety-net-a-step-by-step-guide-to-git-pre-commit-hooks-and-ai-pr-readiness-checks 
 
-| 05 | DevOps Lifecycle & Agile | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/wisgeorge1_dmibypravinmishra-devops-cloudcomputing-share-7491500655270998017-GBb0/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY | — |
+| 05 | DevOps Lifecycle & Agile | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/wisgeorge1_dmibypravinmishra-devops-cloudcomputing-share-7491500655270998017-GBb0/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY | https://cloudly.hashnode.dev/building-agile-delivery-infrastructure-for-a-devops-project-with-jira-cloud |
 
-| 06 | AWS Cloud | 🔄 In Progress | 🔄 In Progress | — | — |
+| 06 | AWS Cloud | 🔄 In Progress | 🔄 In Progress | https://www.linkedin.com/posts/wisgeorge1_dmibypravinmishra-devops-cloudcomputing-activity-7495640870105554944-jnv0?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY |https://cloudly.hashnode.dev/building-a-fault-tolerant-highly-available-two-tier-wordpress-architecture-on-aws-vpc-alb-asg-multi-az-rds 
+
 | 07 | Azure Cloud | ⬜ Not Started | ⏳ Pending | — | — |
 | 08 | Terraform | ⬜ Not Started | ⏳ Pending | — | — |
 | 09 | Ansible | ⬜ Not Started | ⏳ Pending | — | — |
