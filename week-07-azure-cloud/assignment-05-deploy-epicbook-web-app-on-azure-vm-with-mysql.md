@@ -20,19 +20,20 @@ Create a VNet (10.0.0.0/16) with a public subnet (10.0.1.0/24) for the VM and a 
 
 #### Screenshot 1 — Virtual Network overview showing the 10.0.0.0/16 address space and both subnets
 
-Add your screenshot here.
+![vnet](/week-07-azure-cloud/screenshots/assignment-5-SS-1.png)
 
 ---
 
 #### Screenshot 2 — Public and private NSG inbound rules showing ports 80, 22, and restricted 3306 access
 
-Add your screenshot here.
+![public-private-nsg](/week-07-azure-cloud/screenshots/assignment-5-SS-2.png)
+![public-private-nsg](/week-07-azure-cloud/screenshots/assignment-5-SS-2b.png)
 
 ---
 
 #### Screenshot 3 — Public IP and Network Interface association for the Virtual Machine
 
-Add your screenshot here.
+![ip-nic-association](/week-07-azure-cloud/screenshots/assignment-5-SS-3.png)
 
 ---
 
@@ -46,13 +47,13 @@ Launch an Ubuntu 22.04 LTS VM (Standard B1s or equivalent) in the public subnet,
 
 #### Screenshot 4 — Virtual Machine overview showing Ubuntu, size, public IP, and subnet
 
-Add your screenshot here.
+![vm-overview](/week-07-azure-cloud/screenshots/assignment-5-SS-4.png)
 
 ---
 
 #### Screenshot 5 — Terminal showing successful software installation or installed-version checks
 
-Add your screenshot here.
+![software-versions](/week-07-azure-cloud/screenshots/assignment-5-SS-5.png)
 
 ---
 
@@ -66,19 +67,19 @@ Clone the EpicBook repository, install dependencies, build the frontend, configu
 
 #### Screenshot 6 — Terminal showing the EpicBook repository cloned and dependencies installed
 
-Add your screenshot here.
+![epicbook-repo](/week-07-azure-cloud/screenshots/assignment-5-SS-6.png)
 
 ---
 
 #### Screenshot 7 — Nginx configuration or service status proving the frontend is configured to be served
 
-Add your screenshot here.
+![nginx-config](/week-07-azure-cloud/screenshots/assignment-5-SS-7.png)
 
 ---
 
 #### Screenshot 8 — Backend process or listening-port evidence (without exposing environment-variable secrets)
 
-Add your screenshot here.
+![backend-listening-port](/week-07-azure-cloud/screenshots/assignment-5-SS-8.png)
 
 ---
 
@@ -92,19 +93,19 @@ Create a private Azure Database for MySQL Flexible Server (VNet Integration) in 
 
 #### Screenshot 9 — MySQL Flexible Server overview showing Private access (VNet Integration)
 
-Add your screenshot here.
+![mysql-server](/week-07-azure-cloud/screenshots/assignment-5-SS-9.png)
 
 ---
 
 #### Screenshot 10 — Networking configuration showing the private subnet and restricted access
 
-Add your screenshot here.
+![restricted-network](/week-07-azure-cloud/screenshots/assignment-2-SS-10.png)
 
 ---
 
 #### Screenshot 11 — MySQL Client output showing the EpicBook database or imported tables (no password visible)
 
-Add your screenshot here.
+![epicbook-database](/week-07-azure-cloud/screenshots/assignment-5-SS-11.png)
 
 ---
 
@@ -118,13 +119,13 @@ Confirm the EpicBook application loads through the VM's public IP and that viewi
 
 #### Screenshot 12 — Browser showing the EpicBook application with the Virtual Machine public IP visible
 
-Add your screenshot here.
+![epicbook-app](/week-07-azure-cloud/screenshots/assignment-5-SS-12.png)
 
 ---
 
 #### Screenshot 13 — Proof of a successful database-backed action (viewing products, adding to cart, or placing an order)
 
-Add your screenshot here.
+![proof-successful-action](/week-07-azure-cloud/screenshots/assignment-5-SS-13.png)
 
 ---
 
@@ -132,7 +133,7 @@ Add your screenshot here.
 
 Paste the public IP URL of your Virtual Machine here:
 
-`Add your URL here`
+<http://20.235.31.232/>
 
 ---
 
