@@ -145,7 +145,8 @@ Week 05 → DevOps Lifecycle & Agile
 
 | 06 | AWS Cloud | 🔄 In Progress | 🔄 In Progress | https://www.linkedin.com/posts/wisgeorge1_dmibypravinmishra-devops-cloudcomputing-activity-7495640870105554944-jnv0?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY |https://cloudly.hashnode.dev/building-a-fault-tolerant-highly-available-two-tier-wordpress-architecture-on-aws-vpc-alb-asg-multi-az-rds 
 
-| 07 | Azure Cloud | ⬜ Not Started | ⏳ Pending | — | — |
+| 07 | Azure Cloud | 🔄 In Progress | 🔄 In Progress | https://lnkd.in/p/eJgxKmtu | — |
+
 | 08 | Terraform | ⬜ Not Started | ⏳ Pending | — | — |
 | 09 | Ansible | ⬜ Not Started | ⏳ Pending | — | — |
 | 10 | Azure DevOps (CI/CD) | ⬜ Not Started | ⏳ Pending | — | — |
