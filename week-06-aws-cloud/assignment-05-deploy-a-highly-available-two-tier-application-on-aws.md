@@ -1,4 +1,4 @@
-# Assignment 5 — Deploy a Highly Available Two-Tier Application on AWS
+# Assignment 5 — Deploy a Highly Available Two-Tier Application on AWS (VPC + ALB + ASG + Multi-AZ RDS)
 
 Part of the DevOps Micro Internship (DMI) Cohort 3 with Agentic AI
 
@@ -112,7 +112,7 @@ Create a Launch Template whose user data installs the web-server runtime, deploy
 
 ---
 
-#### Screenshot 12 — A running instance created from the template showing the application responds on port 80
+#### Screenshot 12 — A running instance created from the template showing that the application responds on port 80 through a local test or browser using its public IP
 
 ![running-instance](/week-06-aws-cloud/screenshots/instance-install.png)
 
@@ -182,11 +182,13 @@ Confirm the application communicates with the RDS database through the ALB DNS n
 
 ## Goal
 
-Test A: terminate one web instance and confirm the Auto Scaling Group replaces it automatically without interrupting the ALB. Test B: simulate an Availability Zone impact (stop, detach, or reduce desired capacity in one AZ) and confirm the application stays available.
+Test A: terminate one web instance and confirm the Auto Scaling Group replaces it automatically without interrupting the ALB.
+
+Test B: simulate an Availability Zone impact (stop, detach, or reduce desired capacity in one AZ) and confirm the application stays available.
 
 ### Evidence
 
-#### Screenshot 19 — EC2 showing the terminated instance and the newly launched instance
+#### Screenshot 19 — EC2 showing the terminated instance and the newly launched instance; timestamps are helpful
 
 ![terminated-instance](/week-06-aws-cloud/screenshots/terminated-instance.png)
 
@@ -217,7 +219,7 @@ Summarize the VPC/subnet layout, the ALB and Auto Scaling Group setup, the priva
 
 ### Evidence
 
-#### Screenshot 23 — A simple architecture diagram (hand-drawn is fine), or an AWS console overview showing the components
+#### Screenshot 23 — A simple architecture diagram, which may be hand-drawn, or an AWS console overview showing the components
 
 ![diagram-architecture](/week-06-aws-cloud/screenshots/architecture-diagram.jpg)
 
@@ -225,7 +227,19 @@ Summarize the VPC/subnet layout, the ALB and Auto Scaling Group setup, the priva
 
 ### Notes
 
-Write a short summary covering the network, ALB/ASG setup, RDS setup, and the results of Test A and Test B.
+Summarize the VPC and subnets across the two Availability Zones.
+
+Write your answer here.
+
+Summarize the ALB and Auto Scaling Group setup.
+
+Write your answer here.
+
+Summarize the private Multi-AZ RDS setup.
+
+Write your answer here.
+
+Summarize the results of both high-availability tests.
 
 Infrastructure Summary
 Network Setup: Built inside an AWS Virtual Private Cloud (ha-vpc) across a cloud region. Public traffic enters via an Internet Gateway and an Application Load Balancer (ALB) that distributes requests across public subnets spanning multiple Availability Zones.
@@ -257,7 +271,7 @@ Paste your LinkedIn post URL here:
 
 ---
 
-#### Screenshot — Published LinkedIn post
+#### Screenshot of LinkedIn post
 
 ![ha-linkedin-post](/week-06-aws-cloud/screenshots/ha-linkedin-post.png)
 
