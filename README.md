@@ -145,7 +145,7 @@ Week 07 → Azure Cloud
 
 | 06 | AWS Cloud | 🔄 In Progress | 🔄 In Progress | https://www.linkedin.com/posts/wisgeorge1_dmibypravinmishra-devops-cloudcomputing-activity-7495640870105554944-jnv0?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY |https://cloudly.hashnode.dev/building-a-fault-tolerant-highly-available-two-tier-wordpress-architecture-on-aws-vpc-alb-asg-multi-az-rds 
 
-| 07 | Azure Cloud | 🔄 In Progress | 🔄 In Progress | https://lnkd.in/p/eJgxKmtu | https://cloudly.hashnode.dev/deploy-a-full-stack-node-js-application-on-azure-vm-with-private-mysql 
+| 07 | Azure Cloud | 🔄 In Progress | 🔄 In Progress |  https://www.linkedin.com/posts/wisgeorge1_dmibypravinmishra-devops-cloudcomputing-share-7499222347426480128-SawJ/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY | https://cloudly.hashnode.dev/deploy-a-full-stack-node-js-application-on-azure-vm-with-private-mysql 
 
 | 08 | Terraform | ⬜ Not Started | ⏳ Pending | — | — |
 | 09 | Ansible | ⬜ Not Started | ⏳ Pending | — | — |
