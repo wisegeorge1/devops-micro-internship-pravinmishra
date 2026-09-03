@@ -44,7 +44,7 @@ Confirm successful Azure Portal access and Locate the required services and subs
 
 Write a three-to-four-line paragraph explaining which Azure services you plan to explore first and why.
 
-Write your answer here.
+I plan to explore Azure Virtual Machines to understand core compute infrastructure and how to host applications in the cloud. Alongside compute, I will dive into Azure Virtual Networks (VNet) and Network Security Groups to learn how to isolate resources and securely control traffic flow.
 
 ---
 
