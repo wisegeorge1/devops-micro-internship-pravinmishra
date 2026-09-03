@@ -157,7 +157,7 @@ Add a screenshot showing successful `terraform apply` completion.
 
 Add a screenshot showing the VM public IP address returned by `terraform output`.
 
-Add your screenshot here.
+![terraform-output](/week-08-terraform/screenshots/Assign3-SS-11.png)
 
 ## VM Public IP Address
 
