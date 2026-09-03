@@ -229,24 +229,17 @@ Summarize the VPC/subnet layout, the ALB and Auto Scaling Group setup, the priva
 
 Summarize the VPC and subnets across the two Availability Zones.
 
-Write your answer here.
+Network Setup: Built inside an AWS Virtual Private Cloud (ha-vpc) across a cloud region. Public traffic enters via an Internet Gateway and an Application Load Balancer (ALB) that distributes requests across public subnets spanning multiple Availability Zones.
 
 Summarize the ALB and Auto Scaling Group setup.
 
-Write your answer here.
+ALB / ASG Setup: An Auto Scaling Group (ASG) manages EC2 web instances running WordPress across public subnets, ensuring seamless scaling and traffic handling.
 
 Summarize the private Multi-AZ RDS setup.
 
-Write your answer here.
+RDS Setup: A managed Amazon RDS database is deployed across private subnets to securely store application and user data, accepting database traffic exclusively from the web tier.
 
 Summarize the results of both high-availability tests.
-
-Infrastructure Summary
-Network Setup: Built inside an AWS Virtual Private Cloud (ha-vpc) across a cloud region. Public traffic enters via an Internet Gateway and an Application Load Balancer (ALB) that distributes requests across public subnets spanning multiple Availability Zones.
-
-ALB / ASG Setup: An Auto Scaling Group (ASG) manages EC2 web instances running WordPress across public subnets, ensuring seamless scaling and traffic handling.
-
-RDS Setup: A managed Amazon RDS database is deployed across private subnets to securely store application and user data, accepting database traffic exclusively from the web tier.
 
 High-Availability Test Results
 Test A (Instance Failure): When an active running EC2 instance is abruptly terminated, the Auto Scaling Group detects the failure within minutes and automatically provisions a brand-new replacement instance. Because the ALB continues routing traffic to the remaining healthy node, the WordPress site stays fully accessible with zero downtime.
