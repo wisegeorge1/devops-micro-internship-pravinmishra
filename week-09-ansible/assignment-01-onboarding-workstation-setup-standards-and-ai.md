@@ -20,13 +20,14 @@ Create and activate an isolated `.venv` inside `ansible-onboarding/`, install `a
 
 #### Screenshot 1 — Terminal showing the activated `.venv` and successful `ansible --version` output
 
-Add your screenshot here.
+![ansible-virtual](/week-09-ansible/screenshots/ASS-1-SS-1a.png)
+![ansible-virtual](/week-09-ansible/screenshots/ASS-1-SS-1b.png)
 
 ---
 
 #### Screenshot 2 — Terminal showing successful `ansible-lint --version` output and `requirements.txt`
 
-Add your screenshot here.
+![ansible-lint](/week-09-ansible/screenshots/ASS-1-SS-2.png)
 
 ---
 
@@ -40,13 +41,13 @@ Install the Ansible, YAML, and Python VS Code extensions, and create `.vscode/se
 
 #### Screenshot 3 — VS Code Extensions panel showing Ansible, YAML, and Python installed
 
-Add your screenshot here.
+![vscode-extension](/week-09-ansible/screenshots/ASS-1-SS-3.png)
 
 ---
 
 #### Screenshot 4 — VS Code showing `.vscode/settings.json` and `.editorconfig`
 
-Add your screenshot here.
+![settings-editorconfig](/week-09-ansible/screenshots/ASS-1-SS-4.png)
 
 ---
 
@@ -60,7 +61,7 @@ Create `ansible.cfg` in the project root with the team-friendly defaults and SSH
 
 #### Screenshot 5 — VS Code or terminal showing `ansible.cfg` in the project root with the supplied settings
 
-Add your screenshot here.
+![ansible-cfg](/week-09-ansible/screenshots/ASS-1-SS-5.png)
 
 ---
 
@@ -74,7 +75,7 @@ Generate or use an Ed25519 SSH key, load it into `ssh-agent`, and configure `~/.
 
 #### Screenshot 6 — Terminal showing `ssh-add -l` with the key loaded (do not expose private-key contents)
 
-Add your screenshot here.
+![ssh-add-1](/week-09-ansible/screenshots/ASS-1-SS-6.png)
 
 ---
 
@@ -88,13 +89,13 @@ Configure Git identity and the `main` default branch, install `pre-commit`, add 
 
 #### Screenshot 7 — Terminal showing `pre-commit install` output
 
-Add your screenshot here.
+![pre-commit-install](/week-09-ansible/screenshots/ASS-1-SS-7.png)
 
 ---
 
 #### Screenshot 8 — Terminal showing `pre-commit run --all-files` passing
 
-Add your screenshot here.
+![pre-commit-run](/week-09-ansible/screenshots/ASS-1-SS-8.png)
 
 ---
 
@@ -108,13 +109,13 @@ Document the workstation setup in `README.md`, including a "New Machine? Do This
 
 #### Screenshot 9 — Repository tree showing the required files
 
-Add your screenshot here.
+![repo-tree](/week-09-ansible/screenshots/ASS-1-SS-9.png)
 
 ---
 
 #### Screenshot 10 — `README.md` showing machine details and the "New Machine? Do This" checklist
 
-Add your screenshot here.
+![readme-checklist](/week-09-ansible/screenshots/ASS-1-SS-9.png)
 
 ---
 
@@ -122,7 +123,14 @@ Add your screenshot here.
 
 State one thing that makes this setup team-friendly, and one pitfall you avoided (e.g. global pip, missing SSH agent). Note any corporate proxy or CA certificate steps, if applicable.
 
-Write your answer here.
+## Team Friendly Feature
+The setup is team friendly because it uses a project-specific .venv, ansible.cfg, .gitignore, and pre-commit configuration. These files provide a consistent development and validation workflow that team members can reproduce on their own machines.
+
+## Pitfall Avoided
+A key pitfall avoided was installing Ansible and its Python dependencies globally with pip. Using the project specific .venv keeps dependencies isolated and reduces the risk of conflicts with other Python projects or system packages. The setup also ensures that the SSH agent is configured for secure key-based authentication without exposing or committing the private SSH key.
+
+## Corporate Proxy or CA Certificate
+No corporate proxy or custom CA certificate configuration was required for this workstation setup.
 
 ---
 

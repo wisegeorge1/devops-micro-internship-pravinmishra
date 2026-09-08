@@ -31,7 +31,8 @@ Prepare the Book Review App project and configure the provided Claude Code Agent
 
 Add a screenshot of the project `CLAUDE.md` showing the three-tier architecture, security boundaries, Terraform requirements, and human-approval rules.
 
-Add your screenshot here.
+![claude.md](/week-08-terraform/screenshots/Assign5-SS-1.png)
+![claude.md](/week-08-terraform/screenshots/Assign5-SS-1a.png)
 
 ---
 
@@ -90,7 +91,7 @@ The diagram must show:
 
 ## Architecture Diagram
 
-Add the completed architecture diagram here.
+![Architecture-Diagram](/week-08-terraform/screenshots/architecture-diagram.jpg)
 
 ---
 
