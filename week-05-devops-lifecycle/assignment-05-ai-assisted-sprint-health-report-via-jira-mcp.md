@@ -181,6 +181,9 @@ Map this assignment to Gather → Analyze → Human Act → Verify from Week 3 A
 4. Verify: I cross checked the live Jira board/browser to confirm that the intended state or change actually occurred when I ran 
    the /sprint-health a second time.
 
+## Why must Human Act stay human?
+Because there is an intentional establishment of a human in the loop boundary. The AI can identify a problem, but it shouldn't decide what the team should do about it.
+
 ---
 
 # Submission Instructions
