@@ -20,7 +20,7 @@ Confirm your Azure CLI is authenticated and can see the VM, network, storage acc
 
 #### Screenshot 1 — `az account show` and `az vm list -d -o table` confirming your subscription and running VM (subscription ID partially blurred)
 
-Add your screenshot here.
+![runing-vm](/week-07-azure-cloud/screenshots/assignment-7-SS-1.png)
 
 ---
 
@@ -34,7 +34,7 @@ Create a `CLAUDE.md` for this workspace that tells Claude what the audit covers 
 
 #### Screenshot 2 — `CLAUDE.md` open in your editor showing the project overview, audit workflow, and safety rules
 
-Add your screenshot here.
+![claude](/week-07-azure-cloud/screenshots/assignment-7-SS-2.png)
 
 ---
 
@@ -48,7 +48,10 @@ Ask Claude Code to read `CLAUDE.md` and propose a read-only, four-check audit pl
 
 #### Screenshot 3 — Claude Code showing the four-check plan, with no files created or modified
 
-Add your screenshot here.
+![four-check-plan](/week-07-azure-cloud/screenshots/assignment-7-SS-3a.png)
+![four-check-plan](/week-07-azure-cloud/screenshots/assignment-7-SS-3b.png)
+![four-check-plan](/week-07-azure-cloud/screenshots/assignment-7-SS-3c.png)
+![four-check-plan](/week-07-azure-cloud/screenshots/assignment-7-SS-3d.png)
 
 ---
 
@@ -62,13 +65,13 @@ Write a Bash script that runs the four checks from Task 3 using read-only `az` c
 
 #### Screenshot 4 — Your script open in your editor, showing the check functions and the `az` commands they call
 
-Add your screenshot here.
+![check-function](/week-07-azure-cloud/screenshots/assignment-7-SS-4.png)
 
 ---
 
 #### Screenshot 5 — Output of `bash -n` (no syntax errors) and `ls -l` showing the script is executable
 
-Add your screenshot here.
+![output-bash](/week-07-azure-cloud/screenshots/assignment-7-SS-5.png)
 
 ---
 
@@ -82,7 +85,7 @@ Run the script against your live resources and read the report honestly, even if
 
 #### Screenshot 6 — Script output showing your Full Name and all four checks with a PASS, WARN, or FAIL result
 
-Add your screenshot here.
+![script-output](/week-07-azure-cloud/screenshots/assignment-7-SS-6.png)
 
 ---
 
@@ -96,13 +99,16 @@ Create a Claude Code skill restricted to read-only tools (no `Write`) that runs 
 
 #### Screenshot 7 — Your skill file's frontmatter showing `allowed-tools` without `Write`
 
-Add your screenshot here.
+![skills-frontmatter](/week-07-azure-cloud/screenshots/assignment-7-SS-7.png)
 
 ---
 
 #### Screenshot 8 — `/azure-audit` output showing the baseline findings and Claude's explanation
 
-Add your screenshot here.
+![audit-output](/week-07-azure-cloud/screenshots/assignment-7-SS-8a.png)
+![audit-output](/week-07-azure-cloud/screenshots/assignment-7-SS-8b.png)
+![audit-output](/week-07-azure-cloud/screenshots/assignment-7-SS-8c.png)
+![audit-output](/week-07-azure-cloud/screenshots/assignment-7-SS-8d.png)
 
 ---
 
@@ -116,19 +122,20 @@ Pick one WARN or FAIL finding (or deliberately open an NSG rule to port 22 from 
 
 #### Screenshot 9 — Saved report showing the original finding before the fix
 
-Add your screenshot here.
+![initial-findings](/week-07-azure-cloud/screenshots/assignment-7-SS-9.png)
 
 ---
 
 #### Screenshot 10 — Terminal output of the remediation command you ran yourself
 
-Add your screenshot here.
+![remediation-output](/week-07-azure-cloud/screenshots/assignment-7-SS-10.png)
 
 ---
 
 #### Screenshot 11 — Second `/azure-audit` run (or report) showing the finding resolved
 
-Add your screenshot here.
+![second-audit-run](/week-07-azure-cloud/screenshots/assignment-7-SS-11a.png)
+![second-audit-run](/week-07-azure-cloud/screenshots/assignment-7-SS-11b.png)
 
 ---
 
