@@ -143,7 +143,55 @@ Pick one WARN or FAIL finding (or deliberately open an NSG rule to port 22 from 
 
 Compare this assignment to the AWS audit you built in Week 6: which finding categories map to each other across the two clouds, and what stayed exactly the same about the workflow even though the `az`/`aws` commands are completely different?
 
-Add your answer here
+The two assignments are essentially the same audit-and-remediation pattern translated from AWS to Azure. The cloud resources and CLI syntax change, but the security concepts and workflow remain remarkably consistent.
+
+Finding categories that map across AWS and Azure
+| Security concept	      |  AWS assignment	                                         |   Azure assignment                               |
+| :-----------------------|:---------------------------------------------------------|:-------------------------------------------------|
+| Network exposure	      |  Security Groups with overly open inbound rules	         |   NSG rules open to 0.0.0.0/0 on SSH/RDP         |
+| Public storage exposure |  S3 static site / S3 bucket public-access configuration  |   Storage Account public blob access             |
+| Compute security	      |  EC2 instance security/configuration	                 |   Azure Virtual Machine disk encryption          |
+| Database exposure	      |  RDS database security/network configuration	         |   Azure Database for MySQL public network access |
+| Disk/storage security	  |  EBS volume configuration	                             |   VM disk encryption status                      |
+
+The mapping isn't perfectly one to one at the resource level. For example, EBS volume security maps conceptually to Azure managed disk encryption, while AWS Security Groups and Azure NSGs are the closest direct network control equivalents.
+
+## What stayed exactly the same
+The important part of the assignment is not the CLI. It's the control workflow:
+
+1. Gather → 2. Analyze → 3. Human Act → 4. Verify
+
+Both assignments follow this sequence:
+
+Gather: Run a read-only audit against the cloud environment.
+Analyze: Claude Code interprets the evidence and identifies security/cost findings.
+Human Act: Claude recommends a remediation, but the human performs the change manually.
+Verify: Run the audit again and use the new evidence to prove that the finding was resolved.
+The same safety boundary also carries over:
+
+The audit can observe and recommend, but it cannot remediate.
+
+So AWS might use:
+
+aws s3 ...
+aws ec2 ...
+aws rds ...
+
+while Azure uses:
+
+az storage ...
+az vm ...
+az network ...
+az mysql ...
+
+Those commands are completely different, but their role in the workflow is identical: collect evidence without changing the environment.
+
+The key lesson
+The assignment is teaching a cloud agnostic operational pattern, not AWS  or Azure specific command memorization:
+
+Evidence first → AI analysis → human decision/action → evidence-based verification.
+
+That's why the Azure assignment explicitly describes itself as the cloud agnostic counterpart to the AWS audit. The aws → az substitution is implementation detail; the read only evidence discipline and human remediation boundary are the actual skill being carried from Week 6 into Azure.
 
 ---
 
