@@ -94,8 +94,8 @@ Week 07 → Azure Cloud
 Week 08 → Terraform
 [![Week 08 – Terraform](./badges/week-08.svg)](./week-08-terraform/)
 
-<!-- Week 09 → Ansible -->
-<!-- [![Week 09 – Ansible](./badges/week-09.svg)](./week-09-ansible/) -->
+Week 09 → Ansible
+[![Week 09 – Ansible](./badges/week-09.svg)](./week-09-ansible/)
 
 <!-- Week 10 → Azure DevOps CI/CD -->
 <!-- [![Week 10 – CI/CD](./badges/week-10.svg)](./week-10-azure-devops/) -->
@@ -145,11 +145,11 @@ Week 08 → Terraform
 
 | 06 | AWS Cloud | 🔄 In Progress | 🔄 In Progress | https://www.linkedin.com/posts/wisgeorge1_dmibypravinmishra-devops-cloudcomputing-activity-7495640870105554944-jnv0?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY |https://cloudly.hashnode.dev/building-a-fault-tolerant-highly-available-two-tier-wordpress-architecture-on-aws-vpc-alb-asg-multi-az-rds 
 
-| 07 | Azure Cloud | 🔄 In Progress | 🔄 In Progress |  https://www.linkedin.com/posts/wisgeorge1_dmibypravinmishra-devops-cloudcomputing-share-7499222347426480128-SawJ/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY | https://cloudly.hashnode.dev/deploy-a-full-stack-node-js-application-on-azure-vm-with-private-mysql 
+| 07 | Azure Cloud | ✅ Completed | ✅ Completed |  https://www.linkedin.com/posts/wisgeorge1_dmibypravinmishra-devops-cloudcomputing-share-7499222347426480128-SawJ/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY | https://cloudly.hashnode.dev/deploy-a-full-stack-node-js-application-on-azure-vm-with-private-mysql 
 
 | 08 | Terraform | 🔄 In Progress | 🔄 In Progress | https://www.linkedin.com/posts/wisgeorge1_%F0%9D%98%81%F0%9D%97%B2%F0%9D%97%BF%F0%9D%97%BF%F0%9D%97%AE%F0%9D%97%B3%F0%9D%97%BC%F0%9D%97%BF%F0%9D%97%BA-%F0%9D%97%AE%F0%9D%97%BD%F0%9D%97%BD%F0%9D%97%B9%F0%9D%98%86-%F0%9D%98%80%F0%9D%98%82%F0%9D%97%B0%F0%9D%97%B0%F0%9D%97%B2%F0%9D%97%B2%F0%9D%97%B1%F0%9D%97%B6%F0%9D%97%BB%F0%9D%97%B4-ugcPost-7501113660661194752-UpAI/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY | https://cloudly.hashnode.dev/deploy-a-node-js-web-application-on-aws-using-terraform-modules-ec2-nginx-and-private-amazon-rds-mysql 
 
-| 09 | Ansible | ⬜ Not Started | ⏳ Pending | — | — |
+| 09 | Ansible | 🔄 In Progress | 🔄 In Progress | — | — |
 | 10 | Azure DevOps (CI/CD) | ⬜ Not Started | ⏳ Pending | — | — |
 | 11 | Docker | ⬜ Not Started | ⏳ Pending | — | — |
 | 12 | Kubernetes | ⬜ Not Started | ⏳ Pending | — | — |

@@ -20,7 +20,7 @@ Create an architecture diagram showing the custom VPC (10.0.0.0/16), the six sub
 
 #### Diagram image or link
 
-Add your diagram image or link here.
+![architecture-diagram](/week-06-aws-cloud/screenshots/high-availability-web-architecture-aws.jpg)
 
 ---
 
@@ -34,13 +34,56 @@ Record the AWS Region used and list every AWS service used across networking, co
 
 **Region:**
 
-Write your answer here.
+US-East-1
 
 ---
 
 **Services:**
 
-Write your answer here.
+**AWS Services Used**
+
+**Networking**
++ Amazon VPC — custom VPC using 10.0.0.0/16
++ Amazon VPC Subnets — six subnets across two Availability Zones:
++ 2 public Web Tier subnets
++ 2 private App Tier subnets
++ 2 private Database Tier subnets
++ Route Tables — public, private App, and private Database routing
++ Internet Gateway — Internet connectivity for the public Web Tier
++ NAT Gateway — outbound Internet connectivity for private App Tier instances
+
+**Compute**
++ Amazon EC2 — Ubuntu instances for:
++ Web Tier: Next.js + Nginx
++ App Tier: Node.js/Express
+
+**Load Balancing**
++ Application Load Balancer (ALB), Internet-facing — public entry point for the Web Tier
++ Application Load Balancer (ALB), Internal — private load balancer for the App Tier
+
+**Security**
++ Amazon VPC Security Groups — tier-to-tier traffic control:
++ Public ALB → Web Tier: HTTP 80
++ Web Tier → Internal ALB: TCP 3001
++ Internal ALB → App Tier: TCP 3001
++ App Tier → RDS: MySQL 3306
+
++ AWS Identity and Access Management (IAM) — permissions for AWS resources/management where required
++ AWS Systems Manager Session Manager — optional/preferred method for accessing private App Tier instances without exposing SSH
+
+**Database**
++ Amazon RDS for MySQL — primary application database
++ Amazon RDS DB Subnet Group — places RDS across the two private DB subnets
++ RDS Multi-AZ — high availability/failover
++ RDS Read Replica — read-scaling/replication
+
+**Application/Server Software**
+Although these aren't AWS services, they should also be listed because they are part of the deployed architecture:
++ Ubuntu — EC2 operating system
++ Nginx — Web Tier reverse proxy
++ Next.js — frontend
++ Node.js / Express — backend
++ MySQL — database engine
 
 ---
 
@@ -56,7 +99,7 @@ Confirm the Book Review App loads through the public ALB DNS name.
 
 Paste your public ALB DNS name here:
 
-`Add your URL here`
+Book-Review-Web-ALB-759039383.us-east-1.elb.amazonaws.com
 
 ---
 
@@ -70,31 +113,31 @@ Capture visual proof of every tier and load balancer.
 
 #### Web EC2
 
-Add your screenshot here.
+![web-ec2](/week-06-aws-cloud/screenshots/web-ec2.png)
 
 ---
 
 #### App EC2
 
-Add your screenshot here.
+![app-ec2](/week-06-aws-cloud/screenshots/app-ec2.png)
 
 ---
 
 #### Public ALB
 
-Add your screenshot here.
+![public-alb](/week-06-aws-cloud/screenshots/public-alb.png)
 
 ---
 
 #### Internal ALB
 
-Add your screenshot here.
+![internal-ALB](/week-06-aws-cloud/screenshots/internal-alb.png)
 
 ---
 
 #### RDS + Replica
 
-Add your screenshot here.
+![rds-replica](/week-06-aws-cloud/screenshots/rds-replica.png)
 
 ---
 

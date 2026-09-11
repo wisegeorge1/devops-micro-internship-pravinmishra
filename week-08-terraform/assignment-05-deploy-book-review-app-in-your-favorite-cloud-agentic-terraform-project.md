@@ -40,7 +40,7 @@ Add a screenshot of the project `CLAUDE.md` showing the three-tier architecture,
 
 Add a screenshot showing the Terraform Engineer subagent configuration.
 
-Add your screenshot here.
+![engineer-subagent](/week-08-terraform/screenshots/Assign5-SS-2.png)
 
 ---
 
@@ -48,7 +48,7 @@ Add your screenshot here.
 
 Add a screenshot showing the Architecture and Security Reviewer subagent configuration.
 
-Add your screenshot here.
+![security-reviewer](/week-08-terraform/screenshots/Assign5-SS-3.png)
 
 ---
 
