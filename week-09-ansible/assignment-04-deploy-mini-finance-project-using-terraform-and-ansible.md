@@ -20,7 +20,7 @@ Create the `mini-finance` project with separate `terraform/` and `ansible/` subd
 
 #### Screenshot 1 — Terminal or editor showing the complete `mini-finance` project tree
 
-Add your screenshot here.
+![minifinance-project](/week-09-ansible/screenshots/ASS-4-SS-1.png)
 
 ---
 
@@ -34,19 +34,19 @@ Provision an Ubuntu 22.04 Standard_B1s VM with a public IP, SSH key authenticati
 
 #### Screenshot 2 — Terminal showing the end of a successful `terraform apply`
 
-Add your screenshot here.
+![terraformapply-successful](/week-09-ansible/screenshots/ASS-4-SS-2.png)
 
 ---
 
 #### Screenshot 3 — Terminal showing `terraform output public_ip`
 
-Add your screenshot here.
+![public-ip-output](/week-09-ansible/screenshots/ASS-4-SS-3.png)
 
 ---
 
 #### Screenshot 4 — Terraform code or Azure Portal showing NSG inbound rules for ports 22 and 80
 
-Add your screenshot here.
+![nsg-inbound-rules](/week-09-ansible/screenshots/ASS-4-SS-4.png)
 
 ---
 
@@ -60,7 +60,7 @@ Connect to the VM with SSH using the injected key and run `hostname` remotely wi
 
 #### Screenshot 5 — Terminal showing the successful passwordless SSH hostname check
 
-Add your screenshot here.
+![passwordless-SSH](/week-09-ansible/screenshots/ASS-4-SS-5.png)
 
 ---
 
@@ -74,13 +74,14 @@ Create `ansible/inventory.ini` and a three-play `site.yml` that installs Nginx a
 
 #### Screenshot 6 — Editor showing `inventory.ini` and the three plays in `site.yml`
 
-Add your screenshot here.
+![site-inventory](/week-09-ansible/screenshots/ASS-4-SS-6.png)
 
 ---
 
 #### Screenshot 7 — Terminal showing `ansible-playbook -i inventory.ini site.yml` with HTTP 200, assertion OK, and no failures
 
-Add your screenshot here.
+![checks](/week-09-ansible/screenshots/ASS-4-SS-7a.png)
+![checks](/week-09-ansible/screenshots/ASS-4-SS-7b.png)
 
 ---
 
@@ -94,7 +95,7 @@ Confirm the Mini Finance site is publicly accessible and correctly served by Ngi
 
 #### Screenshot 8 — Browser showing the Mini Finance site loaded from `http://<public_ip>` with the URL visible
 
-Add your screenshot here.
+![browser-showing](/week-09-ansible/screenshots/ASS-4-SS-8.png)
 
 ---
 
@@ -102,8 +103,9 @@ Add your screenshot here.
 
 Describe an issue you faced and how you fixed it, and what you learned.
 
-Write your answer here.
+I initially encountered an Ansible verification error because I treated the registered variable as though it contained a single URI result. Since the URI task used a loop, Ansible stored the individual responses inside `website_checks.results`. I fixed the issue by looping over `website_checks.results` and checking `item.status == 200`. I also learned that `status_code` specifies the expected HTTP response for the URI module, while `status` contains the response returned by the server.
 
+I learned how Terraform and Ansible can work together while maintaining separate responsibilities. Terraform provisions the Azure infrastructure, while Ansible configures the VM and deploys the application. I also learned how Ansible loops, registered variables, handlers, `synchronize`, `uri`, and `assert` can be combined to create a repeatable deployment workflow.
 ---
 
 # LinkedIn Post (Required)
@@ -116,9 +118,9 @@ Publish a LinkedIn post about the Terraform + Ansible deployment, mentioning the
 
 #### LinkedIn Post URL
 
-Paste your LinkedIn post URL here:
+![linkedin-post](/week-09-ansible/screenshots/ASS-4-SS-9.png)
 
-`Add your URL here`
+<https://www.linkedin.com/posts/wisgeorge1_dmibypravinmishra-devops-cloudcomputing-activity-7504829205751435264-zatF?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY>
 
 ---
 
