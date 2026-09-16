@@ -20,7 +20,7 @@ Create the `epicbook-prod` project with `terraform/azure` or `terraform/aws`, `a
 
 #### Screenshot 1 — Terminal or editor showing the complete `epicbook-prod` project tree
 
-Add your screenshot here.
+![project-tree](/week-09-ansible/screenshots/ASS-5-SS-1.png)
 
 ---
 
@@ -34,13 +34,13 @@ Provision one secure Ubuntu 22.04 VM with SSH key authentication, inbound SSH (2
 
 #### Screenshot 2 — Terminal showing successful `terraform apply` and `terraform output` with `public_ip` and `admin_user`
 
-Add your screenshot here.
+![terraform-apply-successful](/week-09-ansible/screenshots/ASS-5-SS-2.png)
 
 ---
 
 #### Screenshot 3 — Terraform code or cloud console showing inbound rules for ports 22 and 80
 
-Add your screenshot here.
+![cloud-console](/week-09-ansible/screenshots/ASS-5-SS-3.png)
 
 ---
 
@@ -54,13 +54,13 @@ Create the `[web]` inventory using the Terraform `public_ip` and `admin_user` ou
 
 #### Screenshot 4 — Terminal showing the successful passwordless SSH hostname check
 
-Add your screenshot here.
+![passwordless-check](/week-09-ansible/screenshots/ASS-5-SS-4.png)
 
 ---
 
 #### Screenshot 5 — Editor or terminal showing `inventory.ini` and a successful Ansible ping
 
-Add your screenshot here.
+![successful-ping](/week-09-ansible/screenshots/ASS-5-SS-5.png)
 
 ---
 
@@ -74,7 +74,7 @@ Create `site.yml` invoking the `common`, `nginx`, and `epicbook` roles in that e
 
 #### Screenshot 6 — Editor showing `ansible/site.yml` with the three roles in the required order
 
-Add your screenshot here.
+![site.yml](/week-09-ansible/screenshots/ASS-5-SS-6.png)
 
 ---
 
@@ -88,7 +88,7 @@ Create `roles/common/tasks/main.yml` to update apt, upgrade packages, install ba
 
 #### Screenshot 7 — Editor showing `roles/common/tasks/main.yml`
 
-Add your screenshot here.
+![roles/common/tasks/main.yml](/week-09-ansible/screenshots/ASS-5-SS-7.png)
 
 ---
 

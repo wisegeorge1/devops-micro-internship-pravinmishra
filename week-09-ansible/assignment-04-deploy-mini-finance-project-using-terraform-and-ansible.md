@@ -118,7 +118,7 @@ Publish a LinkedIn post about the Terraform + Ansible deployment, mentioning the
 
 #### LinkedIn Post URL
 
-![linkedin-post](/week-09-ansible/screenshots/ASS-4-SS-9.png)
+
 
 <https://www.linkedin.com/posts/wisgeorge1_dmibypravinmishra-devops-cloudcomputing-activity-7504829205751435264-zatF?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY>
 
@@ -126,7 +126,7 @@ Publish a LinkedIn post about the Terraform + Ansible deployment, mentioning the
 
 #### Screenshot — Published LinkedIn post showing the text and at least one image or proof
 
-Add your screenshot here.
+![linkedin-post](/week-09-ansible/screenshots/ASS-4-SS-9.png)
 
 ---
 

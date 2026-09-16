@@ -120,7 +120,7 @@ bash: line 1: vm-web1: command not found
 ssh -i ~/.ssh/id_ed25519 azureuser@20.219.73.91 "hostname"
 ```
 
- This correctly returned:
+This correctly returned:
 
 ```
 web1
