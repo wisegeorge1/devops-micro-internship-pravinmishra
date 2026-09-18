@@ -30,7 +30,7 @@ Create a self-hosted agent pool (e.g. `SelfHostedPool`) in Azure DevOps Organiza
 
 #### Screenshot 1 — Azure DevOps Agent Pools page showing the newly created pool
 
-Add your screenshot here.
+![agent-pool](/week-10-azure-devops/screenshots/ASS-01-SS-1.png)
 
 ---
 
@@ -44,13 +44,13 @@ Create an Ubuntu 22.04 (or latest) VM in AWS or Azure with SSH access, and confi
 
 #### Screenshot 2 — Cloud console showing the running Ubuntu VM and its public IP or DNS name
 
-Add your screenshot here.
+![vm](/week-10-azure-devops/screenshots/ASS-01-SS-2.png)
 
 ---
 
 #### Screenshot 3 — Terminal showing a successful SSH login and Ubuntu version details
 
-Add your screenshot here.
+![ssh-login](/week-10-azure-devops/screenshots/ASS-01-SS-3.png)
 
 ---
 
@@ -64,13 +64,13 @@ Download the Linux agent package, register it with your organization/pool/PAT vi
 
 #### Screenshot 4 — Terminal showing successful agent configuration without exposing the PAT
 
-Add your screenshot here.
+![agent-config](/week-10-azure-devops/screenshots/ASS-01-SS-4.png)
 
 ---
 
 #### Screenshot 5 — Terminal showing the agent service running successfully
 
-Add your screenshot here.
+![agent-running](/week-10-azure-devops/screenshots/ASS-01-SS-5.png)
 
 ---
 
@@ -84,7 +84,7 @@ Confirm the agent service is running and the agent shows as Online in the Azure 
 
 #### Screenshot 6 — Agent Pool listing showing the registered agent online
 
-Add your screenshot here.
+![pool-listing](/week-10-azure-devops/screenshots/ASS-01-SS-6.png)
 
 ---
 
@@ -98,7 +98,7 @@ Create and run a YAML pipeline targeting the self-hosted pool, running `uname -a
 
 #### Screenshot 7 — Successful test pipeline run output in Azure DevOps showing the Linux commands
 
-Add your screenshot here.
+![pipeline-output](/week-10-azure-devops/screenshots/ASS-01-SS-7.png)
 
 ---
 
@@ -106,8 +106,10 @@ Add your screenshot here.
 
 Note the cloud platform used, your Azure DevOps organization/project name, and the agent pool name. Describe any issue you faced and how you resolved it.
 
-Write your answer here.
-
+Platform : Microsoft Azure
+Organisation/Project Name : georgeepebifie/self Hosted Agent
+Agent Pool : SelfhostedPool 
+Issues faced : None
 ---
 
 # Submission Instructions
