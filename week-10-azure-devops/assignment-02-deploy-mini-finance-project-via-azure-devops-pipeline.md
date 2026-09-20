@@ -20,7 +20,7 @@ Import `https://github.com/pravinmishraaws/Azure-Static-Website` into Azure Repo
 
 #### Screenshot 1 — Azure Repos showing the imported repository files with `index.html` visible
 
-Add your screenshot here.
+![imported-repo](/week-10-azure-devops/screenshots/ASS-02-SS-1.png)
 
 ---
 
@@ -34,13 +34,13 @@ Provision a Linux VM with Terraform (ports 22/80 open), then use Ansible to inst
 
 #### Screenshot 2 — Terraform output or cloud console showing the running VM and public IP
 
-Add your screenshot here.
+![cloud-console](/week-10-azure-devops/screenshots/ASS-02-SS-2.png)
 
 ---
 
 #### Screenshot 3 — Terminal showing Ansible completed successfully and Nginx is active
 
-Add your screenshot here.
+![ansible-completed](/week-10-azure-devops/screenshots/ASS-02-SS-3.png)
 
 ---
 
@@ -54,7 +54,7 @@ Create the password-based SSH Service Connection `ubuntu-nginx-ssh` pointing to 
 
 #### Screenshot 4 — SSH Service Connection configuration page showing the connection details and successful validation, with the password hidden
 
-Add your screenshot here.
+![ssh-service-connection](/week-10-azure-devops/screenshots/ASS-02-SS-4.png)
 
 ---
 
@@ -68,7 +68,7 @@ Write a pipeline triggered on `main` that checks out the repo, copies files to `
 
 #### Screenshot 5 — Pipeline YAML definition open in the Azure DevOps editor
 
-Add your screenshot here.
+![pipeline-yaml](/week-10-azure-devops/screenshots/ASS-02-SS-5.png)
 
 ---
 
@@ -82,13 +82,13 @@ Confirm the pipeline run succeeded (checkout, SSH connection, file transfer, rem
 
 #### Screenshot 6 — Successful Azure DevOps pipeline run log summary
 
-Add your screenshot here.
+![ss-6](/week-10-azure-devops/screenshots/ASS-02-SS-6.png)
 
 ---
 
 #### Screenshot 7 — Browser showing the deployed website with the VM public IP visible
 
-Add your screenshot here.
+![ss-7](/week-10-azure-devops/screenshots/ASS-02-SS-7.png)
 
 ---
 

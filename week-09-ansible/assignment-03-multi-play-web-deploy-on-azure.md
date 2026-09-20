@@ -101,7 +101,7 @@ Describe an issue you faced and how you fixed it, what you learned, why installa
 
 One issue I faced was during the website verification stage of the Ansible playbook. The ansible.builtin.uri task was being executed in check mode, so it was skipped because the URI module could not perform the HTTP request in check mode. As a result, the registered result did not contain a status value, and the assertion task failed when it tried to check item.status.
 
-I fixed the issue by adding check_mode: false to the verification play and then running the playbook normally without the --check option. After the fix, Ansible successfully sent HTTP requests to both web servers, received HTTP 200 responses, and the assertion task confirmed that both websites were working correctly.
+I fixed the issue by adding check_mode:false to the verification play and then running the playbook normally without the --check option. After the fix, Ansible successfully sent HTTP requests to both web servers, received HTTP 200 responses, and the assertion task confirmed that both websites were working correctly.
 
 ### What I Learned
 

@@ -46,7 +46,7 @@ Connect to each of the four VMs as `azureuser` and run `hostname` remotely witho
 
 #### Screenshot 4 — Terminal showing successful `hostname` output from all four passwordless SSH tests
 
-![hostname](/week-09-ansible/screenshots/ASS-2-SS-4.png)
+![SS-4](/week-09-ansible/screenshots/ASS-2-SS-4.png)
 
 ---
 
@@ -60,7 +60,7 @@ Create `inventory.ini` mapping VM indices 0–1 to `[web]`, index 2 to `[app]`, 
 
 #### Screenshot 5 — Editor or terminal showing `inventory.ini` with the web, app, db, and all:vars sections
 
-![inventory-file](/week-09-ansible/screenshots/ASS-2-SS-5.png)
+![SS-5](/week-09-ansible/screenshots/ASS-2-SS-5.png)
 
 ---
 
@@ -74,25 +74,25 @@ Run `ping`, `whoami`, and `uptime` against all hosts; install and start Nginx on
 
 #### Screenshot 6 — Terminal showing `ansible ping` SUCCESS for all four hosts
 
-![ping](/week-09-ansible/screenshots/ASS-2-SS-6.png)
+![SS-6](/week-09-ansible/screenshots/ASS-2-SS-6.png)
 
 ---
 
 #### Screenshot 7 — Terminal showing `uptime` output for all four hosts
 
-![uptime](/week-09-ansible/screenshots/ASS-2-SS-7.png)
+![SS-7](/week-09-ansible/screenshots/ASS-2-SS-7.png)
 
 ---
 
 #### Screenshot 8 — Terminal showing Nginx installation and service start on the web group
 
-![nginx-started](/week-09-ansible/screenshots/ASS-2-SS-8.png)
+![SS-8](/week-09-ansible/screenshots/ASS-2-SS-8.png)
 
 ---
 
 #### Screenshot 9 — Terminal showing `htop` installation on all hosts and group-targeted command output
 
-![htop](/week-09-ansible/screenshots/ASS-2-SS-9.png)
+![SS-9](/week-09-ansible/screenshots/ASS-2-SS-9.png)
 
 ---
 
@@ -106,15 +106,15 @@ One issue I faced occurred while testing SSH access to my Azure VM. I initially 
 ssh -i ~/.ssh/id_ed25519 azureuser@20.219.73.91 "vm-web1"
 ```
 
- SSH successfully connected to the VM and added the host fingerprint to my `known_hosts` file, which confirmed that the SSH key authentication and network connectivity were working correctly. However, the command returned:
+ SSH successfully connected to the VM and added the host fingerprint to my known_hosts file, which confirmed that the SSH key authentication and network connectivity were working correctly. However, the command returned:
 
 ```
 bash: line 1: vm-web1: command not found
 ```
 
- The problem was that I was treating the Azure VM resource name, `vm-web1`, as if it were a Linux command. The SSH connection itself was not the problem.
+ The problem was that I was treating the Azure VM resource name, vm-web1, as if it were a Linux command. The SSH connection itself was not the problem.
 
- I fixed the issue by using the Linux `hostname` command instead:
+ I fixed the issue by using the Linux hostname command instead:
 
 ```
 ssh -i ~/.ssh/id_ed25519 azureuser@20.219.73.91 "hostname"
@@ -144,7 +144,7 @@ vm-web1
 web1
 ```
 
- Ansible can then use `web1` as an inventory alias while connecting to the VM's actual public IP through:
+ Ansible can then use web1 as an inventory alias while connecting to the VM's actual public IP through:
 
 ```
 web1 ansible_host=20.219.73.91
@@ -190,7 +190,7 @@ ansible web -m command -a "systemctl is-active nginx"
 vm-web1
 ```
 
- but I initially attempted to execute `vm-web1` as a command. After receiving the `command not found` error, I realized that the correct way to verify the machine's Linux hostname was:
+ but I initially attempted to execute vm-web1 as a command. After receiving the command-not-found error, I realized that the correct way to verify the machine's Linux hostname was:
 
 ```
 ssh -i ~/.ssh/id_ed25519 azureuser@20.219.73.91 "hostname"
@@ -219,7 +219,7 @@ ansible_user=azureuser
 ansible_ssh_private_key_file=~/.ssh/id_ed25519
 ```
 
- This challenge helped me understand how Ansible inventory aliases work. The alias `web1` is the logical name Ansible uses, while `ansible_host` specifies the actual IP address to which Ansible connects.
+ This challenge helped me understand how Ansible inventory aliases work. The alias web1 is the logical name Ansible uses, while ansible_host specifies the actual IP address to which Ansible connects.
 
  Overall, the experience reinforced the importance of troubleshooting each layer separately: first verify network connectivity, then SSH authentication, then the remote command, and finally Ansible inventory and automation.
 

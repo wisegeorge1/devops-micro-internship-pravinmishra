@@ -41,13 +41,13 @@ Install the Ansible, YAML, and Python VS Code extensions, and create `.vscode/se
 
 #### Screenshot 3 — VS Code Extensions panel showing Ansible, YAML, and Python installed
 
-![vscode-extension](/week-09-ansible/screenshots/ASS-1-SS-3.png)
+![ss-3](/week-09-ansible/screenshots/ASS-1-SS-3.png)
 
 ---
 
 #### Screenshot 4 — VS Code showing `.vscode/settings.json` and `.editorconfig`
 
-![settings-editorconfig](/week-09-ansible/screenshots/ASS-1-SS-4.png)
+![ss-4](/week-09-ansible/screenshots/ASS-1-SS-4.png)
 
 ---
 
