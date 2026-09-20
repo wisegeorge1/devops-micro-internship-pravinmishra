@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 # Assignment 2: Teaching Claude Your Project
+=======
+# Assignment 2 — Teaching Claude Your Project
+
+Part of the DevOps Micro Internship (DMI) with Agentic AI
+>>>>>>> upstream/main
 
 ---
 
@@ -57,7 +63,25 @@ Each task must be completed sequentially.
 
 ---
 
+<<<<<<< HEAD
 ### Task 1 — Capture the Before State
+=======
+# Task 6 — Share Your Progress on WhatsApp
+
+## Goal
+
+Celebrate your progress and share your DMI Leaderboard achievement on WhatsApp.
+
+### Evidence
+
+#### Screenshot 7 — Your shared WhatsApp Status or community message showing the automatically generated leaderboard rank and personal progress link
+
+Add your screenshot here.
+
+---
+
+# Submission Instructions
+>>>>>>> upstream/main
 
 **Goal:** Screenshot Claude's answer before CLAUDE.md exists so you have a baseline to compare.
 
@@ -252,6 +276,7 @@ Before submission, verify:
 [ ] Screenshot 4 shows Claude mentioning S3, CloudFront, and Terraform <br>
 [ ] Screenshot 5 shows Claude refusing the React request <br>
 [ ] Screenshot 6 shows `CLAUDE.md` committed and visible in your GitHub repository <br>
+[ ] Screenshot 7 shows your shared WhatsApp Status with the automatically generated DMI Leaderboard rank and personal progress link<br>
 [ ] GitHub repository URL is included in the submission <br>
 
 ---
@@ -278,5 +303,9 @@ It helps learners build strong DevOps foundations with hands-on experience.
 
 ---
 
+<<<<<<< HEAD
 *This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track.*
+>>>>>>> upstream/main
+=======
+*This submission is part of DevOps Micro Internship (DMI)— Agentic AI Track.*
 >>>>>>> upstream/main

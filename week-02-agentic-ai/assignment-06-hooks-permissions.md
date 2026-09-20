@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 # Assignment 6: Safety Rails for Your AI Agent
+=======
+# Assignment 6 — Safety Rails for Your AI Agent
+
+Part of the DevOps Micro Internship (DMI) with Agentic AI
+>>>>>>> upstream/main
 
 ---
 
@@ -530,6 +536,7 @@ Example:
 
 ---
 
+<<<<<<< HEAD
 ## 8. Industry Insight
 
 The hook architecture in Claude Code mirrors the same pattern used in production CI/CD pipelines — pre-commit hooks, pre-deploy approval gates, and policy-as-code checks. In both cases, the principle is identical: intercept early and block at the lowest cost point. A UserPromptSubmit hook that fires in milliseconds is far cheaper than a Terraform destroy that runs for 10 minutes before someone notices the mistake. Building this habit now — intercepting at the earliest possible point — is one of the most transferable skills in professional DevOps.
@@ -537,11 +544,28 @@ The hook architecture in Claude Code mirrors the same pattern used in production
 ---
 
 ## 9. Submission Instructions
+=======
+# Task 9 — Share Your AI Safety Achievement
+
+## Goal
+
+Share how you built safety controls that prevent an AI agent from performing destructive actions.
+
+### Evidence
+
+#### Screenshot 10 — Published post on X or LinkedIn showing your AI safety achievement message and leaderboard progress link visible
+
+Add your screenshot here.
+
+---
+
+# Submission Instructions
+>>>>>>> upstream/main
 
 Complete all tasks in sequence.
 
 Your submission must include:
-- All 9 required screenshots
+- All 10 required screenshots
 
 ---
 
@@ -574,6 +598,8 @@ Before submission, verify:
 - [ ] Destructive prompt test shows UserPromptSubmit blocked the request
 - [ ] Terraform destroy command test shows PreToolUse intercepted the command
 - [ ] Terraform validate test shows PostToolUse created the log entry
+- [ ] AI safety achievement shared on X or LinkedIn
+- [ ] Screenshot of published post with leaderboard progress link visible
 - [ ] All required screenshots are captured
 
 
@@ -599,5 +625,9 @@ It helps learners build strong DevOps foundations with hands-on experience.
 
 ---
 
+<<<<<<< HEAD
 *This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track.*
+>>>>>>> upstream/main
+=======
+*This submission is part of DevOps Micro Internship (DMI) — Agentic AI Track.*
 >>>>>>> upstream/main

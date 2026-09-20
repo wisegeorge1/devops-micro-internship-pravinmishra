@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 # Assignment 4: Building Your AI Team
+=======
+# Assignment 4 — Building Your AI Team
+
+Part of the DevOps Micro Internship (DMI) Cohort with Agentic AI
+>>>>>>> upstream/main
 
 ---
 
@@ -163,7 +169,36 @@ Review my Terraform infrastructure for cost optimization.
 
 ---
 
+<<<<<<< HEAD
 ## 8. Industry Insight
+=======
+# Task 5 — Share Your AI Team Achievement on LinkedIn
+
+## Goal
+
+Share your AI subagents learning progress on LinkedIn and provide evidence of your published post.
+
+### LinkedIn Post
+
+Use the LinkedIn post template provided in the assignment guideline.
+
+Make sure your published post includes:
+
+- Your AI team achievement
+- The three specialized subagents you created
+- Your GitHub repository URL
+- Your DMI Leaderboard progress link
+
+### Evidence
+
+#### Screenshot 7 — Published LinkedIn post showing your post content and leaderboard progress link visible
+
+Add your screenshot here.
+
+---
+
+# Submission Instructions
+>>>>>>> upstream/main
 
 The most common mistake teams make when adopting agentic AI is building one large general-purpose agent and giving it every tool and every capability. This works until something goes wrong — and then it is very hard to diagnose. The subagent pattern solves this. When a security audit runs on read-only tools and produces a wrong result, you know exactly where to look: the agent body and its checklist. Small, focused agents are easier to debug, easier to trust, and easier to improve over time. Start small. Specialize deliberately.
 
@@ -191,6 +226,7 @@ Follow the Assignment Submission Guidelines — (LINK)
 
 A step-by-step solution and troubleshooting guide is available for reference:
 Full solution walkthrough → [Click here](../assignment-solutions/assignment-04-subagents.md)
+
 
 ---
 
@@ -220,3 +256,9 @@ Before submission, verify:
 - 🏢 CloudAdvisory (LinkedIn): https://www.linkedin.com/company/thecloudadvisory/
 >>>>>>> upstream/main
 
+<<<<<<< HEAD
+=======
+---
+
+*This submission is part of DevOps Micro Internship (DMI) — Agentic AI Track.*
+>>>>>>> upstream/main

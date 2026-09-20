@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 # Assignment 8: Week 2 Reflection Blog
+=======
+# Assignment 8 — Week 2 Reflection Blog
+
+Part of the DevOps Micro Internship (DMI) with Agentic AI
+>>>>>>> upstream/main
 
 ---
 
@@ -130,6 +136,7 @@ For example:
 
 ---
 
+<<<<<<< HEAD
 #### 3. My biggest weakness or loop I noticed
 
 Write honestly about one repeated challenge.
@@ -233,6 +240,9 @@ Hashtags:
 ---
 
 ## 11. Submission Instructions
+=======
+### Evidence
+>>>>>>> upstream/main
 
 <https://github.com/wisegeorge1/devops-micro-internship-pravinmishra.git>
 
@@ -303,6 +313,7 @@ It helps learners build strong DevOps foundations through hands-on experience.
 * ▶️ YouTube Playlist: [https://www.youtube.com/playlist?list=PLFeSNDtI4Cho](https://www.youtube.com/playlist?list=PLFeSNDtI4Cho)
 * 🔗 Pravin Mishra (LinkedIn): [https://www.linkedin.com/in/pravin-mishra-aws-trainer/](https://www.linkedin.com/in/pravin-mishra-aws-trainer/)
 * 🏢 CloudAdvisory (LinkedIn): [https://www.linkedin.com/company/thecloudadvisory/](https://www.linkedin.com/company/thecloudadvisory/)
+<<<<<<< HEAD
 >>>>>>> upstream/main
 
 * [ ] Reflection title is included
@@ -315,3 +326,8 @@ It helps learners build strong DevOps foundations through hands-on experience.
 * [ ] Required P.S. line is included in the LinkedIn post
 * [ ] LinkedIn post URL is added
 * [ ] Screenshot of LinkedIn post is added
+=======
+---
+
+*This submission is part of DevOps Micro Internship (DMI) — Agentic AI Track.*
+>>>>>>> upstream/main

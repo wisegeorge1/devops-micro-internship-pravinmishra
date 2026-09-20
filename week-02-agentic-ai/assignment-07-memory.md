@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 # Assignment 7: A Claude That Remembers
+=======
+# Assignment 7 — A Claude That Remembers
+
+Part of the DevOps Micro Internship (DMI) with Agentic AI
+>>>>>>> upstream/main
 
 ---
 
@@ -212,6 +218,7 @@ Full solution walkthrough → [Click here](../assignment-solutions/assignment-07
 
 ---
 
+<<<<<<< HEAD
 ## 11. LinkedIn Requirement
 
 Create a LinkedIn post including:
@@ -240,3 +247,6 @@ Before submission, verify:
 - [ ] Claude refused JavaScript — memory rule enforced (Screenshot 6)
 - [ ] All 6 screenshots captured and updated in GitHub folder
 
+=======
+*This submission is part of DevOps Micro Internship (DMI) — Agentic AI Track.*
+>>>>>>> upstream/main

@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 # Assignment 5: Connecting Claude to the Outside World
+=======
+# Assignment 5 — Connecting Claude to the Outside World
+
+Part of the DevOps Micro Internship (DMI) with Agentic AI
+>>>>>>> upstream/main
 
 ---
 
@@ -53,7 +59,25 @@ Without MCP, Claude works from training data — which can be months old and kno
 
 ---
 
+<<<<<<< HEAD
 ## 7. Tasks
+=======
+# Task 6 — Share Your MCP Achievement
+
+## Goal
+
+Share your MCP achievement on Facebook or WhatsApp Status and provide evidence of the published post/status.
+
+### Evidence
+
+#### Screenshot 6 — Published Facebook post or WhatsApp Status showing your MCP achievement message and leaderboard progress link visible
+
+Add your screenshot here.
+
+---
+
+# Submission Instructions
+>>>>>>> upstream/main
 
 Each task must be completed sequentially.
 
@@ -237,12 +261,24 @@ Not required for this assignment.
 
 Before submission, verify:
 - [ ] GitHub PAT created with correct scopes (`repo`, `read:user`)
+<<<<<<< HEAD
 - [ ] `.mcp.json` at project root with GitHub server configured
 - [ ] `settings.local.json` has the token — token value blurred in screenshot
 - [ ] `settings.local.json` is gitignored and NOT committed
 - [ ] `/mcp` shows `github: connected`
 - [ ] Live GitHub query returned real repository data
 - [ ] `.mcp.json` committed and visible in GitHub repo
+=======
+- [ ] `.mcp.json` created at project root
+- [ ] `.claude/settings.local.json` contains token (hidden in screenshot)
+- [ ] `.claude/settings.local.json` is NOT committed
+- [ ] `/mcp` shows GitHub connection as active
+- [ ] Live GitHub query returns real repository data
+- [ ] All required screenshots added
+- [ ] GitHub repository URL included
+- [ ] MCP achievement shared on Facebook or WhatsApp Status
+- [ ] Screenshot 6 added showing the published post/status
+>>>>>>> upstream/main
 
 <<<<<<< HEAD
 =======
@@ -268,5 +304,9 @@ It helps learners build strong DevOps foundations with hands-on experience.
 
 ---
 
+<<<<<<< HEAD
 *This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track.*
+>>>>>>> upstream/main
+=======
+*This submission is part of DevOps Micro Internship (DMI) — Agentic AI Track.*
 >>>>>>> upstream/main

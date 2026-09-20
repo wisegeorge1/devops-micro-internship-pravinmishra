@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 # Assignment 1: Your First Agentic Session
+=======
+# Assignment 1 — Your First Agentic Session
+
+Part of the DevOps Micro Internship (DMI) with Agentic AI
+>>>>>>> upstream/main
 
 ---
 
@@ -34,7 +40,46 @@ Every DevOps engineer working with agentic AI starts the same way — setting up
 
 ## 5. Important Instructions (Global Rules)
 
+<<<<<<< HEAD
 **Key Rules:**
+=======
+## Goal
+
+Interact with Claude Code and observe how it performs the Agentic Loop (Gather → Act → Verify) while answering project-related questions.
+
+### Evidence
+
+#### Screenshot 4 — Claude's response to the first question, showing it read the files (tool calls visible)
+
+Add your screenshot here.
+
+---
+
+#### Screenshot 5 — Claude's response to the second question, showing it ran a command and reported the line count
+
+Add your screenshot here.
+
+---
+
+# Task 4 — Share Your First Agentic AI Achievement
+
+## Goal
+
+Share your completed Agentic AI session and DMI Leaderboard progress on LinkedIn.
+
+### Evidence
+
+#### Screenshot 6 — Published LinkedIn post showing the caption and shared DMI Leaderboard progress
+
+Add your screenshot here.
+
+---
+
+
+# Submission Instructions
+
+- Add all required screenshots in your GitHub repository submission
+>>>>>>> upstream/main
 - Full name must be visible in required screenshots
 - Do not expose sensitive information (keys, passwords, account IDs)
 - Follow screenshot requirements exactly as specified in tasks
@@ -177,6 +222,7 @@ How many lines of CSS does this project have?
 
 ---
 
+<<<<<<< HEAD
 ## 8. Industry Insight
 
 In professional agentic DevOps teams, engineers do not use Claude Code blind. Before trusting it with infrastructure, they watch it work on safe, low-stakes tasks — reading files, counting lines, describing what it sees. This is how you build calibration: you learn what Claude does well, where it guesses, and when it needs more context. That calibration is exactly what the rest of this week builds on.
@@ -220,3 +266,6 @@ Before submission, verify:
 - [ ] GitHub repo URL included
 
 ---
+=======
+*This submission is part of DevOps Micro Internship (DMI) — Agentic AI Track.*
+>>>>>>> upstream/main
