@@ -154,7 +154,19 @@ http://168.62.59.149/
 
 Write a short summary of the completed CI/CD workflow.
 
-[Write your summary here.]
+I completed an automated CI/CD workflow for deploying a static website to an Azure Virtual Machine using Terraform, Ansible, and Azure DevOps.
+
+Terraform provisioned the Azure infrastructure, including the Ubuntu VM, virtual network, public IP, and Network Security Group.
+
+Ansible configured the server by installing and enabling Nginx and preparing /var/www/html with the required deployment permissions.
+
+Azure DevOps was configured with an SSH service connection and a YAML pipeline running on a self-hosted agent.
+
+Every code push to the repository automatically triggers the pipeline, which transfers the website files to the Azure VM over SSH.
+
+The pipeline then validates the deployment by checking that index.html exists and that Nginx returns an HTTP 200 response.
+
+The completed workflow establishes a clear separation of responsibilities: Terraform provisions, Ansible configures, and Azure DevOps deploys and verifies. This provides a repeatable and automated process for delivering website changes to Azure.
 
 ---
 

@@ -144,6 +144,7 @@ Add a browser screenshot showing:
 * Deployment date
 
 ![ass3-ss5](/week-10-azure-devops/screenshots/ASS-03-SS-5.png)
+![ass3-ss6](/week-10-azure-devops/screenshots/ASS-03-SS-6.png)
 
 ## Final Application URL
 
@@ -151,7 +152,7 @@ Add a browser screenshot showing:
 
 Replace the placeholder and paste your final application URL below:
 
-[Paste your final application URL here.]
+http://20.124.130.112/
 
 ---
 
@@ -159,7 +160,11 @@ Replace the placeholder and paste your final application URL below:
 
 Write a short explanation of the CI/CD workflow you created.
 
-[Write your summary here.]
+The CI/CD workflow automates the process of building, testing, and deploying the React application to an Azure-hosted Ubuntu VM. Whenever a change is committed to the main branch, Azure DevOps automatically triggers the multi-stage pipeline.
+
+The pipeline consists of four stages: Build, Test, Publish, and Deploy. The Build stage installs the required Node.js version, installs the project dependencies, and creates the production React build. The Test stage runs the application's tests in CI mode to ensure the code is working correctly. The Publish stage downloads and verifies the build artifact before publishing it as the deployment artifact. Finally, the Deploy stage uses the Azure DevOps SSH Service Connection and CopyFilesOverSSH@0 to transfer the production files to /var/www/html on the Ubuntu VM.
+
+Terraform is used to provision the Azure infrastructure, while Ansible installs and configures Nginx and prepares the web-root permissions. Nginx then serves the compiled React application and handles SPA routes using try_files. This workflow provides a repeatable deployment process where only successfully built and tested application artifacts are deployed to the web server.
 
 ---
 
@@ -169,7 +174,7 @@ Write a short explanation of the CI/CD workflow you created.
 
 ### Screenshot 6 — LinkedIn Post
 
-Add a screenshot of your LinkedIn post showing:
+![linkedin-post](/week-10-azure-devops/screenshots/ASS-03-SS-7.png)
 
 * Post text
 * At least one image or link
@@ -178,7 +183,7 @@ Add your screenshot here.
 
 ## LinkedIn Post URL
 
-[Paste your public LinkedIn post URL here.]
+<https://www.linkedin.com/posts/wisgeorge1_dmibypravinmishra-devops-cloudcomputing-ugcPost-7509291953398820864-ZCn2/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY>
 
 > Do not expose VM passwords, tokens, private keys, cloud credentials, or other sensitive information.
 
