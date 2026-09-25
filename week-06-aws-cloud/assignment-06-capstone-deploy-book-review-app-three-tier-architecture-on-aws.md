@@ -143,7 +143,7 @@ Capture visual proof of every tier and load balancer.
 
 #### App UI proof
 
-Add your screenshot here.
+![app-ui](/week-06-aws-cloud/screenshots/App-UI.jpg)
 
 ---
 
@@ -157,19 +157,45 @@ Summarize what worked in the final deployment, the issues encountered and how ea
 
 **What worked:**
 
-Write your answer here.
+The Book Review App was successfully deployed using a three-tier architecture in an AWS VPC with CIDR `10.0.0.0/16`. The Web Tier was deployed across two public subnets and placed behind an internet-facing Application Load Balancer. Nginx served the Next.js frontend on port 80.
+
+ The App Tier was deployed across two private subnets and placed behind an internal Application Load Balancer. The Node.js/Express backend listened on port 3001 and was not directly accessible from the Internet.
+
+ The Database Tier used Amazon RDS for MySQL in private subnets. Multi-AZ was enabled and a read replica was created. Security Groups restricted MySQL traffic to the App Tier only.
+
+ The complete application was tested through the public Application Load Balancer DNS name, and database connectivity was tested from the App Tier.
 
 ---
 
 **Issues + fixes:**
 
-Write your answer here.
+### Issue 1 — Website was not loading on browser
+
+API Routing & CORS Issues
+
+The backend .env had an incorrect ALLOWED_ORIGINS configuration that only allowed localhost, blocking cross-origin requests. I added the public ALB DNS to the CORS whitelist. I later discovered that page.js also had a hardcoded /api/ prefix, which caused the API path to be duplicated. Removing the redundant prefix resolved the routing issue.
+
+The internal-alb-sg initially allowed traffic only on port 3001. Since Nginx was forwarding HTTP traffic through the internal ALB, I added an inbound rule for port 80 from web-sg, allowing the reverse proxy to reach the backend successfully.
+
+Nginx reverse proxy routing: Added a dedicated location /api/ block in Nginx to forward API requests to the internal ALB. I also updated the frontend .env.local to use the relative /api path instead of exposing the internal ALB URL to the browser.
 
 ---
 
 **Tools/sources used:**
 
-Write your answer here.
+- AWS Management Console
+- AWS CLI where required for verification
+- Ubuntu/Linux administration tools
+- Nginx
+- Node.js/npm
+- Next.js
+- MySQL client
+- AWS VPC documentation
+- AWS Elastic Load Balancing documentation
+- Amazon RDS documentation
+- AWS troubleshooting documentation
+- Developer forums and technical documentation
+- ChatGPT/Claude for research and troubleshooting
 
 ---
 
@@ -185,13 +211,13 @@ Publish a LinkedIn post sharing the capstone deployment, including the public AL
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+<https://www.linkedin.com/posts/wisgeorge1_dmibypravinmishra-devops-cloudcomputing-ugcPost-7509178292391047168-D1Nh/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY>
 
 ---
 
 #### Screenshot of LinkedIn post
 
-Add your screenshot here.
+![linkedin-post](/week-06-aws-cloud/screenshots/linked-post-capstone-bookreview.png)
 
 ---
 

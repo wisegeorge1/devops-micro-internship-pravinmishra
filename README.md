@@ -149,8 +149,8 @@ Week 09 → Ansible
 
 | 08 | Terraform | 🔄 In Progress | 🔄 In Progress | https://www.linkedin.com/posts/wisgeorge1_%F0%9D%98%81%F0%9D%97%B2%F0%9D%97%BF%F0%9D%97%BF%F0%9D%97%AE%F0%9D%97%B3%F0%9D%97%BC%F0%9D%97%BF%F0%9D%97%BA-%F0%9D%97%AE%F0%9D%97%BD%F0%9D%97%BD%F0%9D%97%B9%F0%9D%98%86-%F0%9D%98%80%F0%9D%98%82%F0%9D%97%B0%F0%9D%97%B0%F0%9D%97%B2%F0%9D%97%B2%F0%9D%97%B1%F0%9D%97%B6%F0%9D%97%BB%F0%9D%97%B4-ugcPost-7501113660661194752-UpAI/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY | https://cloudly.hashnode.dev/deploy-a-node-js-web-application-on-aws-using-terraform-modules-ec2-nginx-and-private-amazon-rds-mysql 
 
-| 09 | Ansible | 🔄 In Progress | 🔄 In Progress | https://www.linkedin.com/posts/wisgeorge1_dmibypravinmishra-devops-cloudcomputing-activity-7504829205751435264-zatF?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY | — |
-| 10 | Azure DevOps (CI/CD) | ⬜ Not Started | ⏳ Pending | — | — |
+| 09 | Ansible | 🔄 In Progress | 🔄 In Progress | https://www.linkedin.com/posts/wisgeorge1_dmibypravinmishra-devops-cloudcomputing-activity-7504829205751435264-zatF?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY | https://cloudly.hashnode.dev/how-to-provision-linux-vms-with-terraform-and-run-ansible-ad-hoc-commands 
+| 10 | Azure DevOps (CI/CD) | 🔄 In Progress | 🔄 In Progress | <https://www.linkedin.com/posts/wisgeorge1_dmibypravinmishra-devops-cloudcomputing-ugcPost-7509134319060283392-Qw2f/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY> | — |
 | 11 | Docker | ⬜ Not Started | ⏳ Pending | — | — |
 | 12 | Kubernetes | ⬜ Not Started | ⏳ Pending | — | — |
 | 13 | Final Project | ⬜ Not Started | ⏳ Pending | — | — |
