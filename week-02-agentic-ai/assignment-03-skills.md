@@ -194,6 +194,7 @@ Paste your forked repository URL here:
 Paste your forked repository URL here:
 
 `Add your URL here`
+
 ---
 
 # Completion Checklist
@@ -239,6 +240,7 @@ Full solution walkthrough → [Click here](../assignment-solutions/assignment-03
 
 ---
 
+<<<<<<< HEAD
 ## 11. LinkedIn Requirement
 
 Create a LinkedIn post including:
@@ -267,3 +269,6 @@ Before submission, verify:
 - [ ] `/tf-plan` was triggered and Claude analyzed the output
 - [ ] Skills committed and visible in GitHub repo
 
+=======
+*This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track.*
+>>>>>>> upstream/main
