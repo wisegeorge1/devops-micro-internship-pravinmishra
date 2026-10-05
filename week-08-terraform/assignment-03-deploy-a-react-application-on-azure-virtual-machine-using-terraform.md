@@ -241,11 +241,11 @@ Share your React application deployment progress and DMI Leaderboard link on Lin
 6. Add this caption:
 
 ```text
-Just deployed a React application on an Azure Virtual Machine using Terraform! ☁️
+Just deployed a React application on an Azure Virtual Machine using Terraform! 
 
 I provisioned the Azure infrastructure with Terraform and automated the React application deployment using cloud-init Custom Data and Nginx.
 
-Check my DMI learning progress below. 🚀
+Check my DMI learning progress below. 
 ```
 
 7. Publish the post on LinkedIn.
@@ -262,7 +262,7 @@ Add a screenshot of your published LinkedIn post showing:
 
 Ensure that no passwords, private keys, account IDs, access tokens, or other sensitive information are visible.
 
-Add your screenshot here.
+![linkedin-post](/week-08-terraform/screenshots/Assign3-SS-16.png)
 
 ---
 
