@@ -174,8 +174,11 @@ Terraform is used to provision the Azure infrastructure, while Ansible installs 
 
 ### Screenshot 6 — LinkedIn Post
 
+![linkedin-post](/week-10-azure-devops/screenshots/ASS-03-SS-7.png)
+
 * Post text
 * At least one image or link
+
 
 ![linkedin-post](/week-10-azure-devops/screenshots/ASS-03-SS-7.png)
 
