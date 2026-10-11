@@ -26,7 +26,7 @@ Add a screenshot of Docker Hub showing your newly created public repository:
 my-react-app
 ```
 
-Add your screenshot here.
+![ss1](/week-11-docker/screenshots/Ass-5-SS1.png)
 
 ---
 
@@ -40,7 +40,7 @@ Login Succeeded
 
 Ensure that your full name is visible and that no password, Personal Access Token, or device code is exposed.
 
-Add your screenshot here.
+![ss2](/week-11-docker/screenshots/Ass-5-SS2.png)
 
 ---
 
@@ -54,7 +54,7 @@ docker image ls <YOUR_DOCKERHUB_USERNAME>/my-react-app
 
 The output must show the `latest` tag.
 
-Add your screenshot here.
+![ss3](/week-11-docker/screenshots/Ass-5-SS3.png)
 
 ---
 
@@ -68,7 +68,7 @@ docker push <YOUR_DOCKERHUB_USERNAME>/my-react-app:latest
 
 The output must include a pushed status or image digest.
 
-Add your screenshot here.
+![ss4](/week-11-docker/screenshots/Ass-5-SS4.png)
 
 ---
 
@@ -76,7 +76,7 @@ Add your screenshot here.
 
 Add a screenshot of your Docker Hub repository showing the uploaded `latest` image tag.
 
-Add your screenshot here.
+![ss5](/week-11-docker/screenshots/Ass-5-SS5.png)
 
 ---
 
@@ -88,7 +88,7 @@ Add a screenshot of the terminal showing:
 - Successful `docker pull` output
 - `docker image ls` showing the pulled image
 
-Add your screenshot here.
+![ss6](/week-11-docker/screenshots/Ass-5-SS6.png)
 
 ---
 
@@ -106,7 +106,7 @@ The output must show the running `react-container` with:
 0.0.0.0:80->80/tcp
 ```
 
-Add your screenshot here.
+![ss7](/week-11-docker/screenshots/Ass-5-SS7.png)
 
 ---
 
@@ -120,13 +120,13 @@ http://<YOUR-VM-PUBLIC-IP>
 
 Ensure that the VM public IP is visible in the address bar. Add your full name as a clear caption directly below the screenshot.
 
-Add your screenshot here.
+![ss8](/week-11-docker/screenshots/Ass-5-SS8.png)
 
 ---
 
 # Docker Hub Repository URL
 
-**Repository URL:** `Add your Docker Hub repository URL here`
+**Repository URL:** `<https://hub.docker.com/repository/docker/wisegeorge1/my-react-app>`
 
 ---
 
@@ -138,7 +138,67 @@ Write a short explanation covering:
 - Why a container registry is useful in DevOps workflows
 - Why production deployments should use versioned image tags instead of relying only on `latest`
 
-Write your explanation here.
+1. Why image tagging is required before pushing to Docker Hub
+
+Docker Hub identifies images using a repository name and tag, such as:
+
+wisegeorge1/my-react-app:latest
+
+
+The original local image:
+react-multistage:latest
+
+does not identify the Docker Hub repository where the image should be stored. The docker tag command creates a registry compatible reference:
+
+
+docker tag react-multistage:latest \
+  wisegeorge1/my-react-app:latest
+
+
+This tells Docker where the image belongs when docker push is executed. Tagging does not rebuild the image; it creates another reference to the existing image.
+
+2. Why a container registry is useful in DevOps workflows
+
+A container registry such as Docker Hub provides a central location for storing, versioning, and distributing Docker images. A CI/CD pipeline can build and test an image once, push it to the registry, and then allow development, staging, and production environments to pull that same tested image.
+
+This creates a workflow such as:
+Code
+  ↓
+CI/CD Pipeline
+  ↓
+Build & Test
+  ↓
+Docker Image
+  ↓
+Container Registry
+  ↓
+Development / Staging / Production
+
+
+This improves consistency because environments can deploy the same application artifact instead of rebuilding the application separately.
+
+3. Why production should use versioned tags instead of relying only on latest
+
+The latest tag is mutable. It can point to a different image after another push, making it difficult to determine exactly which application version is running in production.
+
+For example:
+my-react-app:latest
+could point to version 1.0 today and version 1.1 tomorrow.
+Production deployments should instead use explicit version tags such as:
+my-react-app:v1.0.0
+my-react-app:v1.0.1
+my-react-app:v1.1.0
+
+or CI-generated tags such as:
+my-react-app:build-125
+my-react-app:commit-a1b2c3d
+
+
+Versioned tags make deployments traceable and reproducible, simplify rollback, and make it clear which image version is running in each environment. For even stronger immutability, deployments can reference the image's SHA-256 digest.
+
+## summary
+tagging identifies where an image belongs, a registry provides reliable image distribution, and versioned tags make production deployments predictable and auditable.
+
 
 ---
 
@@ -162,13 +222,13 @@ Include:
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+<https://www.linkedin.com/posts/wisgeorge1_dmibypravinmishra-devops-cloudcomputing-ugcPost-7515183153649541120-aAwI/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY>
 
 ---
 
 #### LinkedIn Post Screenshot
 
-Add a screenshot of the published LinkedIn post here.
+![ss9](/week-11-docker/screenshots/Ass-5-SS9.png)
 
 ---
 
