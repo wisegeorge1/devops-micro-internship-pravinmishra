@@ -20,7 +20,7 @@ Create a clean working directory for all Pod-related files used in this lab.
 
 #### Screenshot 01 — Output of `pwd` showing the current directory ending in `/k8s-labs/pods`
 
-Add your screenshot here.
+![ss1](/week-12-kubernetes/screenshots/Ass1-ss1.png)
 
 ---
 
@@ -34,13 +34,13 @@ Create an NGINX Pod directly from the command line, verify that it is running, a
 
 #### Screenshot 02 — Output of `kubectl run nginx-pod --image=nginx` showing the creation message, and `kubectl get pods` showing `nginx-pod` with `1/1` under `READY` and `Running` under `STATUS`, before deletion
 
-Add your screenshot here.
+![ss2](/week-12-kubernetes/screenshots/Ass1-ss2.png)
 
 ---
 
 #### Screenshot 03 — Output of `kubectl delete pod nginx-pod` showing the successful deletion message
 
-Add your screenshot here.
+![ss3](/week-12-kubernetes/screenshots/Ass1-ss3.png)
 
 ---
 
@@ -54,19 +54,19 @@ Define the NGINX Pod in a YAML file, apply the manifest, and verify the resultin
 
 #### Screenshot 04 — The filename `nginx-pod.yaml` and the complete YAML manifest with clear, readable indentation
 
-Add your screenshot here.
+![ss4](/week-12-kubernetes/screenshots/Ass1-ss4.png)
 
 ---
 
 #### Screenshot 05 — Output of `kubectl apply -f nginx-pod.yaml` showing the successful creation message
 
-Add your screenshot here.
+![ss5](/week-12-kubernetes/screenshots/Ass1-ss5.png)
 
 ---
 
 #### Screenshot 06 — Output of `kubectl get pods` showing the declarative `nginx-pod` with `1/1` under `READY` and `Running` under `STATUS`
 
-Add your screenshot here.
+![ss6](/week-12-kubernetes/screenshots/Ass1-ss6.png)
 
 ---
 
@@ -74,7 +74,11 @@ Add your screenshot here.
 
 **1. What is the difference between imperative and declarative Pod creation?**
 
-Add your answer here.
+In Kubernetes, the difference between imperative and declarative Pod creation is how you tell Kubernetes what to do.
+
+ 1. Imperative: You give Kubernetes explicit commands to create or modify a resource.
+
+ 2. Declarative: You describe the desired state in a YAML file, and Kubernetes works to make the actual state match it.
 
 ---
 
@@ -88,13 +92,13 @@ Inspect the running Pod, view its logs, and open a shell inside the NGINX contai
 
 #### Screenshot 07 — Output of `kubectl describe pod nginx-pod` showing the Pod name, `app=nginx` label, `Running` status, container name, and NGINX image
 
-Add your screenshot here.
+![ss7](/week-12-kubernetes/screenshots/Ass1-ss7.png)
 
 ---
 
 #### Screenshot 08 — Output of `kFilename: `08-pod-logs.png`
 
-Add your screenshot here.
+![ss8](/week-12-kubernetes/screenshots/Ass1-ss8.png)
 
 If no logs appear, add a caption stating that the command completed without output.
 
@@ -102,7 +106,7 @@ If no logs appear, add a caption stating that the command completed without outp
 
 #### Screenshot 09 — Container shell opened using `kubectl exec -it nginx-pod -- /bin/bash`, showing `cd /usr/share/nginx/html`, `pwd`, and `ls -la`, with the directory path and default NGINX files visible before exiting
 
-Add your screenshot here.
+![ss9](/week-12-kubernetes/screenshots/Ass1-ss9.png)
 
 ---
 
@@ -132,13 +136,13 @@ Today, I deployed an NGINX Pod using both imperative kubectl commands and a decl
 
 I also checked its status, inspected its details, viewed its logs, and accessed the container shell.
 
-[PASTE YOUR GENERATED LEADERBOARD MESSAGE AND LINK HERE]
+[https://dmi.pravinmishra.com/s/wisegeorge1.html]
 
 #DMIByPravinMishra #DevOps #Kubernetes
 
 **Screenshots Required**
 
-- **Screenshot 10 — `10-whatsapp-status.png`:** Published WhatsApp Status showing your Kubernetes Pod message and generated DMI leaderboard progress link.
+- **Screenshot 10 — ![ss10](/week-12-kubernetes/screenshots/10-whatsapp-status.png):** Published WhatsApp Status showing your Kubernetes Pod message and generated DMI leaderboard progress link.
 
 ---
 
