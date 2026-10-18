@@ -18,7 +18,7 @@ Confirm that you are connected to your learning cluster and remove the previous 
 
 ### Evidence
 
-No screenshots required.
+![ss0](/week-12-kubernetes/screenshots/Ass2-ss0.png)
 
 ---
 
@@ -32,7 +32,7 @@ Create and enter a dedicated directory for this ReplicaSet lab.
 
 #### Screenshot 01 — Output of `pwd` showing the working directory ending in `/k8s-labs/replicasets`
 
-Add your screenshot here.
+![ss1](/week-12-kubernetes/screenshots/Ass2-ss1.png)
 
 ---
 
@@ -40,13 +40,15 @@ Add your screenshot here.
 
 **1. Why is it useful to keep Kubernetes manifests in organized directories?**
 
-Add your answer here.
+Keeping Kubernetes manifests in organized directories is useful because it makes your configuration easier to manage, reuse, troubleshoot, and maintain as your project grows.
+
+A Kubernetes manifest is a YAML file that defines a resource, such as a Pod, Deployment, Service, ConfigMap, or Secret.
 
 ---
 
 **2. What file will you create in this directory for this assignment?**
 
-Add your answer here.
+I will create `nginx-replicaset.yaml`, which defines the desired state of the NGINX ReplicaSet.
 
 ---
 
@@ -60,19 +62,19 @@ Create a ReplicaSet that maintains three NGINX Pods.
 
 #### Screenshot 02 — Completed `nginx-replicaset.yaml` manifest showing `replicas: 3`
 
-Add your screenshot here.
+![ss2](/week-12-kubernetes/screenshots/Ass2-ss2.png)
 
 ---
 
 #### Screenshot 03 — Output of `kubectl apply -f nginx-replicaset.yaml`
 
-Add your screenshot here.
+![ss3](/week-12-kubernetes/screenshots/Ass2-ss3.png)
 
 ---
 
 #### Screenshot 04 — Output of `kubectl get pods` showing three NGINX Pods with `1/1` under `READY` and `Running` under `STATUS`
 
-Add your screenshot here.
+![ss4](/week-12-kubernetes/screenshots/Ass2-ss4.png)
 
 ---
 
@@ -80,19 +82,19 @@ Add your screenshot here.
 
 **1. What does `replicas: 3` mean in this manifest?**
 
-Add your answer here.
+It tells Kubernetes that the desired number of matching Pods for this ReplicaSet is three. The ReplicaSet controller creates or removes Pods as needed to move the current count toward that desired count.
 
 ---
 
 **2. Why must `selector.matchLabels` match `template.metadata.labels`?**
 
-Add your answer here.
+The selector determines which Pods the ReplicaSet manages. The Pod template labels identify the Pods it creates. These labels must match so the ReplicaSet can recognize and manage its own Pods correctly. Kubernetes validates this relationship when creating the ReplicaSet.
 
 ---
 
 **3. What image and image tag are used for the NGINX container?**
 
-Add your answer here.
+The container uses the official NGINX image with the tag `nginx:1.21.1`, and the container port declared in the manifest is `80`.
 
 ---
 
@@ -106,19 +108,19 @@ Delete one Pod managed by the ReplicaSet and observe Kubernetes automatically cr
 
 #### Screenshot 05 — Output of the command deleting one ReplicaSet-managed Pod
 
-Add your screenshot here.
+![ss5](/week-12-kubernetes/screenshots/Ass2-ss5.png)
 
 ---
 
 #### Screenshot 06 — Output of `kubectl get pods` showing the replacement Pod with a different name from the deleted Pod
 
-Add your screenshot here.
+![ss6](/week-12-kubernetes/screenshots/Ass2-ss6.png)
 
 ---
 
 #### Screenshot 07 — Output showing three NGINX Pods with `1/1` under `READY` and `Running` under `STATUS` again
 
-Add your screenshot here.
+![ss7](/week-12-kubernetes/screenshots/Ass2-ss7.png)
 
 ---
 
@@ -126,19 +128,19 @@ Add your screenshot here.
 
 **1. What happened after you deleted one Pod?**
 
-Add your answer here.
+The selected Pod was terminated and removed. The ReplicaSet detected that only two matching Pods remained and created a new Pod to restore the desired count of three.
 
 ---
 
 **2. How does the ReplicaSet know that a replacement Pod is needed?**
 
-Add your answer here.
+The ReplicaSet controller continuously reconciles the desired replica count in `spec.replicas` against the actual number of matching Pods. When the actual count is below the desired count, it creates replacement Pods from the Pod template.
 
 ---
 
 **3. What proves that auto-healing worked successfully?**
 
-Add your answer here.
+The deleted Pod's name disappears, a new Pod with a different name appears, and the ReplicaSet returns to three ready Pods with `DESIRED`, `CURRENT`, and `READY` equal to three.
 
 ---
 
@@ -152,13 +154,13 @@ Scale the ReplicaSet from three NGINX Pods to five NGINX Pods by changing the YA
 
 #### Screenshot 08 — Updated `nginx-replicaset.yaml` showing `replicas: 5`
 
-Add your screenshot here.
+![ss8](/week-12-kubernetes/screenshots/Ass2-ss8.png)
 
 ---
 
 #### Screenshot 09 — Output of `kubectl get pods` showing five NGINX Pods with `1/1` under `READY` and `Running` under `STATUS`
 
-Add your screenshot here.
+![ss9](/week-12-kubernetes/screenshots/Ass2-ss9.png)
 
 ---
 
@@ -166,19 +168,19 @@ Add your screenshot here.
 
 **1. What change did you make to scale the ReplicaSet?**
 
-Add your answer here.
+I changed `spec.replicas` in `nginx-replicaset.yaml` from `3` to `5` and reapplied the manifest using `kubectl apply -f nginx-replicaset.yaml`.
 
 ---
 
 **2. Did you manually create the additional Pods? Explain why or why not.**
 
-Add your answer here.
+No. The ReplicaSet controller automatically created two additional Pods because the desired count increased from three to five.
 
 ---
 
 **3. What would happen if you changed the replica count from five back to three?**
 
-Add your answer here.
+After applying the change, Kubernetes would work to reduce the number of matching Pods from five to three. Two excess Pods would be terminated, leaving three replicas as the desired state. Which individual Pods are removed is determined by Kubernetes and should not be assumed in advance.
 
 ---
 
@@ -200,13 +202,13 @@ Do not share sensitive information, cluster credentials, tokens, or kubeconfig d
 
 #### Screenshot 10 — Published LinkedIn post showing your name, the required explanation, and the attached Pod screenshot
 
-Add your screenshot here.
+![ss10](/week-12-kubernetes/screenshots/Ass2-ss10.png)
 
 ---
 
 ### Post Link
 
-Add the URL of your published LinkedIn post here.
+<https://www.linkedin.com/posts/wisgeorge1_dmibypravinmishra-devops-cloudcomputing-ugcPost-7517384489740726272-v6A7/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY>
 
 ---
 
