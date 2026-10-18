@@ -30,7 +30,7 @@ Create and enter a dedicated directory for the liveness-probe lab.
 
 #### Screenshot 1 — Terminal showing that you are working inside `~/k8s-labs/health-probes-liveness`
 
-Add your screenshot here.
+![ss1](/week-12-kubernetes/screenshots/Ass6-ss1.png)
 
 ---
 
@@ -38,11 +38,11 @@ Add your screenshot here.
 
 **1. What problem does a liveness probe solve?**
 
-Add your answer here.
+A liveness probe helps Kubernetes detect when a container is persistently unhealthy, even though its process may still be running. After the configured number of consecutive failures, Kubernetes restarts the container.
 
 **2. What is the key difference between a readiness probe and a liveness probe?**
 
-Add your answer here.
+A readiness probe determines whether a Pod should receive traffic. A liveness probe determines whether a container should be restarted. A failed readiness probe ordinarily marks a Pod unready without restarting it; a failed liveness probe triggers a container restart after the failure threshold is reached.
 
 ---
 
@@ -56,19 +56,19 @@ Create a baseline NGINX Deployment with two replicas and no health probes.
 
 #### Screenshot 2 — Completed `00-nginx-deploy-baseline.yaml` manifest
 
-Add your screenshot here.
+![ss2](/week-12-kubernetes/screenshots/Ass6-ss2.png)
 
 ---
 
 #### Screenshot 3 — Output showing a successful rollout and two running NGINX Pods
 
-Add your screenshot here.
+![ss3](/week-12-kubernetes/screenshots/Ass6-ss3.png)
 
 ---
 
 #### Screenshot 4 — Relevant output from `kubectl describe deployment nginx-deployment`
 
-Add your screenshot here.
+![ss4](/week-12-kubernetes/screenshots/Ass6-ss4.png)
 
 ---
 
@@ -76,15 +76,15 @@ Add your screenshot here.
 
 **1. How many replicas does this Deployment maintain?**
 
-Add your answer here.
+Two replicas.
 
 **2. Are any health probes configured in the baseline Deployment?**
 
-Add your answer here.
+No. The baseline manifest contains neither a readiness probe nor a liveness probe.
 
 **3. Why is a baseline useful before adding a liveness probe?**
 
-Add your answer here.
+It gives you a known starting point. You can compare the Deployment before and after adding a probe and observe how Kubernetes behaves when the probe fails.
 
 ---
 
@@ -98,19 +98,19 @@ Add an HTTP liveness probe so Kubernetes can periodically check whether the NGIN
 
 #### Screenshot 5 — Completed `01-nginx-deploy-liveness.yaml` manifest showing the liveness probe
 
-Add your screenshot here.
+![ss5](/week-12-kubernetes/screenshots/Ass6-ss5.png)
 
 ---
 
 #### Screenshot 6 — Output showing successful rollout and running Pods
 
-Add your screenshot here.
+![ss6](/week-12-kubernetes/screenshots/Ass6-ss6.png)
 
 ---
 
 #### Screenshot 7 — Pod description showing liveness-probe details
 
-Add your screenshot here.
+![ss7](/week-12-kubernetes/screenshots/Ass6-ss7.png)
 
 ---
 
@@ -118,19 +118,19 @@ Add your screenshot here.
 
 **1. What path and port does the liveness probe check?**
 
-Add your answer here.
+It checks the HTTP path `/` on port `80`.
 
 **2. What does `initialDelaySeconds: 10` do?**
 
-Add your answer here.
+It delays the first liveness check until 10 seconds after the container starts, giving the application time to initialize.
 
 **3. What does `failureThreshold: 3` mean?**
 
-Add your answer here.
+Three consecutive failed liveness checks cause Kubernetes to restart the container. The exact elapsed time depends on probe scheduling and response timing.
 
 **4. Does a successful liveness probe control whether a Pod receives traffic? Explain briefly.**
 
-Add your answer here.
+No. Liveness controls whether Kubernetes restarts the container. Readiness determines whether the Pod is ready to receive traffic.
 
 ---
 
@@ -144,25 +144,25 @@ Intentionally make the liveness probe fail and observe Kubernetes restart the un
 
 #### Screenshot 8 — `02-nginx-liveness-broken.yaml` showing `/does-not-exist`
 
-Add your screenshot here.
+![ss8](/week-12-kubernetes/screenshots/Ass6-ss8.png)
 
 ---
 
 #### Screenshot 9 — Pod output showing an increased RESTARTS count
 
-Add your screenshot here.
+![ss9](/week-12-kubernetes/screenshots/Ass6-ss9.png)
 
 ---
 
 #### Screenshot 10 — Pod description showing liveness-probe failure events or restart details
 
-Add your screenshot here.
+![ss10](/week-12-kubernetes/screenshots/Ass6-ss10.png)
 
 ---
 
 #### Screenshot 11 — Output showing stable running Pods after applying the fixed configuration
 
-Add your screenshot here.
+![ss11](/week-12-kubernetes/screenshots/Ass6-ss11.png)
 
 ---
 
@@ -170,19 +170,19 @@ Add your screenshot here.
 
 **1. Why did the liveness probe fail?**
 
-Add your answer here.
+The probe requested `/does-not-exist`, which typically returned HTTP 404. Kubernetes treated that response as a failed liveness check.
 
 **2. What happened after Kubernetes detected repeated liveness-probe failures?**
 
-Add your answer here.
+After three consecutive failures, kubelet restarted the affected container. The Pod's restart count increased, and Pod events recorded the failures and restart activity.
 
 **3. What does the RESTARTS column prove?**
 
-Add your answer here.
+An increased count shows that the container has restarted within that Pod. Combined with the Pod's events, it helps confirm that Kubernetes responded to the failed liveness checks.
 
 **4. How did you restore the Deployment to a stable state?**
 
-Add your answer here.
+I applied the fixed manifest, `03-nginx-liveness-fixed.yaml`, which restored the probe path to `/`. I then waited for the Deployment to settle and confirmed that two NGINX Pods were running with no new restarts during the observation period.
 
 ---
 
@@ -194,13 +194,13 @@ Observe why overly aggressive or incorrectly configured liveness probes can crea
 
 Complete this section only if you attempt Task 5. Otherwise, mark it as “Not attempted.”
 
-**Task status:** Completed / Not attempted
+**Task status:** Completed 
 
 ### Evidence
 
 #### Optional Screenshot — Pod output showing the RESTARTS count increasing during the restart-loop observation
 
-Add your screenshot here if attempted.
+![ss12](/week-12-kubernetes/screenshots/Ass6-ss-optional.png)
 
 No specific restart count or CrashLoopBackOff status is required.
 
@@ -210,15 +210,15 @@ No specific restart count or CrashLoopBackOff status is required.
 
 **1. What is a restart loop?**
 
-Add your answer here.
+A restart loop occurs when a container repeatedly starts, fails a health check or another startup condition, and is restarted. In a liveness-triggered loop, the container repeatedly fails its configured liveness check and gets restarted.
 
 **2. Why can an aggressive liveness probe be harmful?**
 
-Add your answer here.
+If a probe has insufficient startup allowance, an overly short timeout, or an excessively low failure threshold, it can restart a container that is merely starting slowly or experiencing temporary load. Repeated restarts can prevent the application from recovering.
 
 **3. Why should liveness checks be lightweight and carefully tuned?**
 
-Add your answer here.
+They should detect genuine application failures without adding significant load or confusing temporary dependency issues with an application deadlock. Appropriate delays, timeouts, and thresholds reduce unnecessary restarts.
 
 ---
 
@@ -232,11 +232,11 @@ Share what you learned about Kubernetes liveness probes, container restarts, and
 
 #### Screenshot 12 — Published LinkedIn post
 
-Add your screenshot here.
+![ss12](/week-12-kubernetes/screenshots/Ass6-ss12.png)
 
 #### Linkedin post URL
 
-Add URl here
+<https://www.linkedin.com/posts/wisgeorge1_dmibypravinmishra-devops-cloudcomputing-ugcPost-7517606924356382720-HDAL/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY>
 
 ---
 
