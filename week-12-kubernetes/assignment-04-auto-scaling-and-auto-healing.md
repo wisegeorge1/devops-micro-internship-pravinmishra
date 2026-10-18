@@ -34,7 +34,7 @@ Create and enter a dedicated directory for the auto-scaling lab.
 
 #### Screenshot 1 — Terminal showing that you are working inside `~/k8s-labs/autoscaling`
 
-Add your screenshot here.
+![ss1](/week-12-kubernetes/screenshots/Ass4-ss1.png)
 
 ---
 
@@ -42,13 +42,13 @@ Add your screenshot here.
 
 **1. What is the difference between auto-healing and auto-scaling?**
 
-Add your answer here.
+Auto-healing restores the desired state when Pods fail or are deleted. Auto-scaling changes the number of desired replicas in response to changing workload demand or another configured scaling metric.
 
 ---
 
 **2. Which Kubernetes feature will you use for CPU-based auto-scaling?**
 
-Add your answer here.
+The Horizontal Pod Autoscaler (HPA), which adjusts a workload's desired replica count based on observed metrics such as CPU utilization.
 
 ---
 
@@ -62,25 +62,25 @@ Create a Deployment with two replicas, delete one Pod, and observe Kubernetes cr
 
 #### Screenshot 2 — Completed `autohealing-deployment.yaml` manifest
 
-Add your screenshot here.
+![ss2](/week-12-kubernetes/screenshots/Ass4-ss2.png)
 
 ---
 
 #### Screenshot 3 — Output of `kubectl get pods` showing two running Pods before deletion
 
-Add your screenshot here.
+![ss3](/week-12-kubernetes/screenshots/Ass4-ss3.png)
 
 ---
 
 #### Screenshot 4 — Output of the `kubectl delete pod` command
 
-Add your screenshot here.
+![ss4](/week-12-kubernetes/screenshots/Ass4-ss4.png)
 
 ---
 
 #### Screenshot 5 — Output of `kubectl get pods` showing the replacement Pod and two running Pods
 
-Add your screenshot here.
+![ss5](/week-12-kubernetes/screenshots/Ass4-ss5.png)
 
 ---
 
@@ -88,19 +88,19 @@ Add your screenshot here.
 
 **1. What happened after you deleted one Pod?**
 
-Add your answer here.
+Kubernetes detected that the actual number of Pods was below the desired count and created a replacement Pod.
 
 ---
 
 **2. What Kubernetes resource maintains the desired replica count for this Deployment?**
 
-Add your answer here.
+The ReplicaSet maintains the Pod replica count. The Deployment manages the ReplicaSet and its rollout lifecycle.
 
 ---
 
 **3. What proves that auto-healing worked?**
 
-Add your answer here.
+The deleted Pod disappeared, a new Pod name appeared, and the Deployment returned to two ready, running Pods.
 
 ---
 
@@ -114,13 +114,13 @@ Create a Deployment with CPU resource requests and limits so that HPA can calcul
 
 #### Screenshot 6 — Completed `hpa-deployment.yaml` manifest showing CPU requests and limits
 
-Add your screenshot here.
+![ss6](/week-12-kubernetes/screenshots/Ass4-ss6.png)
 
 ---
 
 #### Screenshot 7 — Output showing `nginx-deployment` and its running Pods
 
-Add your screenshot here.
+![ss7](/week-12-kubernetes/screenshots/Ass4-ss7.png)
 
 ---
 
@@ -128,19 +128,23 @@ Add your screenshot here.
 
 **1. What does `cpu: "100m"` mean?**
 
-Add your answer here.
+In Kubernetes, 100m means 100 millicores, equivalent to 0.1 of one CPU core. It represents one-tenth of a CPU core's processing capacity. For example, cpu: "500m" represents half a CPU core.
 
 ---
 
 **2. What is the difference between a CPU request and a CPU limit?**
 
-Add your answer here.
+CPU request: The amount of CPU Kubernetes uses when scheduling a container onto a node. It also serves as the baseline for CPU utilization calculations used by the Horizontal Pod Autoscaler (HPA).
+
+CPU limit: The maximum CPU processing time a container can use. If a container attempts to exceed its CPU limit, it may be throttled.
 
 ---
 
 **3. Why does CPU-based HPA require CPU requests?**
 
-Add your answer here.
+The Horizontal Pod Autoscaler calculates CPU utilization as a percentage of the CPU requested by containers. For example, if a container requests 200m CPU and uses 100m, its CPU utilization is 50% of its request.
+
+If the CPU request is not defined, Kubernetes cannot calculate CPU utilization as a percentage of that request, so CPU utilization based HPA cannot make the required scaling decisions for that container.
 
 ---
 
@@ -152,9 +156,9 @@ Ensure the cluster can collect resource metrics for the HPA.
 
 ### Evidence
 
-#### Screenshot 8 — Output showing Metrics Server running, or `kubectl top pods` displaying Pod metrics
+#### Screenshot 8 — Output showing Metrics Server running, or `!` displaying Pod metrics
 
-Add your screenshot here.
+![ss8](/week-12-kubernetes/screenshots/Ass4-ss8.png)
 
 ---
 
@@ -162,19 +166,19 @@ Add your screenshot here.
 
 **1. Why does HPA need Metrics Server?**
 
-Add your answer here.
+HPA needs current resource usage metrics to compare observed CPU utilization with its configured target.
 
 ---
 
 **2. What issue can occur if Metrics Server is not working?**
 
-Add your answer here.
+The HPA may display `<unknown>` for its CPU target and cannot make normal CPU based scaling decisions.
 
 ---
 
 **3. What does `kubectl top pods` help you check?**
 
-Add your answer here.
+It displays recent CPU and memory usage for Pods, helping you verify that metrics collection is working.
 
 ---
 
@@ -188,13 +192,13 @@ Create an HPA that keeps at least two Pods running and can scale up to five Pods
 
 #### Screenshot 9 — The imperative command output OR completed `hpa-nginx.yaml` manifest
 
-Add your screenshot here.
+![ss9](/week-12-kubernetes/screenshots/Ass4-ss9.png)
 
 ---
 
 #### Screenshot 10 — Output of `kubectl get hpa` and the relevant `kubectl describe hpa` command
 
-Add your screenshot here.
+![ss10](/week-12-kubernetes/screenshots/Ass4-ss10.png)
 
 ---
 
@@ -202,25 +206,25 @@ Add your screenshot here.
 
 **1. What does `minReplicas: 2` mean?**
 
-Add your answer here.
+The HPA should not scale the Deployment below two replicas.The HPA should not scale the Deployment below two replicas.
 
 ---
 
 **2. What does `maxReplicas: 5` mean?**
 
-Add your answer here.
+The HPA should not scale the Deployment above five replicas.
 
 ---
 
 **3. What does `averageUtilization: 50` mean?**
 
-Add your answer here.
+It sets the target average CPU utilization to 50% of the CPU requests for the relevant containers.
 
 ---
 
 **4. Why should only one HPA manage a Deployment at a time?**
 
-Add your answer here.
+Multiple HPAs targeting the same Deployment can issue competing scaling recommendations and cause confusing or unstable replica counts. Keep one HPA responsible for this workload.
 
 ---
 
@@ -238,13 +242,13 @@ Task status: Add your status here.
 
 #### Screenshot 11 — Terminal showing the CPU-load command running inside the selected Pod
 
-Add your screenshot here if completed.
+![ss11](/week-12-kubernetes/screenshots/Ass4-ss11.png)
 
 ---
 
 #### Screenshot 12 — Output of `kubectl get hpa` and `kubectl get pods` while HPA evaluates or changes the replica count
 
-Add your screenshot here if completed.
+![ss12](/week-12-kubernetes/screenshots/Ass4-ss12.png)
 
 ---
 
@@ -254,19 +258,21 @@ Complete these answers only if you perform the optional test.
 
 **1. Did the HPA change the number of Pods? Explain what you observed.**
 
-Add your answer here.
+The Deployment scaled from two to four replicas, Four was the highest replica count I observed and the CPU target shown by `kubectl get hpa -w` was 50%/50%. the scaling was observed during the test.
 
 ---
 
 **2. If scaling did not happen, what are two possible reasons?**
 
-Add your answer here, or write “Not applicable — scaling occurred.”
+* CPU utilization did not exceed the configured target for long enough, or the load was insufficient relative to the target.
+
+* Metrics Server or HPA metrics were unavailable or delayed. Another possibility is that a CPU limit restricted the generated load.
 
 ---
 
 **3. Why is automatic scale-down useful after traffic decreases?**
 
-Add your answer here.
+It reduces unnecessary resource consumption when demand falls, helping avoid paying for or reserving more compute capacity than the application needs.
 
 ---
 
@@ -276,11 +282,11 @@ Add your answer here.
 
 #### Screenshot 13 — Published LinkedIn post showing your name, the required explanation, and the attached Kubernetes screenshot
 
-Add your screenshot here.
+![ss13](/week-12-kubernetes/screenshots/Ass4-ss13.png)
 
 #### Linkedin Post Link
 
-Add your link here
+<https://www.linkedin.com/posts/wisgeorge1_dmibypravinmishra-devops-cloudcomputing-ugcPost-7517515302822105088-KnhS/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY>
 
 ---
 
