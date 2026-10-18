@@ -32,7 +32,7 @@ Create and enter a dedicated directory for the readiness-probe lab.
 
 #### Screenshot 1 — Terminal showing that you are working inside `~/k8s-labs/health-probes-readiness`
 
-Add your screenshot here.
+![ss1](/week-12-kubernetes/screenshots/Ass5-ss1.png)
 
 ---
 
@@ -40,11 +40,11 @@ Add your screenshot here.
 
 **1. What is the purpose of a readiness probe?**
 
-Add your answer here.
+A readiness probe tells Kubernetes whether a container is currently ready to serve requests. If the check fails, Kubernetes marks the Pod as not ready.
 
 **2. Why is a Pod being Running not always enough to confirm it can serve traffic?**
 
-Add your answer here.
+`Running` means the Pod's containers have started and are running, but the application may still be initializing, loading configuration, or unable to respond successfully. Readiness checks test the application's ability to serve requests rather than just whether the container is running.
 
 ---
 
@@ -58,19 +58,19 @@ Create a baseline NGINX Deployment with two replicas and no readiness probe.
 
 #### Screenshot 2 — Completed `00-nginx-deploy-baseline.yaml` manifest
 
-Add your screenshot here.
+![ss2](/week-12-kubernetes/screenshots/Ass5-ss2.png)
 
 ---
 
 #### Screenshot 3 — Output showing a successful rollout and two running NGINX Pods
 
-Add your screenshot here.
+![ss3](/week-12-kubernetes/screenshots/Ass5-ss3.png)
 
 ---
 
 #### Screenshot 4 — Relevant output from `kubectl describe deployment nginx-deployment`
 
-Add your screenshot here.
+![ss4](/week-12-kubernetes/screenshots/Ass5-ss4.png)
 
 ---
 
@@ -78,15 +78,15 @@ Add your screenshot here.
 
 **1. How many replicas does this Deployment maintain?**
 
-Add your answer here.
+Two replicas, as requested by `spec.replicas: 2`.
 
 **2. What does `maxUnavailable: 0` mean during a rolling update?**
 
-Add your answer here.
+It tells the Deployment controller not to reduce the number of available replicas below the desired count because of the rolling update. Kubernetes can create up to one extra Pod (`maxSurge: 1`) while replacing old Pods. If replacement Pods never become ready, the rollout can stall.
 
 **3. Is a readiness probe configured in this baseline Deployment?**
 
-Add your answer here.
+No. The baseline has no readiness probe configured explicitly. Kubernetes still reports Pod readiness conditions, but it has no custom HTTP readiness check for this container yet.
 
 ---
 
@@ -100,19 +100,20 @@ Add an HTTP readiness probe so Kubernetes checks whether each NGINX container is
 
 #### Screenshot 5 — Completed `01-nginx-deploy-readiness.yaml` manifest showing the readiness probe
 
-Add your screenshot here.
+![ss5](/week-12-kubernetes/screenshots/Ass5-ss5.png)
 
 ---
 
 #### Screenshot 6 — Output of the successful rollout and ready Pods
 
-Add your screenshot here.
+![ss6](/week-12-kubernetes/screenshots/Ass5-ss6.png)
 
 ---
 
 #### Screenshot 7 — Pod description showing readiness conditions and readiness probe details
 
-Add your screenshot here.
+![ss7](/week-12-kubernetes/screenshots/Ass5-ss7.png)
+![ss7](/week-12-kubernetes/screenshots/Ass5-ss7a.png)
 
 ---
 
@@ -120,19 +121,19 @@ Add your screenshot here.
 
 **1. What path and port does the readiness probe check?**
 
-Add your answer here.
+It checks HTTP path `/` on port `80` inside the NGINX container.
 
 **2. What does `initialDelaySeconds: 2` do?**
 
-Add your answer here.
+It delays the first readiness check for two seconds after the container starts.
 
 **3. What does `periodSeconds: 5` do?**
 
-Add your answer here.
+It sets the interval between readiness checks to approximately five seconds.
 
 **4. What must happen before Kubernetes considers this Pod ready?**
 
-Add your answer here.
+The readiness check must succeed. In this configuration, the NGINX HTTP endpoint must return a successful HTTP status code for the probe.
 
 ---
 
@@ -146,25 +147,25 @@ Intentionally fail the readiness probe, observe the NotReady behavior, and then 
 
 #### Screenshot 8 — `02-nginx-readiness-broken.yaml` showing `/does-not-exist`
 
-Add your screenshot here.
+![ss8](/week-12-kubernetes/screenshots/Ass5-ss8.png)
 
 ---
 
 #### Screenshot 9 — Output showing the rollout timeout or incomplete rollout
 
-Add your screenshot here.
+![ss9](/week-12-kubernetes/screenshots/Ass5-ss9.png)
 
 ---
 
 #### Screenshot 10 — Pod details showing `Ready: False` or readiness-probe failure events
 
-Add your screenshot here.
+![ss10](/week-12-kubernetes/screenshots/Ass5-ss10.png)
 
 ---
 
 #### Screenshot 11 — Output showing successful rollout and ready Pods after the fix
 
-Add your screenshot here.
+![ss11](/week-12-kubernetes/screenshots/Ass5-ss11.png)
 
 ---
 
@@ -172,19 +173,19 @@ Add your screenshot here.
 
 **1. Why did the readiness probe fail?**
 
-Add your answer here.
+The probe requested `/does-not-exist`, which normally returns HTTP 404 from NGINX. A non-successful response causes the readiness check to fail.
 
 **2. What happened to the Pod readiness status?**
 
-Add your answer here.
+The new Pod remained `NotReady` (`READY` typically shows `0/1`) even though its container could still be running.
 
 **3. Why did the rollout fail to complete?**
 
-Add your answer here.
+The new Pods never passed the readiness check, so Kubernetes could not count them as available replacements.
 
 **4. How did you restore the Deployment successfully?**
 
-Add your answer here.
+I reapplied the working manifest with the readiness path restored to `/`, then waited for the readiness checks to succeed and the rollout to complete.
 
 ---
 
@@ -198,37 +199,37 @@ Observe how readiness prevents a bad new Pod from replacing healthy Pods during 
 
 #### Screenshot 12 — Successful update command and rollout status
 
-Add your screenshot here.
+![ss12](/week-12-kubernetes/screenshots/Ass5-ss12.png)
 
 ---
 
 #### Screenshot 13 — ReplicaSets and Pods after the successful rolling update
 
-Add your screenshot here.
+![ss13](/week-12-kubernetes/screenshots/Ass5-ss13.png)
 
 ---
 
 #### Screenshot 14 — Completed `04-readiness-broken-patch.yaml`
 
-Add your screenshot here.
+![ss14](/week-12-kubernetes/screenshots/Ass5-ss14.png)
 
 ---
 
 #### Screenshot 15 — Output showing the expected stalled rollout or timeout
 
-Add your screenshot here.
+![ss15](/week-12-kubernetes/screenshots/Ass5-ss15.png)
 
 ---
 
 #### Screenshot 16 — Deployment or Pod output showing the effect of the broken readiness probe
 
-Add your screenshot here.
+![ss16](/week-12-kubernetes/screenshots/Ass5-ss16.png)
 
 ---
 
 #### Screenshot 17 — Successful rollout status after restoring the fixed configuration
 
-Add your screenshot here.
+![ss17](/week-12-kubernetes/screenshots/Ass5-ss17.png)
 
 ---
 
@@ -236,19 +237,19 @@ Add your screenshot here.
 
 **1. What happened during the successful rolling update?**
 
-Add your answer here.
+Kubernetes created a new ReplicaSet, started Pods using the new image, waited for them to pass readiness checks, and progressively removed the old Pods.
 
 **2. Why did Kubernetes create a new ReplicaSet?**
 
-Add your answer here.
+The container image changed, which changed the Deployment's Pod template. Deployments use ReplicaSets to manage the old and new versions of their Pods during updates.
 
 **3. Why were the new Pods unable to replace the existing healthy Pods after readiness was broken?**
 
-Add your answer here.
+The new Pods failed their readiness probes, so Kubernetes did not count them as available. The rollout could not progress normally to completion.
 
 **4. How does `maxUnavailable: 0` protect availability during this rollout?**
 
-Add your answer here.
+It prevents the Deployment's rolling update strategy from intentionally allowing fewer than the desired number of available replicas during the update. With `maxSurge: 1`, Kubernetes can create one extra Pod while waiting for a replacement to become ready.
 
 ---
 
@@ -262,11 +263,11 @@ Share what you learned about Kubernetes readiness probes and how they protect ro
 
 #### Screenshot 18 — Published LinkedIn post
 
-Add your screenshot here.
+![ss18](/week-12-kubernetes/screenshots/Ass5-ss18.png)
 
 #### Linkedin post link
 
-Add your post link here
+<https://www.linkedin.com/posts/wisgeorge1_dmibypravinmishra-devops-cloudcomputing-ugcPost-7517580394922311683-5h2A/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY>
 
 ---
 
