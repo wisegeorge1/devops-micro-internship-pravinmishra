@@ -1,6 +1,6 @@
 # Assignment 1 — Creating an AWS Free Tier Account & Setting Up Budget Management and Alerts
 
-Part of the DevOps Micro Internship (DMI) with Agentic AI
+Part of the DevOps Micro Internship (DMI) Cohort 3 with Agentic AI
 
 ---
 
@@ -10,82 +10,34 @@ In this assignment, you will create your own AWS Free Tier account and configure
 
 ---
 
-# Task 1 — Sign Up for AWS
+# Task 1 — Sign Up for AWS and Access the Console
 
 ## Goal
 
-Create your AWS Free Tier account and select the Basic Support Plan (Free).
+Create your AWS Free Tier account, select the Basic Support Plan (Free), and log in to the AWS Management Console.
 
-> No screenshot required for this task.
+> No screenshot required for this task. Completion is verified through Task 2.
 
 ---
 
-# Task 2 — Log in to the AWS Management Console
+# Task 2 — Create a Monthly Cost Budget with Alerts
 
 ## Goal
 
-Log in to your AWS account and access the AWS Management Console.
-
-> No screenshot required for this task.
-
----
-
-# Task 3 — Familiarize Yourself with the AWS Console
-
-## Goal
-
-Explore the AWS Management Console and review the AWS Free Tier offerings.
-
-> No screenshot required for this task.
-
----
-
-# Task 4 — Access the Billing Dashboard
-
-## Goal
-
-Open the Billing Dashboard from the AWS Management Console.
-
-> No screenshot required for this task.
-
----
-
-# Task 5 — Create a Budget
-
-## Goal
-
-Configure a monthly Cost Budget with a descriptive name, the current month as the start month, and your selected budget amount.
-
-> No screenshot required for this task.
-
----
-
-# Task 6 — Set Budget Alerts
-
-## Goal
-
-Configure budget alert thresholds, such as 50%, 80%, and 100%, and enter your notification email address.
-
-> No screenshot required for this task.
-
----
-
-# Task 7 — Review & Confirm Your Budget
-
-## Goal
-
-Review your budget and notification settings, then create the budget.
+In the Billing Dashboard, create a monthly Cost Budget with a name, amount, and start month, then configure alert thresholds (e.g. 50%, 80%, 100%) and a notification email address.
 
 ### Evidence
 
 #### Screenshot 1 — AWS Budget setup page showing the budget name, budget amount, and alert thresholds
 
 ![budget-page](/week-06-aws-cloud/screenshots/budget-page.png)
+
 ---
 
 ### Notes
 
 Answer the following in your own words:
+
 
 **1. Why is it important to set up budget alerts when using an AWS account?**
 
@@ -110,45 +62,22 @@ In short: AWS budget alerts provide an early warning system for cloud costs. The
 
 ---
 
-# Task 8 — Share Your Progress on WhatsApp
-
-## Goal
-
-Publish the automatically generated DMI Leaderboard message containing your rank and personal progress link on your WhatsApp Status.
-
-Go to the DMI Leaderboard, find your name, select **Share your progress**, and click the **WhatsApp icon**. Copy the generated message, paste it into your WhatsApp Status, and publish it.
-
-### Evidence
-
-#### Screenshot 2 — Published WhatsApp Status showing the automatically generated DMI Leaderboard rank and personal progress link
-
-Add your screenshot here.
-
-> **Privacy Note:** Make sure no private phone numbers, personal messages, or sensitive information are visible in the screenshot.
-
----
-
 # Submission Instructions
 
-- Add Screenshot 1 showing your AWS budget name, amount, and alert thresholds
-- Answer the Notes question under Task 7 in your own words
-- Add Screenshot 2 showing your published WhatsApp Status with your DMI Leaderboard rank and personal progress link
-- Do not expose sensitive billing, card, identity, account information, private phone numbers, or personal messages
+- Add the required screenshot in your submission
+- Do not expose sensitive billing, card, identity, or account information
 
 ---
 
 # Completion Checklist
 
-- [ ] Task 1: AWS Free Tier account created and Basic Support Plan (Free) selected
-- [ ] Task 2: Logged in to the AWS Management Console
-- [ ] Task 3: Explored the AWS Console and reviewed AWS Free Tier offerings
-- [ ] Task 4: Opened the Billing Dashboard
-- [ ] Task 5: Configured a monthly Cost Budget with name, amount, and start month
-- [ ] Task 6: Configured budget alert thresholds and notification email
-- [ ] Task 7: Reviewed and created the budget, and included Screenshot 1
-- [ ] Task 7: Answered the budget alerts question
-- [ ] Task 8: Published the DMI Leaderboard message on WhatsApp Status and included Screenshot 2
-- [ ] No sensitive information exposed
+- [x] AWS Free Tier account created and Basic Support Plan (Free) selected
+- [x] Logged in to the AWS Management Console
+- [x] Monthly Cost Budget created with name, amount, and start month
+- [x] Budget alert thresholds and notification email configured
+- [x] Screenshot captured showing budget name, amount, and thresholds (Screenshot 1)
+- [x] Notes question answered
+- [x] No sensitive billing or account information exposed
 
 ---
 
@@ -172,4 +101,4 @@ It helps learners build strong DevOps foundations with hands-on experience.
 
 ---
 
-*This submission is part of DevOps Micro Internship (DMI) — Agentic AI Track.*
+*This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track.*
