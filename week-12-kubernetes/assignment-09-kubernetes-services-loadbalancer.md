@@ -20,21 +20,22 @@ Create a small AKS cluster for this lab, or connect to an existing approved AKS 
 
 #### Screenshot 1 — Output of `kubectl get nodes` showing ready AKS node(s)
 
-Add your screenshot here.
+![ss1](/week-12-kubernetes/screenshots/Ass9-ss1.png)
 
 ### Notes
 
 **1. Why does this lab use a cloud-capable Kubernetes environment such as AKS for the LoadBalancer Service?**
 
-Add your answer here.
+A local cluster may not be integrated with a cloud load-balancer provider. AKS integrates Kubernetes Service provisioning with Azure networking, enabling Azure to create and configure load-balancing resources.
 
 **2. What Azure resources can Kubernetes provision when a LoadBalancer Service is created?**
 
-Add your answer here.
+Depending on the cluster's configuration, a public LoadBalancer Service can cause Azure to configure load-balancing rules, frontend IP configuration, and associated backend connectivity. A public IP resource may also be provisioned for the Service. AKS has separate networking resources for cluster outbound connectivity.
 
 **3. Why is it important to delete unused AKS resources after the lab?**
 
-Add your answer here.
+Compute, networking, and public IP resources can incur costs. Deleting a dedicated lab Resource Group after saving evidence helps prevent ongoing charges from resources you no longer need.
+
 
 ---
 
@@ -48,17 +49,22 @@ Create and enter a dedicated directory for the LoadBalancer Service manifests.
 
 #### Screenshot 2 — Terminal showing the output of `pwd` confirming that you are working inside `~/k8s-labs/services/loadbalancer`
 
-Add your screenshot here.
+![ss2](/week-12-kubernetes/screenshots/Ass9-ss2.png)
 
 ### Notes
 
 **1. Why is it useful to keep Kubernetes manifests organized in dedicated directories?**
 
-Add your answer here.
+It keeps project files easy to find, review, version control, and reuse while reducing the chance of applying the wrong manifest.
 
 **2. What are the names of the main Deployment and LoadBalancer Service YAML files you will create in this assignment?**
 
-Add your answer here.
+
+  * `00-nginx-deploy.yaml` — NGINX Deployment.
+
+  * `01-nginx-svc-loadbalancer.yaml` — public LoadBalancer Service.
+
+  * `02-readiness-broken.yaml` — temporary readiness-probe patch for the controlled failure test.
 
 ---
 
@@ -72,27 +78,29 @@ Create a healthy NGINX Deployment with readiness and liveness probes.
 
 #### Screenshot 3 — Completed `00-nginx-deploy.yaml` manifest
 
-Add your screenshot here.
+![ss3](/week-12-kubernetes/screenshots/Ass9-ss3.png)
 
 ---
 
 #### Screenshot 4 — Output showing successful rollout and two ready NGINX Pods
 
-Add your screenshot here.
+![ss4](/week-12-kubernetes/screenshots/Ass9-ss4.png)
 
 ### Notes
 
 **1. Why must Pods be ready before they should receive public traffic?**
 
-Add your answer here.
+An application may be running but not yet able to serve requests. Readiness helps keep such Pods out of the ready backend pool.
 
 **2. What is the role of the readiness probe in this Deployment?**
 
-Add your answer here.
+It checks whether NGINX can respond successfully to an HTTP request on `/`. A failed readiness check marks the Pod unready.
 
 **3. What is the role of the liveness probe in this Deployment?**
 
-Add your answer here.
+It checks whether the container is alive and responsive. Repeated liveness failures can cause Kubernetes to restart the container.
+
+Readiness and liveness solve different problems: readiness controls traffic eligibility; liveness helps recover from certain unhealthy container states.
 
 ---
 
@@ -106,37 +114,36 @@ Create a public LoadBalancer Service and verify that the NGINX application is re
 
 #### Screenshot 5 — Completed `01-nginx-svc-loadbalancer.yaml` manifest
 
-Add your screenshot here.
+![ss5](/week-12-kubernetes/screenshots/Ass9-ss5.png)
 
 ---
 
 #### Screenshot 6 — Output showing the Service with an assigned EXTERNAL-IP
 
-Add your screenshot here.
+![ss6](/week-12-kubernetes/screenshots/Ass9-ss6.png)
 
 ---
 
 #### Screenshot 7 — Successful curl output from the public IP
 
-Add your screenshot here.
+![ss7](/week-12-kubernetes/screenshots/Ass9-ss7.png)
 
 ### Notes
 
 **1. What does `type: LoadBalancer` instruct AKS to do?**
-
-Add your answer here.
+Request a cloud load-balancer integration so that the Service can be reached through an external endpoint when public provisioning is supported.
 
 **2. What public IP was assigned to your Service?**
 
-Add your answer here.
+68.220.231.210
 
 **3. How does the public request eventually reach the NGINX Pods?**
 
-Add your answer here.
+The client contacts the public IP, Azure and AKS networking deliver traffic to the Service, and Service routing directs it to an eligible backend Pod.
 
 **4. Why should you wait for EXTERNAL-IP before testing the Service?**
 
-Add your answer here.
+The Service needs time for Azure provisioning and configuration. Before an address is assigned, there is no confirmed public endpoint to test.
 
 ---
 
@@ -150,43 +157,43 @@ Intentionally break readiness and observe how Kubernetes excludes unready Pods f
 
 #### Screenshot 8 — Completed `02-readiness-broken.yaml` patch file
 
-Add your screenshot here.
+![ss8](/week-12-kubernetes/screenshots/Ass9-ss8.png)
 
 ---
 
 #### Screenshot 9 — Output showing the expected incomplete rollout or readiness failure
 
-Add your screenshot here.
+![ss9](/week-12-kubernetes/screenshots/Ass9-ss9.png)
 
 ---
 
 #### Screenshot 10 — EndpointSlice output showing ready healthy backends and the effect of the readiness failure
 
-Add your screenshot here.
+![ss10](/week-12-kubernetes/screenshots/Ass9-ss10.png)
 
 ---
 
 #### Screenshot 11 — Successful public curl response after recovery
 
-Add your screenshot here.
+![ss11](/week-12-kubernetes/screenshots/Ass9-ss11.png)
 
 ### Notes
 
 **1. Why did the rollout not complete?**
 
-Add your answer here.
+The new Pod's readiness probe requests a nonexistent path, so NGINX responds with an unsuccessful HTTP status and the Pod cannot become ready.
 
 **2. Why can the public endpoint still work while new Pods fail readiness?**
 
-Add your answer here.
+Existing ready Pods remain eligible to receive requests, so the Service can continue using them while the new Pod fails readiness.
 
 **3. What would happen if Kubernetes routed traffic to Pods before they were ready?**
 
-Add your answer here.
+Clients could receive errors, incomplete responses, or other failures while an application starts or initializes.
 
 **4. How did you restore the Deployment successfully?**
 
-Add your answer here.
+I Reapplied `00-nginx-deploy.yaml`, waited for the rollout, and confirmed healthy Pods and ready endpoints.
 
 ---
 
@@ -200,27 +207,27 @@ Scale the NGINX Deployment and confirm that more ready Pods become available beh
 
 #### Screenshot 12 — Two ready NGINX Pods verified initially; four ready Pods verified after scaling
 
-Add your screenshot here.
+![ss12](/week-12-kubernetes/screenshots/Ass9-ss12.png)
 
 ---
 
 #### Screenshot 13 — Successful public curl response after scaling
 
-Add your screenshot here.
+![ss13](/week-12-kubernetes/screenshots/Ass9-ss13.png)
 
 ### Notes
 
 **1. What changed after scaling the Deployment from two to four replicas?**
 
-Add your answer here.
+The Deployment maintains four Pods, and the Service's eligible endpoint set expands as the additional Pods become ready.
 
 **2. Did the public IP change after scaling? Explain why or why not.**
 
-Add your answer here.
+It did not change merely because the Deployment replica count changed. The same Service remains in place.
 
 **3. Why does scaling behind a LoadBalancer Service not require users to change the URL or IP they use?**
 
-Add your answer here.
+The Service and public endpoint provide a stable entry point while Kubernetes updates the backend endpoints behind it.
 
 ---
 
@@ -234,11 +241,11 @@ Share what you learned about exposing an NGINX application publicly through a Lo
 
 #### Screenshot 14 — Published LinkedIn post about your LoadBalancer lab on AKS
 
-Add your screenshot here.
+![ss14](/week-12-kubernetes/screenshots/Ass9-ss14.png)
 
 #### LinkedIn post link
 
-Add your link here.
+<https://www.linkedin.com/posts/wisgeorge1_devops-cloudcomputingnbsp-continuouslearning-ugcPost-7517854940761841664-CcmE/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY>
 
 ---
 
