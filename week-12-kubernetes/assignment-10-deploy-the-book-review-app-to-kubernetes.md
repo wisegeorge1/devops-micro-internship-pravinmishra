@@ -12,19 +12,19 @@ Deploy the Book Review App as a production style three tier application using Ku
 
 ## Submission Details
 
-**Full Name:** Add your full name here.
+**Full Name:** George Adimowei Epebifie
 
-**Kubernetes Platform:** Add your platform here.
+**Kubernetes Platform:** Azure Kubernetes Service (AKS)
 
 **Namespace:** book-review
 
-**Frontend URL or IP:** Add the working endpoint here.
+**Frontend URL or IP:** <http://135.18.211.88/>
 
-**Access Method:** Public LoadBalancer, Ingress, or documented local access.
+**Access Method:** Public LoadBalancer: the Kubernetes LoadBalancer Service frontend on port 80, backed by an Azure Standard Load Balancer
 
-**GitHub Manifests or Helm Chart URL:** Add your repository link here.
+**GitHub Manifests or Helm Chart URL:**  https://github.com/wisegeorge1/book-review-app
 
-**Architecture Diagram:** Add your diagram or link here.
+**Architecture Diagram:** ![architecture](/week-12-kubernetes/screenshots/Ass10-ss3.png)
 
 ---
 
@@ -46,7 +46,7 @@ Prepare the cluster, application source, container images, and tooling needed fo
 
 Required only if you choose Helm. Skip this screenshot if using YAML manifests.
 
-“Not applicable — using YAML manifests.”
+Not applicable — using YAML manifests.
 
 ---
 
@@ -230,7 +230,7 @@ Explain your three-tier architecture, demonstrate the working application, and s
 
 #### Screenshot 20 — Published LinkedIn post about your Book Review App deployment on Kubernetes
 
-Add your screenshot here.
+![ss20](/week-12-kubernetes/screenshots/Ass10-ss20.png)
 
 ### LinkedIn Post URL
 

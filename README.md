@@ -151,8 +151,8 @@ Week 09 → Ansible
 
 | 09 | Ansible | 🔄 In Progress | 🔄 In Progress | https://www.linkedin.com/posts/wisgeorge1_dmibypravinmishra-devops-cloudcomputing-activity-7504829205751435264-zatF?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY | https://cloudly.hashnode.dev/how-to-provision-linux-vms-with-terraform-and-run-ansible-ad-hoc-commands 
 | 10 | Azure DevOps (CI/CD) | 🔄 In Progress | 🔄 In Progress | <https://www.linkedin.com/posts/wisgeorge1_dmibypravinmishra-devops-cloudcomputing-ugcPost-7509134319060283392-Qw2f/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY> | — |
-| 11 | Docker | ⬜ Not Started | ⏳ Pending | — | — |
-| 12 | Kubernetes | ⬜ Not Started | ⏳ Pending | — | — |
+| 11 | Docker | 🔄 In Progress | 🔄 In Progress | ttps://www.linkedin.com/posts/wisgeorge1_dmibypravinmishra-devops-cloudcomputing-ugcPost-7517220681663815680-7VEf/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY | — |
+| 12 | Kubernetes | 🔄 In Progress | 🔄 In Progress | https://www.linkedin.com/posts/wisgeorge1_dmibypravinmishra-devops-cloudcomputingnbsp-ugcPost-7518307170225123328-7j_u/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY | — |
 | 13 | Final Project | ⬜ Not Started | ⏳ Pending | — | — |
 
 
