@@ -56,7 +56,7 @@ Add a screenshot showing the Architecture and Security Reviewer subagent configu
 
 Add a screenshot showing Terraform MCP connected and available.
 
-Add your screenshot here.
+![ss4](/week-08-terraform/screenshots/ass5-ss4.png)
 
 ---
 
@@ -64,7 +64,7 @@ Add your screenshot here.
 
 Add a screenshot showing the configured Claude Code validation hooks.
 
-Add your screenshot here.
+![ss5](/week-08-terraform/screenshots/ass5-ss5.png)
 
 ---
 
@@ -107,7 +107,7 @@ Create the modular Terraform project and implement the network and security laye
 
 Add a screenshot showing the modular Terraform project structure.
 
-Add your screenshot here.
+![ss6](/week-08-terraform/screenshots/ass5-ss6.png)
 
 ---
 

@@ -143,16 +143,20 @@ Week 09 → Ansible
 
 | 05 | DevOps Lifecycle & Agile | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/wisgeorge1_dmibypravinmishra-devops-cloudcomputing-share-7491500655270998017-GBb0/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY | https://cloudly.hashnode.dev/building-agile-delivery-infrastructure-for-a-devops-project-with-jira-cloud 
 
-| 06 | AWS Cloud | 🔄 In Progress | 🔄 In Progress | https://www.linkedin.com/posts/wisgeorge1_dmibypravinmishra-devops-cloudcomputing-activity-7495640870105554944-jnv0?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY |https://cloudly.hashnode.dev/building-a-fault-tolerant-highly-available-two-tier-wordpress-architecture-on-aws-vpc-alb-asg-multi-az-rds 
+| 06 | AWS Cloud | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/wisgeorge1_dmibypravinmishra-devops-cloudcomputing-activity-7495640870105554944-jnv0?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY |https://cloudly.hashnode.dev/building-a-fault-tolerant-highly-available-two-tier-wordpress-architecture-on-aws-vpc-alb-asg-multi-az-rds 
 
-| 07 | Azure Cloud | ✅ Completed | ✅ Completed |  https://www.linkedin.com/posts/wisgeorge1_dmibypravinmishra-devops-cloudcomputing-share-7499222347426480128-SawJ/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY | https://cloudly.hashnode.dev/deploy-a-full-stack-node-js-application-on-azure-vm-with-private-mysql 
+| 07 | Azure Cloud | ✅ Completed | ✅ Solved |  https://www.linkedin.com/posts/wisgeorge1_dmibypravinmishra-devops-cloudcomputing-share-7499222347426480128-SawJ/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY | https://cloudly.hashnode.dev/deploy-a-full-stack-node-js-application-on-azure-vm-with-private-mysql 
 
 | 08 | Terraform | 🔄 In Progress | 🔄 In Progress | https://www.linkedin.com/posts/wisgeorge1_%F0%9D%98%81%F0%9D%97%B2%F0%9D%97%BF%F0%9D%97%BF%F0%9D%97%AE%F0%9D%97%B3%F0%9D%97%BC%F0%9D%97%BF%F0%9D%97%BA-%F0%9D%97%AE%F0%9D%97%BD%F0%9D%97%BD%F0%9D%97%B9%F0%9D%98%86-%F0%9D%98%80%F0%9D%98%82%F0%9D%97%B0%F0%9D%97%B0%F0%9D%97%B2%F0%9D%97%B2%F0%9D%97%B1%F0%9D%97%B6%F0%9D%97%BB%F0%9D%97%B4-ugcPost-7501113660661194752-UpAI/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY | https://cloudly.hashnode.dev/deploy-a-node-js-web-application-on-aws-using-terraform-modules-ec2-nginx-and-private-amazon-rds-mysql 
 
 | 09 | Ansible | 🔄 In Progress | 🔄 In Progress | https://www.linkedin.com/posts/wisgeorge1_dmibypravinmishra-devops-cloudcomputing-activity-7504829205751435264-zatF?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY | https://cloudly.hashnode.dev/how-to-provision-linux-vms-with-terraform-and-run-ansible-ad-hoc-commands 
-| 10 | Azure DevOps (CI/CD) | 🔄 In Progress | 🔄 In Progress | <https://www.linkedin.com/posts/wisgeorge1_dmibypravinmishra-devops-cloudcomputing-ugcPost-7509134319060283392-Qw2f/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY> | — |
-| 11 | Docker | 🔄 In Progress | 🔄 In Progress | ttps://www.linkedin.com/posts/wisgeorge1_dmibypravinmishra-devops-cloudcomputing-ugcPost-7517220681663815680-7VEf/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY | — |
-| 12 | Kubernetes | 🔄 In Progress | 🔄 In Progress | https://www.linkedin.com/posts/wisgeorge1_dmibypravinmishra-devops-cloudcomputingnbsp-ugcPost-7518307170225123328-7j_u/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY | — |
+
+| 10 | Azure DevOps (CI/CD) | 🔄 In Progress | 🔄 In Progress | <https://www.linkedin.com/posts/wisgeorge1_dmibypravinmishra-devops-cloudcomputing-ugcPost-7509134319060283392-Qw2f/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY> | https://cloudly.hashnode.dev/set-up-a-self-hosted-linux-agent-for-azure-devops-on-ubuntu 
+
+| 11 | Docker | 🔄 In Progress | 🔄 In Progress | https://www.linkedin.com/posts/wisgeorge1_dmibypravinmishra-devops-cloudcomputing-ugcPost-7517220681663815680-7VEf/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY | https://cloudly.hashnode.dev/deploy-a-static-website-on-microsoft-azure-using-docker-and-cloud-init 
+
+| 12 | Kubernetes | 🔄 In Progress | 🔄 In Progress | https://www.linkedin.com/posts/wisgeorge1_dmibypravinmishra-devops-cloudcomputingnbsp-ugcPost-7518307170225123328-7j_u/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY | https://cloudly.hashnode.dev/creating-your-first-pod-in-kubernetes 
+
 | 13 | Final Project | ⬜ Not Started | ⏳ Pending | — | — |
 
 

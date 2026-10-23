@@ -1,0 +1,23 @@
+========================================
+AWS Security and Cost Audit Report
+========================================
+Full Name: George Adimowei Epebifie
+Timestamp: 2026-10-22T19:03:27Z
+AWS Region: us-east-1
+S3 Bucket: pravin-portfolio-oweigeorge-us-east-1-577638383122-us-east-1-an
+RDS Instance: database-1
+EBS Volume: vol-038a8cd2e94d92af3
+
+[PASS] S3 bucket 'pravin-portfolio-oweigeorge-us-east-1-577638383122-us-east-1-an' blocks and ignores public ACLs
+[PASS] No security group rule allows SSH (port 22) from 0.0.0.0/0
+[PASS] No security group rule allows MySQL (port 3306) from 0.0.0.0/0
+[PASS] RDS instance 'database-1' is not publicly accessible
+[PASS] EBS volume 'vol-038a8cd2e94d92af3' is encrypted (State=available)
+
+Summary:
+PASS: 5
+WARN: 0
+FAIL: 0
+Overall Status: HEALTHY
+Script Exit Code: 0
+Report File: /c/Users/George/Documents/Personal-Workspace/DMI-Cohort-3/devops-micro-internship-pravinmishra/week-06-aws-audit/reports/aws-audit-report.txt
