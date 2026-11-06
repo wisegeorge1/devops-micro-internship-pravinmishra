@@ -43,7 +43,7 @@ This is not a course. It is an internship style program — real deployments, re
 
 | Week | Award | Post |
 |------|-------|------|
-| <!-- e.g. Week 03 --> | <!-- 🏆 Champion of the Week --> | <!-- [LinkedIn Post](#) --> |
+| Week 05 | [🏆 Champion of the Week](https://www.linkedin.com/safety/go/?url=https%3A%2F%2Flnkd.in%2FgBCApqwC&urlhash=Mljk&mt=BHYPMEt_0qmImGaWsLUFArh-GyDA6eSEC9Gpm6_YPYAszI9w0eGx7QaEXPd8JjNorKQckZ8Wt4Z9PcCv9Yfq9q8smhoIByCYG3cpEqDvzrTwwwlHuod5gOu8EkRgztAwJ8KDFg7HUpY4Wb4rqrdBfEFNtxhCn5Rn-WJc8dj-njng_cBztv0g4I38X6b4axbQBA&isSdui=true&lipi=urn%3Ali%3Apage%3Ad_flagship3_detail_base%3B5aHtAL07RDSPxsL6oyjsPg%3D%3D)  | [LinkedIn Post](https://www.linkedin.com/posts/dmibypravinmishra-devops-agile-share-7500155968945778688-3_Cd/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY)  |
 
 ### Leaderboard
 
@@ -147,9 +147,9 @@ Week 09 → Ansible
 
 | 07 | Azure Cloud | ✅ Completed | ✅ Solved |  https://www.linkedin.com/posts/wisgeorge1_dmibypravinmishra-devops-cloudcomputing-share-7499222347426480128-SawJ/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY | https://cloudly.hashnode.dev/deploy-a-full-stack-node-js-application-on-azure-vm-with-private-mysql 
 
-| 08 | Terraform | 🔄 In Progress | 🔄 In Progress | https://www.linkedin.com/posts/wisgeorge1_%F0%9D%98%81%F0%9D%97%B2%F0%9D%97%BF%F0%9D%97%BF%F0%9D%97%AE%F0%9D%97%B3%F0%9D%97%BC%F0%9D%97%BF%F0%9D%97%BA-%F0%9D%97%AE%F0%9D%97%BD%F0%9D%97%BD%F0%9D%97%B9%F0%9D%98%86-%F0%9D%98%80%F0%9D%98%82%F0%9D%97%B0%F0%9D%97%B0%F0%9D%97%B2%F0%9D%97%B2%F0%9D%97%B1%F0%9D%97%B6%F0%9D%97%BB%F0%9D%97%B4-ugcPost-7501113660661194752-UpAI/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY | https://cloudly.hashnode.dev/deploy-a-node-js-web-application-on-aws-using-terraform-modules-ec2-nginx-and-private-amazon-rds-mysql 
+| 08 | Terraform | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/wisgeorge1_%F0%9D%98%81%F0%9D%97%B2%F0%9D%97%BF%F0%9D%97%BF%F0%9D%97%AE%F0%9D%97%B3%F0%9D%97%BC%F0%9D%97%BF%F0%9D%97%BA-%F0%9D%97%AE%F0%9D%97%BD%F0%9D%97%BD%F0%9D%97%B9%F0%9D%98%86-%F0%9D%98%80%F0%9D%98%82%F0%9D%97%B0%F0%9D%97%B0%F0%9D%97%B2%F0%9D%97%B2%F0%9D%97%B1%F0%9D%97%B6%F0%9D%97%BB%F0%9D%97%B4-ugcPost-7501113660661194752-UpAI/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY | https://cloudly.hashnode.dev/deploy-a-node-js-web-application-on-aws-using-terraform-modules-ec2-nginx-and-private-amazon-rds-mysql 
 
-| 09 | Ansible | 🔄 In Progress | 🔄 In Progress | https://www.linkedin.com/posts/wisgeorge1_dmibypravinmishra-devops-cloudcomputing-activity-7504829205751435264-zatF?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY | https://cloudly.hashnode.dev/how-to-provision-linux-vms-with-terraform-and-run-ansible-ad-hoc-commands 
+| 09 | Ansible | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/wisgeorge1_dmibypravinmishra-devops-cloudcomputing-activity-7504829205751435264-zatF?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY | https://cloudly.hashnode.dev/how-to-provision-linux-vms-with-terraform-and-run-ansible-ad-hoc-commands 
 
 | 10 | Azure DevOps (CI/CD) | 🔄 In Progress | 🔄 In Progress | <https://www.linkedin.com/posts/wisgeorge1_dmibypravinmishra-devops-cloudcomputing-ugcPost-7509134319060283392-Qw2f/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY> | https://cloudly.hashnode.dev/set-up-a-self-hosted-linux-agent-for-azure-devops-on-ubuntu 
 
