@@ -6,10 +6,10 @@ Part of the DevOps Micro Internship (DMI) with Agentic AI
 
 ## Student Details
 
-**Full Name:** Add your full name here  
-**Cloud Platform:** AWS or Azure  
-**GitHub Repository URL:** Add your repository URL here  
-**Public Application URL / Load-Balancer DNS:** Add the public URL or DNS here
+**Full Name:** George Adimowei Epebifie 
+**Cloud Platform:** AWS 
+**GitHub Repository URL:** https://github.com/wisegeorge1/book-review-app.git  
+**Public Application URL / Load-Balancer DNS:** http://book-review-public-alb-1127651348.us-east-1.elb.amazonaws.com/
 
 ---
 
@@ -91,7 +91,7 @@ The diagram must show:
 
 ## Architecture Diagram
 
-![Architecture-Diagram](/week-08-terraform/screenshots/architecture-diagram.jpg)
+![Architecture-Diagram](/week-08-terraform/screenshots/three-tier-high-available-book-review.png)
 
 ---
 
@@ -115,15 +115,15 @@ Add a screenshot showing the modular Terraform project structure.
 
 Add a screenshot showing the six-subnet architecture across two availability locations.
 
-Add your screenshot here.
-
+![ss7](/week-08-terraform/screenshots/ass5-ss7.png)
+                
 ---
 
 ### Screenshot 8 — Public and Private Tier Separation
 
 Add a screenshot showing the public and private tier separation, including routing and security boundaries.
 
-Add your screenshot here.
+![ss8](/week-08-terraform/screenshots/ass5-ss8.png)
 
 ---
 
@@ -139,7 +139,7 @@ Deploy the public and internal load balancers and the Web and Application comput
 
 Add a screenshot showing the Web and Application compute resources in their required subnets.
 
-Add your screenshot here.
+![ss9](/week-08-terraform/screenshots/ass5-ss9.png)
 
 ---
 
@@ -147,7 +147,7 @@ Add your screenshot here.
 
 Add a screenshot showing the internet-facing public load balancer.
 
-Add your screenshot here.
+![ss10](/week-08-terraform/screenshots/ass5-ss10.png)
 
 ---
 
@@ -155,7 +155,7 @@ Add your screenshot here.
 
 Add a screenshot showing the private internal load balancer.
 
-Add your screenshot here.
+![ss11](/week-08-terraform/screenshots/ass5-ss11.png)
 
 ---
 
@@ -163,7 +163,7 @@ Add your screenshot here.
 
 Add a screenshot showing healthy target groups or backend pools.
 
-Add your screenshot here.
+![ss12](/week-08-terraform/screenshots/ass5-ss12.png)
 
 ---
 
@@ -179,7 +179,7 @@ Deploy a private, highly available managed MySQL database with a read replica an
 
 Add a screenshot showing the managed MySQL database deployment.
 
-Add your screenshot here.
+![ss13](/week-08-terraform/screenshots/ass5-ss13.png)
 
 ---
 
@@ -187,7 +187,7 @@ Add your screenshot here.
 
 Add a screenshot showing the Multi-AZ or high-availability configuration.
 
-Add your screenshot here.
+![ss14](/week-08-terraform/screenshots/ass5-ss14.png)
 
 ---
 
@@ -195,7 +195,7 @@ Add your screenshot here.
 
 Add a screenshot showing the read replica configuration.
 
-Add your screenshot here.
+![ss15](/week-08-terraform/screenshots/ass5-ss15.png)
 
 ---
 
@@ -203,7 +203,8 @@ Add your screenshot here.
 
 Add a screenshot showing that the database is private and accepts MySQL traffic only from the Application Tier.
 
-Add your screenshot here.
+![ss16](/week-08-terraform/screenshots/ass5-ss16.png)
+![ss16](/week-08-terraform/screenshots/ass5-ss16a.png)
 
 ---
 
@@ -219,7 +220,7 @@ Validate the Terraform configuration, review the execution plan using both Agent
 
 Add a screenshot showing successful `terraform validate` output.
 
-Add your screenshot here.
+![ss17](/week-08-terraform/screenshots/ass5-ss17.png)
 
 ---
 
@@ -227,7 +228,7 @@ Add your screenshot here.
 
 Add a screenshot showing the Terraform plan output.
 
-Add your screenshot here.
+![ss18](/week-08-terraform/screenshots/ass5-ss18.png)
 
 ---
 
@@ -235,7 +236,7 @@ Add your screenshot here.
 
 Add a screenshot showing successful `terraform apply` completion.
 
-Add your screenshot here.
+![ss19](/week-08-terraform/screenshots/ass5-ss19.png)
 
 ---
 
@@ -251,7 +252,7 @@ Deploy and configure the Book Review App across the Web, Application, and Databa
 
 Add a screenshot showing the Book Review App homepage through the public endpoint.
 
-Add your screenshot here.
+![ss20](/week-08-terraform/screenshots/ass5-ss20.png)
 
 ---
 
@@ -259,7 +260,7 @@ Add your screenshot here.
 
 Add a screenshot showing successful login or authentication.
 
-Add your screenshot here.
+![ss20](/week-08-terraform/screenshots/Ass5-SS-21.png)
 
 ---
 
@@ -267,7 +268,8 @@ Add your screenshot here.
 
 Add a screenshot showing the book listing or book details.
 
-Add your screenshot here.
+![ss22](/week-08-terraform/screenshots/Ass5-SS-22.png)
+![ss22](/week-08-terraform/screenshots/Ass5-SS-22a.png)
 
 ---
 
@@ -275,7 +277,7 @@ Add your screenshot here.
 
 Add a screenshot showing the review functionality working successfully.
 
-Add your screenshot here.
+![ss23](/week-08-terraform/screenshots/Ass5-SS-23.png)
 
 ---
 
@@ -283,7 +285,7 @@ Add your screenshot here.
 
 Add a screenshot showing that the backend or API is working successfully.
 
-Add your screenshot here.
+![ss24](/week-08-terraform/screenshots/Ass5-ss-24.png)
 
 ---
 
@@ -291,11 +293,11 @@ Add your screenshot here.
 
 Add a screenshot showing successful database reads and writes.
 
-Add your screenshot here.
+![ss25](/week-08-terraform/screenshots/Ass5-SS-25.png)
 
 ## Public Application URL
 
-**Public Application URL / DNS:** Add the working public application URL or load-balancer DNS here
+**Public Application URL / DNS:** <http://book-review-public-alb-1127651348.us-east-1.elb.amazonaws.com/>
 
 ---
 
@@ -313,7 +315,9 @@ You do not need to submit your complete Claude Code conversation history. Includ
 
 Add a screenshot showing one useful example of AI-assisted Terraform generation or improvement.
 
-Add your screenshot here.
+![ss26](/week-08-terraform/screenshots/Ass5-SS-26.png)
+![ss26](/week-08-terraform/screenshots/Ass5-SS-26a.png)
+![ss26](/week-08-terraform/screenshots/Ass5-SS-26b.png)
 
 ---
 
@@ -321,7 +325,11 @@ Add your screenshot here.
 
 Add a screenshot showing one structured architecture or security review result.
 
-Add your screenshot here.
+![ss27](/week-08-terraform/screenshots/Ass5-SS-27.png)
+![ss27](/week-08-terraform/screenshots/Ass5-SS-27a.png)
+![ss27](/week-08-terraform/screenshots/Ass5-SS-27b.png)
+![ss27](/week-08-terraform/screenshots/Ass5-SS-27c.png)
+![ss27](/week-08-terraform/screenshots/Ass5-SS-27d.png)
 
 ---
 
@@ -329,7 +337,15 @@ Add your screenshot here.
 
 Add a screenshot showing one AI-assisted troubleshooting interaction based on collected evidence.
 
-Add your screenshot here.
+![ss28](/week-08-terraform/screenshots/Ass5-SS-28.png)
+![ss28](/week-08-terraform/screenshots/Ass5-SS-28a.png)
+![ss28](/week-08-terraform/screenshots/Ass5-SS-28b.png)
+![ss28](/week-08-terraform/screenshots/Ass5-SS-28c.png)
+![ss28](/week-08-terraform/screenshots/Ass5-SS-28d.png)
+![ss28](/week-08-terraform/screenshots/Ass5-SS-28e.png)
+![ss28](/week-08-terraform/screenshots/Ass5-SS-28f.png)
+![ss28](/week-08-terraform/screenshots/Ass5-SS-28g.png)
+![ss28](/week-08-terraform/screenshots/Ass5-SS-28h.png)
 
 ---
 
@@ -368,67 +384,69 @@ Reflect on the architecture, Terraform implementation, and Agentic AI workflow. 
 
 ### 1. Why did you separate the Web, Application, and Database tiers?
 
-Write your answer here.
+I separated the system into three tiers so that each layer has a clear responsibility and security boundary. The Web Tier handles internet-facing traffic and the frontend, the Application Tier handles the backend/API logic, and the Database Tier stores application data. This separation makes the system easier to secure, troubleshoot, scale, and maintain.
 
 ### 2. Why is the Application Tier private?
 
-Write your answer here.
+The Application Tier is private because users should not connect directly to the backend servers. Internet traffic reaches the Web Tier first, and the Web Tier communicates with the Application Tier through the internal load balancer. This reduces the attack surface and prevents direct public access to the Node.js API servers.
 
 ### 3. Why is MySQL private?
 
-Write your answer here.
+MySQL contains sensitive application data, so it should never be directly accessible from the internet. The RDS database is placed in private subnets and only accepts MySQL traffic from the Application Tier. This protects the database while still allowing the backend to access it.
 
 ### 4. Why are multiple Availability Zones used?
 
-Write your answer here.
+I used multiple Availability Zones to avoid having the entire application depend on a single data center or Availability Zone. If one AZ becomes unavailable, resources in another AZ can continue serving users. This improves availability and resilience.
 
 ### 5. What is the difference between Multi-AZ/high availability and a read replica?
 
-Write your answer here.
+Multi-AZ is primarily designed for high availability and failover. A standby database is maintained in another Availability Zone so the system can recover from an infrastructure failure. A read replica is primarily designed to scale read operations by allowing read traffic to be distributed to another database instance. Therefore, Multi-AZ focuses on availability, while read replicas focus mainly on read scalability.
 
 ## Terraform
 
 ### 6. How did you divide your Terraform into modules?
 
-Write your answer here.
+I divided Terraform into logical modules based on infrastructure responsibilities. The main modules cover the network, security groups, load balancers, compute resources, and database. The root Terraform configuration coordinates these modules and provides their required variables.
 
 ### 7. How do the modules communicate through variables and outputs?
 
-Write your answer here.
+The root module passes configuration values into child modules through variables. Each module exposes important resources through outputs, such as subnet IDs, security group IDs, load balancer information, and database information. Other modules can then consume those outputs instead of hard-coding resource IDs.
 
 ### 8. What did you specifically check in `terraform plan`?
 
-Write your answer here.
+I checked for unexpected resource creation, deletion, or replacement, especially for EC2 instances, load balancers, and the RDS database. I also checked network CIDRs, public versus private resources, security-group rules, ports 3001 and 3306, public IP assignments, Availability Zones, and any 0.0.0.0/0 rules. I also reviewed potential cost-impacting resources and anything that could affect the existing database.
 
 ## Agentic AI
 
 ### 9. What was the purpose of `CLAUDE.md`?
 
-Write your answer here.
+CLAUDE.md provided Claude Code with the project's rules, architecture requirements, security expectations, Terraform workflow, and validation requirements. It acted as persistent project guidance so that the AI consistently followed the intended three-tier architecture instead of making isolated decisions.
 
 ### 10. What work did the Terraform Engineer subagent perform?
 
-Write your answer here.
+The Terraform Engineer subagent helped design and generate the Terraform infrastructure according to the required architecture. It focused on the Terraform modules, AWS resources, variables, outputs, dependencies, and validation of the infrastructure configuration.
 
 ### 11. What did the Architecture and Security Reviewer identify?
 
-Write your answer here.
+The Architecture and Security Reviewer examined the proposed infrastructure against the required architecture and security controls. It checked areas such as public versus private resources, security-group access, database exposure, load-balancer configuration, ports, Availability Zones, and potentially risky Terraform changes. Its review helped identify issues that needed correction before applying infrastructure changes.
 
 ### 12. Why did you use Terraform MCP instead of relying only on Claude's existing Terraform knowledge?
 
-Write your answer here.
+I used Terraform MCP so that Claude could work with more current and authoritative Terraform information rather than relying only on knowledge learned during training. This was particularly useful for checking provider and Terraform behavior and reducing the risk of using outdated syntax or assumptions.
 
 ### 13. What was the purpose of your validation hooks?
 
-Write your answer here.
+The validation hooks provided an automated safety check before infrastructure changes progressed. The workflow included formatting and Terraform validation so that basic configuration errors could be detected early. This helped make the process more consistent and reduced avoidable errors before planning or applying infrastructure.
 
 ### 14. Describe one real issue Claude helped you troubleshoot.
 
-Write your answer here.
+One real issue was that the application initially returned a 502 Bad Gateway through the public load balancer because Nginx was not correctly configured to listen on port 80 and route traffic to the frontend. We also had backend connectivity and configuration issues during deployment. By checking target health, service status, logs, Nginx configuration, and API responses, we identified and corrected the problems.
+
+Another important issue was registration and login failing because the backend did not have the correct ALLOWED_ORIGINS configuration. The application was falling back to localhost origins, while the browser was accessing the application through the public load balancer hostname. Adding the correct origin to both Application Tier instances resolved the problem.
 
 ### 15. Describe one recommendation you reviewed, modified, or rejected instead of accepting blindly.
 
-Write your answer here.
+One example was the handling of database initialization and sample data. Instead of enabling DB_SYNC or SEED_DATA in production, I kept both disabled because the production configuration explicitly prevents those settings. I created the required sample books through the application API and verified that they were persisted in RDS. This demonstrated that I treated AI recommendations as suggestions that needed to be reviewed against the architecture and production requirements rather than accepting them automatically.
 
 ---
 
@@ -442,7 +460,7 @@ Write the post in your own words, include at least one project image or other pr
 
 ## LinkedIn Post URL
 
-**LinkedIn Post URL:** Add your LinkedIn post URL here
+**LinkedIn Post URL:** <https://www.linkedin.com/posts/wisgeorge1_dmibypravinmishra-devops-cloudcomputing-ugcPost-7524432945890230272-aBha/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp8HhoB_UGFhHiID8Ba-4DVResYfMJJsuY>
 
 ---
 
